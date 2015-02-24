@@ -11,12 +11,12 @@ class JConfig {
 	var $sef_suffix = '0';
 	var $feed_limit = '10';
 	var $feed_email = 'author';
-	var $secret = 'QF2KEfwBiiWesjZ8';
+	var $secret = 'BNlBE76ftu3GUFwn';
 	var $gzip = '0';
 	var $error_reporting = '-1';
 	var $xmlrpc_server = '0';
-	var $log_path = '/home/iciud0/public_html/graduarte/sitio/logs';
-	var $tmp_path = '/home/iciud0/public_html/graduarte/sitio/tmp';
+	var $log_path = '/Users/Shared/Dropbox/DAYSCRIPT/CLIENTES/ACTIVOS/GRADUARTE/graduarte/log';
+	var $tmp_path = '/tmp';
 	var $live_site = '';
 	var $force_ssl = '0';
 	var $offset = '0';
@@ -32,8 +32,8 @@ class JConfig {
 	var $ftp_root = '';
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
-	var $user = 'iciud0_gradusi';
-	var $db = 'iciud0_gradusitio';
+	var $user = 'graduarte';
+	var $db = 'graduarte';
 	var $dbprefix = 'jos_';
 	var $mailer = 'mail';
 	var $mailfrom = 'info@platcom.net';
@@ -49,7 +49,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '1500';
 	var $session_handler = 'database';
-	var $password = 'manzana12';
+	var $password = 'Th2HLWP8zj';
 	var $sitename = 'Graduarte';
 	var $MetaDesc = 'Joomla! - el motor de portales dinámicos y sistema de administración de contenidos';
 	var $MetaKeys = 'joomla, Joomla';
