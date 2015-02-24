@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<!-- Live update -->
+		<param name="downloadid" type="text" default="" size="30"
+			label="ATOOLS_LBL_CONFIG_DOWNLOADID"
+			description ="" />
+		<param name="liveupdate" type="hidden" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<!--
+		<param name="frontend_enable" type="radio" default="0"
+			label="ATOOLS_CONFIG_FEBENABLE_LABEL"
+			description="ATOOLS_CONFIG_FEBENABLE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="frontend_secret_word" type="password" default="" size="30"
+			label="ATOOLS_CONFIG_SECRETWORD_LABEL"
+			description="ATOOLS_CONFIG_SECRETWORD_DESC" />
+		-->
+	</params>
+	
+	<!-- Joomla! 1.6... -->
+	
+	<fieldset
+		name="updates"
+		label="ATOOLS_JCONFIG_UPDATES_LABEL"
+		description="ATOOLS_JCONFIG_UPDATES_DESC"
+		>
+		<field name="downloadid" type="text" default="" size="30"
+			label="ATOOLS_LBL_CONFIG_DOWNLOADID"
+			description ="" />
+		<field name="liveupdate" type="hidden" default="" label="" description="" />
+	</fieldset>
+	
+	<!--
+	<fieldset name="frontend" label="ATOOLS_CONFIG_FRONTEND_HEADER_LABEL" description="ATOOLS_CONFIG_FRONTEND_HEADER_DESC">
+		<field name="frontend_enable" type="radio" default="0"
+			label="ATOOLS_CONFIG_FEBENABLE_LABEL"
+			description="ATOOLS_CONFIG_FEBENABLE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="frontend_secret_word" type="password" default="" size="30"
+			label="ATOOLS_CONFIG_SECRETWORD_LABEL"
+			description="ATOOLS_CONFIG_SECRETWORD_DESC" />	
+	</fieldset>
+	-->
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_admintools"
+			section="component" />
+	</fieldset>	
+</config>

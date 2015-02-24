@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>prettyBox</name>
+	<author>Joomla Bamboo</author>
+	<creationDate>Jan 2009</creationDate>
+	<copyright>Copyright (C) 2008 Joomla Bamboo. All rights reserved.</copyright>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>1.1.3</version>
+	<description>prettyBox is a flexible gallery in a module for Joomla. See the Joomla Bamboo Extensions page for more details. Please note that in order to use the lightbox effect you need to use this module in conjunction with our JB Library plugin.</description>
+	<files>
+		<filename module="mod_prettyBox">mod_prettyBox.php</filename>
+		<filename module="mod_prettyBox">image.php</filename>
+		<filename module="mod_prettyBox">imagecache/index.html</filename>
+		<filename module="mod_prettyBox">prettyPhoto/css/prettyPhoto.css</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_rounded/btnNext.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_rounded/btnPrevious.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_rounded/contentPattern.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_rounded/loader.gif</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_rounded/sprite.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_square/btnNext.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_square/btnPrevious.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_square/contentPattern.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_square/loader.gif</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/dark_square/sprite.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_rounded/btnNext.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_rounded/btnPrevious.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_rounded/loader.gif</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_rounded/sprite.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_square/btnNext.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_square/btnPrevious.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_square/loader.gif</filename>
+		<filename module="mod_prettyBox">prettyPhoto/images/prettyPhoto/light_square/sprite.png</filename>
+		<filename module="mod_prettyBox">prettyPhoto/js/jquery.prettyPhoto.js</filename>
+	</files>
+	<params>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General Pretty Box Settings&lt;/div&gt;" label="" description="" />
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX"/>
+	<param name="id" type="text" default="1" label="Module ID" description="ID for this instance of the module."/>
+	<param name="directory" type="text" default="images/stories" label="Image Directory" description="Directory images will be sourced from - this is the relative directory eg images/stories/." />
+	<param name="output" type="list" default="random" label="Layout" description="The layout to display the category">
+			<option value="0">No Details</option>
+			<option value="1">Title above image</option>
+			<option value="2">Title below image</option>
+			<option value="3">Title above, description, date, author</option>
+			<option value="4">Title below, description, date, author</option>
+			<option value="5">Description, date, author</option>
+			<option value="5">Date and author</option>
+			<option value="5">Author</option>
+	</param>
+		<param name="items" type="list" default="0" label="Image Naming Convention" description="Select the convention you have used to name your images. Even if you select no details the title and desicription will be output in the source of your page for a better SEO result. Please ensure to use the same convention for each image name in order to have the module function properly." >
+			<option value="1">Title</option>
+			<option value="2">Title-Description</option>
+			<option value="3">Title-Description-Date</option>
+			<option value="4">Title-Description-Date-Author</option>
+			<option value="5">Title-Description-Date-Author-ArticleID</option>
+			<option value="6">Title-Description-Date-Author-ArticleID-ItemID</option>
+	</param>
+	<param name="link" type="list" default="0" label="Link Behaviour" description="Choose the action that occurs when an image is clicked. See the demo site for instrtuctions related to the content item and blog category options." >
+			<option value="0">No link</option>
+			<option value="1">Opens in a Lightbox</option>
+			<option value="2">Opens image in the same window</option>
+			<option value="3">Opens the image in a new window</option>
+			<option value="4">Opens in a content item</option>
+			<option value="5">Opens a blog category</option>
+	</param>
+	<param name="right_margin" type="text" default="" label="Right Margin" description="Enter the right margin for the images. This value creates a space to the right of each image in the gallery. Set to 0 to have no margin."/>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Pretty Photot Settings&lt;/div&gt;" label="" description="" />
+	<param name="prettyPhoto" type="list" default="Yes" label="Enable prettyphoto?" description="Enable this option if you want to display image when clicked in a pretyyPhoto overlay. If you are using another module that includes prettyPhoto then set this option to no. ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</param>
+	<param name="theme" type="list" default="tfast" label="Overlay Theme" description="Select the theme to use in the lightbox.">
+			<option value="dark_rounded">Dark Rounded</option>
+			<option value="light_rounded">Light Rounded</option>
+			<option value="dark_square">Dark Square</option>
+			<option value="light_square">Light Square</option>
+	</param>
+	<param name="opacity" type="text" default="0.6" label="Overlay opacity" description="Set the opacity of the overlay - 1 is opaque and 0 is transparent."/>
+<param name="padding" type="text" default="20" label="prettyPhoto padding" description="The width of the padding around the prettyPhoto overlay without px."/>
+<param name="resize" type="list" default="false" label="Resize Image?" description="Set this option to true if you want to be able to resize large images that are automatically scaled down to fit within the browser window.">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+	</param>
+<param name="prettyBoxTitle" type="list" default="false" label="Show image title?" description="Display the title of the image in the overlay?">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+	</param>
+	<param name="prettyBoxSpeed" type="list" default="tfast" label="Overlay Speed" description="The speed at which the overlay appears when the image is displayed in the lightbox.">
+			<option value="fast">Fast</option>
+			<option value="normal">Normal</option>
+			<option value="slow">Slow</option>
+	</param>
+	
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Image Resize Settings&lt;/div&gt;" label="" description="" />
+	<param name="img_width" type="text" default="150" label="Image Width" description="The width that the image is cropped to. No need to use px just the pixel value."/>
+	<param name="img_height" type="text" default="150" label="Image Height" description="The height that the image is cropped to. No need to use px just the pixel value."/>
+	<param name="crop_width" type="text" default="1" label="Crop ratio width" description="The width ratio that the image is cropped by" />
+	<param name="crop_height" type="text" default="2" label="Crop ratio height" description="The height ratio that the image is cropped by" />
+	<param name="height" type="text" default="200" label="Image block height" description="The height of each image block which includes the title, image and details." />
+	</params>
+</install>

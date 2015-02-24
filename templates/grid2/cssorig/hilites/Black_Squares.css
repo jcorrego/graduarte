@@ -1,0 +1,30 @@
+/**
+ * @package		Joomla Bamboo Grid 2 Joomla Template - June 2010
+ * @Type        Hilite CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		Commercial Joomla Template. All rights reserved. Anthony Olsen 2010.
+ */
+
+body {background:#222 url(../../images/background/blackSquares.png) repeat-x left 0 fixed}
+.fullWrap {background: url(../../images/background/blackSquaresUpsideDown.png) left bottom repeat-x fixed} 
+.topRow {background: url(../../images/topnav/topNavdark.png) repeat-x left top}  
+
+/* Left Column Style */
+.leftStyle {background:  url(../../images/leftbackground/stone2.jpg) repeat-y left top}
+
+/* Divider Style for left column */
+#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-pink,#leftCol .moduletable-blue,#leftCol .moduletable-brown,#leftCol .moduletable-olive,#leftCol .moduletable-purple,#leftCol .moduletable-red,#leftCol .moduletable-yellow,#leftCol .moduletable-green,#leftCol .moduletable-orange,.moduletable-panelmenu,.moduletable-slide  {background:url(../../images/dividerDark.jpg) repeat-x left bottom}
+
+/* General and Left Column Links */
+a,#leftCol .moduletable-slide h3:hover,#leftCol a:hover {color: #D0A825}
+#leftCol a {color: #ccc;}
+a:hover {color: #333}
+
+/* Top Menu links */
+.topRow ul li#current a,.topRow ul li.active a,#nav ul li.active a.sf-with-ul,#nav ul li#current.active a, #nav ul li#current a,#nav ul li.active a{background: #000000;color: #D0A825}
+.topRow .moduletable-superfish ul li a:hover,.topRow .moduletable-superfish ul li li a:hover,.topRow ul li#current li#current.active a,.topRow ul li.active li#current.active a,.topRow ul li.active a:hover,.topRow ul li#current li a:hover,.topRow ul li#current.active li a:hover,.topRow ul li#current.active li a:hover,.topRow .moduletable-superfish ul li.active li a:hover,.topRow .moduletable-superfish ul li.active a,#nav  ul li a:hover,#nav  ul li li a:hover,#nav  ul li#current li#current.active a,#nav  ul li.active li#current.active a,#nav  ul li.active a:hover,#nav  ul li#current li a:hover,#nav  ul li#current.active li a:hover,#nav  ul li#current.active li a:hover,#nav  ul li.active li a:hover,#nav  ul li.active a, #nav ul li span.mainlevel:hover, .moduletable-superfish ul li li span.mainlevel:hover, #nav ul li a.mainlevel:hover, .moduletable-superfish ul li li a.mainlevel:hover {color: #D0A825}
+.topRow ul li#current.active  li a,#nav ul li#current.active  li a {color: #fff;} 
+
+#leftCol .moduletable-pink,#leftCol .moduletable-blue,#leftCol .moduletable-brown,#leftCol .moduletable-olive,#leftCol .moduletable-purple,#leftCol .moduletable-red,#leftCol .moduletable-yellow,#leftCol .moduletable-green,#leftCol .moduletable-orange,.moduletable-panelmenu,.moduletable-slide {background: url(../../images/dividerDark.jpg) repeat-x left bottom}

@@ -1,0 +1,74 @@
+/* @override http://dev.joomlabamboo.com/pixel8/modules/mod_slideshow3/slideshow/slideshow.css */
+
+/* @group Slideshow 3 */
+
+.slideShowNav li {list-style-type: none;float: left;margin-right: 15px;}
+.slideShowNav a { margin:0; padding:0; border: none; text-decoration: none}
+.slideShowNav.indexNav  a,.slideShowNav.indexNavButtons a {margin: 5px; padding: 3px 5px; border: 1px solid #ccc; background: #fff; color: #444; font-weight: bold;float:left;}
+.slideShowNav.indexNav  a :hover{background: #CCC}
+.slideShowNav.indexNav  a.activeSlide { background: #DDD }
+.slideShowContainerNone, .slideShowContainerDark, .slideShowContainerLight, 
+.slideShowContainerBrown, .slideShowContainerGreen, .slideShowContainerRed, 
+.slideShowContainerPurple {position: relative;display:none}
+.slideshowContent,.slideshowImage{position: absolute; float: left}
+.slideshowImage{background: url(../images/loading.gif) no-repeat center center}
+.slideshowImage img{position:absolute;}
+.slideshowContent{padding: 5px;  overflow:hidden;}
+.scroller {background: none;}
+.slideshowContent.light{background: url(../images/lightOverlay.png) repeat;color: #000;}
+.slideshowContent.dark{background: url(../images/blackoverlay.png) repeat;color: #fff;}
+.slideshowContent.dark a {color: #ccc;}
+.ssReadMore{padding:3px 7px 3px 7px;background: #CCC;color: #444;}
+div.ssPager.vertical {position:absolute;margin:0px;}
+div.ssPager.horizontal {position:absolute;margin:0px;}
+.scrollButtonVertical, .scrollButtonHorizontal{float:left;position:absolute;z-index:99}
+.ssNavButtons{float:left;clear:left}
+.ssPrev{padding: 3px 5px;cursor: pointer;color: #444;}
+.ssNext{padding: 3px 5px;cursor: pointer;color: #444;}
+.slideshowNav {float:left}
+.slideShowNav.indexNavButtons  a.activeSlide,#slideShowNav.indexNavButtons  a:hover {background: url(../images/blackNav.png) no-repeat center center;border: none;text-indent: -1000px;color: #353535;}
+.slideShowNav.indexNavButtons  a {background: url(../images/whiteNav.png) no-repeat center center ;border: none;text-indent: -1000px;color: #fff}
+.tickerLabel {float: left;line-height: 1.6em;}
+.scrollContainer{position:relative;overflow:hidden;}
+span.activeIndicator{display:none;}
+img.navThumb ,img.navThumbborder {float: left;margin-right: 10px}
+img.navThumb.thumbRight ,img.navThumbborder.thumbRight{float: right;margin-right: 10px;}
+span.thumbtitle {font-size: 0.95em;margin-left: 8px;display: block;}
+span.thumbtitleright {font-size: 0.95em;margin-left: 8px;display: block;float:left;}
+
+div.slideShowDescription {position:absolute;overflow:hidden;padding:5px;z-index:49;float:left;}
+div.slideShowDescription.light {background: url(../images/lightOverlay.png) repeat;color: #000;}
+div.slideShowDescription.dark {background: url(../images/blackoverlay.png) repeat;color: #fff;}
+
+.slideShowContainerNone div.scrollButtonVertical, .slideShowContainerNone div.scrollButtonHorizontal { cursor:pointer;}
+.slideShowContainerNone div.scrollButtonVertical.scrollPrevious {background: url(../images/prev_vert.png) no-repeat 45% 45% }
+.slideShowContainerNone div.scrollButtonVertical.scrollNext {background: url(../images/next_vert.png) no-repeat 47% 47% }
+.slideShowContainerNone div.scrollButtonHorizontal.scrollPrevious {background: url(../images/prev_horz.png) no-repeat 47% 47% }
+.slideShowContainerNone div.scrollButtonHorizontal.scrollNext {background: url(../images/next_horz.png) no-repeat 47% 47% }
+.slideShowContainerNone div.ssPager {}
+.slideShowContainerNone .ssPager li a.activeSlide {background: #F9F9F9;color:#000;}
+.slideShowContainerNone .ssPager li img {}
+
+/* @end */
+/*Dark Styles*/
+.slideShowContainerDark {background: #111216;padding: 10px 0;border-bottom: 1px solid #414141}
+.slideShowContainerDark .slideshowContent {color: #fff;padding: 6px 0 2px 20px}
+.slideShowContainerDark .slideshowContent h2 a{color: #fff;font-size: 0.6em}
+.slideShowContainerDark .slideShowNav.indexNav  a{border: 0;padding: 0;background: none;float:left;}
+.slideShowContainerDark .slideshowImage img.border,.slideShowContainerDark img.navThumb.border {border: none;padding: 0}
+.slideShowContainerDark .slideshowImage a {border: none}
+.slideShowContainerDark .slideshowContent span.readmore {float: right;margin-right: 20px;background: url(../images/yellowButton.png) no-repeat;height: 32px;width: 120px;margin-top: -12px;text-align: center;text-transform: uppercase;font-size: 90%;padding-top: 10px} 
+.slideShowContainerDark a:hover {color: #333}
+.slideShowContainerDark .ssPager a {color: #fff;}
+.slideShowContainerDark .ssPager a:hover {color: #fff;}
+.slideShowContainerDark .ssPager li a.activeSlide {background: #28282A;border-top: 1px solid #414141;color:#fff;border-bottom: 1px solid #111216;}
+.slideShowContainerDark .ssPager li {height:47px;background: url(../images/slideshowtitle.png) repeat-x right top;padding-top: 2px;margin-bottom: 17px}
+.slideShowContainerDark .bgOverlay {background: url(../images/blackoverlay.png)}
+.slideShowContainerDark div.scrollButtonVertical, .slideShowContainerDark div.scrollButtonHorizontal {border-bottom: 1px solid #111216;border-right: 1px solid #111216;
+	border-top: 1px solid #414141;border-left: 1px solid #414141; cursor:pointer;}
+.slideShowContainerDark div.scrollButtonVertical.scrollPrevious {background: url(../images/prev_vert.png) no-repeat 45% 45% #1C1C1E}
+.slideShowContainerDark div.scrollButtonVertical.scrollNext {background: url(../images/next_vert.png) no-repeat 47% 47% #1C1C1E}
+.slideShowContainerDark div.scrollButtonHorizontal.scrollPrevious {background: url(../images/prev_horz.png) no-repeat 47% 47% #1C1C1E}
+.slideShowContainerDark div.scrollButtonHorizontal.scrollNext {background: url(../images/next_horz.png) no-repeat 47% 47% #1C1C1E}
+.slideShowContainerDark div.ssPager {background:#111216;}
+

@@ -1,0 +1,19 @@
+/**
+ * @package		Joomla Bamboo Grid 2 Joomla Template - June 2010
+ * @Type        Hilite CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		Commercial Joomla Template. All rights reserved. Anthony Olsen 2010.
+ */
+ 
+ body {background:#222220 url(../../images/background/wallIcon.jpg) no-repeat left 51px}
+.leftStyle {background: url(../../images/leftbackground/stone2.jpg) repeat-y left top;float: left;width: 100%;position: relative;z-index: 3}
+a#openPanel,a#closePanel {color: #fff}
+#slideShowContainer1 span,span.breadcrumbs,.breadcrumbs a:hover {color: #fff;}
+.topRow {background: url(../../images/topNavdark.png) repeat-x left top} 
+#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-pink,#leftCol .moduletable-blue,#leftCol .moduletable-brown,#leftCol .moduletable-olive,#leftCol .moduletable-purple,#leftCol .moduletable-red,#leftCol .moduletable-yellow,#leftCol .moduletable-green,#leftCol .moduletable-orange,.moduletable-panelmenu,.moduletable-slide{background:url(../../images/dividerDark.png) repeat-x left bottom}
+a,#leftCol h3:hover {color: #B47E12}
+a:hover {color: #333}
+.topRow ul li#current a,.topRow ul li.active a,#nav ul li.active a.sf-with-ul,#nav ul li#current.active a, #nav ul li#current a,#nav ul li.active a{background: #000000;color: #B47E12}
+.topRow .moduletable-superfish ul li a:hover,.topRow .moduletable-superfish ul li li a:hover,.topRow ul li#current li#current.active a,.topRow ul li.active li#current.active a,.topRow ul li.active a:hover,.topRow ul li#current li a:hover,.topRow ul li#current.active li a:hover,.topRow ul li#current.active li a:hover,.topRow .moduletable-superfish ul li.active li a:hover,.topRow .moduletable-superfish ul li.active a,#nav  ul li a:hover,#nav  ul li li a:hover,#nav  ul li#current li#current.active a,#nav  ul li.active li#current.active a,#nav  ul li.active a:hover,#nav  ul li#current li a:hover,#nav  ul li#current.active li a:hover,#nav  ul li#current.active li a:hover,#nav  ul li.active li a:hover,#nav  ul li.active a, #nav ul li span.mainlevel:hover, .moduletable-superfish ul li li span.mainlevel:hover, #nav ul li a.mainlevel:hover, .moduletable-superfish ul li li a.mainlevel:hover {color: #B47E12}

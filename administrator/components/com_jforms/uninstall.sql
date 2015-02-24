@@ -1,0 +1,9 @@
+--
+-- Uninstall SQL Script
+--
+-- @version		$Id: uninstall.sql 29 2008-12-09 07:13:01Z dr_drsh $
+-- @package		Joomla
+-- @subpackage	JForms
+-- @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+-- @license		GNU/GPL
+--

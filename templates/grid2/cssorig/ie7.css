@@ -1,0 +1,13 @@
+/**
+ * @package		Joomla Bamboo Grid 2 Joomla Template - June 2010
+ * @Type        ie7 CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		Commercial Joomla Template. All rights reserved. Anthony Olsen 2010.
+ */
+ 
+ .k2Buttons {margin-top:-45px;}
+.topRow ul li#current,.topRow ul li.active {padding: 4px 10px;margin-top: -4px;} 
+ul.tweet_list li{list-style-type: none;}
+#memberArea {left: 20px}

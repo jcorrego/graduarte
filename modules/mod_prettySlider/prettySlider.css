@@ -1,0 +1,27 @@
+/* @override 
+	http://showcase.joomlabamboo.com/jun09/modules/mod_prettySlider/css/prettySlider.css
+*/
+ 
+div.ss.pics img {background: #eee;padding: 4px;}
+div.ssControls {float: left;position: relative!important;position:absolute}
+div.ssnav {float: left;padding-top: 0px}
+div.ssnav a {padding: 0px 4px;border: 1px solid #f9f9f9;margin: 0 8px 0 0;text-decoration: none;float: left;background: #fff}
+div.ssnav a:hover {background: url(../images/activeGrunge.jpg) no-repeat;color: #333}
+div.ssnav.Grunge a.activeSlide {background: url(../images/activeGrunge.jpg) no-repeat;color: #333}
+
+div.ssControls.Clean a {margin-top: 2px;}
+div.ssControls.Clean div.ssnav a.activeSlide {background: #eee;color: #333}
+div.ssControls.Clean div.ssnext {background: url(../images/cleanNext.png) no-repeat;height: 24px;width: 24px;margin-right: 10px;float: left;cursor: pointer}
+div.ssControls.Clean div.ssprev {background: url(../images/cleanPrev.png) no-repeat;height: 24px;width: 24px;float: left;cursor: pointer}
+
+div.ssControls.Grunge a {margin-top: 0px;}
+div.ssControls.Grunge div.ssnav a.activeSlide {background: url(../images/activeGrunge.jpg);color: #333}
+div.ssControls.Grunge div.ssnext {background: url(../images/grungeNext.png) no-repeat;height: 24px;width: 24px;margin-right: 10px;float: left;cursor: pointer}
+div.ssControls.Grunge div.ssprev {background: url(../images/grungePrev.png) no-repeat;height: 24px;width: 24px;float: left;cursor: pointer}
+
+div.ssControls.Sticker a {margin-top: 2px;}
+div.ssControls.Sticker div.ssnav a.activeSlide {background: #eee;color: #333}
+div.ssControls.Sticker div.ssnext {background: url(../images/stickerNext.png) no-repeat;height: 24px;width: 24px;margin-right: 10px;float: left;cursor: pointer}
+div.ssControls.Sticker div.ssprev {background: url(../images/stickerPrev.png) no-repeat;height: 24px;width: 24px;float: left;cursor: pointer}
+
+

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML Setup file
+*
+* @version		$Id: jforms.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>JForms</name>
+	<creationDate>March 21st, 2009</creationDate>
+	<author>Mostafa Muhammad</author>
+	<authorEmail>mostafa.mohmmed@gmail.com</authorEmail>
+	<authorUrl>http://jforms.mosmar.com/</authorUrl>
+	<copyright>Copyright (C) 2008 - 2009 Mostafa Muhammad. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>0.6 RC1</version>
+	<description>JForms is an extensible , plug-in based Forms component that works natively on 1.5 Framework and allows single-screen form design while complying with accessibility standards as far as possible.<br />JForms is my Google Summer of Code 2008 Project.</description>
+
+	<files folder="components/com_jforms">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>jforms.php</filename>
+			<filename>router.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/form/dark.css</filename>
+			<filename>views/form/default.css</filename>
+			<filename>views/form/index.html</filename>
+			<filename>views/form/view.html.php</filename>
+			<filename>views/form/tmpl/dark.php</filename>
+			<filename>views/form/tmpl/dark_thank.php</filename>
+			<filename>views/form/tmpl/default.php</filename>
+			<filename>views/form/tmpl/default.xml</filename>
+			<filename>views/form/tmpl/default_thank.php</filename>
+			<filename>views/form/tmpl/embedded.php</filename>
+			<filename>views/form/tmpl/index.html</filename>
+			<filename>models/form.php</filename>
+			<filename>models/index.html</filename>
+
+	</files>
+	
+	
+	<languages folder='language'>
+		<language tag="en-GB">en-GB.com_jforms.ini</language>
+		<language tag="fr-FR">fr-FR.com_jforms.ini</language>
+	</languages>
+	
+
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>	
+
+ 
+	<administration>
+		<menu>JForms</menu>
+		<files folder="administrator/components/com_jforms">
+			<filename>controller.php</filename>
+			<filename>dbUpgrade.php</filename>
+			<filename>globals.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>jforms.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>version.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/records/active.png</filename>
+			<filename>views/records/ajax-loader.gif</filename>
+			<filename>views/records/green.png</filename>
+			<filename>views/records/inactive.png</filename>
+			<filename>views/records/index.html</filename>
+			<filename>views/records/move.jpg</filename>
+			<filename>views/records/red.png</filename>
+			<filename>views/records/style.css</filename>
+			<filename>views/records/style_ie.css</filename>
+			<filename>views/records/view.html.php</filename>
+			<filename>views/records/tmpl/default.php</filename>
+			<filename>views/records/tmpl/index.html</filename>
+			<filename>views/list/css.css</filename>
+			<filename>views/list/index.html</filename>
+			<filename>views/list/upgrade.png</filename>
+			<filename>views/list/view.html.php</filename>
+			<filename>views/list/tmpl/default.php</filename>
+			<filename>views/list/tmpl/index.html</filename>
+			<filename>views/element/index.html</filename>
+			<filename>views/element/view.html.php</filename>
+			<filename>views/element/tmpl/default.php</filename>
+			<filename>views/element/tmpl/index.html</filename>
+			<filename>views/design/active.png</filename>
+			<filename>views/design/bg.gif</filename>
+			<filename>views/design/corner.gif</filename>
+			<filename>views/design/delete.gif</filename>
+			<filename>views/design/edit.gif</filename>
+			<filename>views/design/green.png</filename>
+			<filename>views/design/inactive.png</filename>
+			<filename>views/design/index.html</filename>
+			<filename>views/design/move.png</filename>
+			<filename>views/design/red.png</filename>
+			<filename>views/design/selector-arrow.png</filename>
+			<filename>views/design/style.css</filename>
+			<filename>views/design/view.html.php</filename>
+			<filename>views/design/tmpl/default.php</filename>
+			<filename>views/design/tmpl/index.html</filename>
+			<filename>tables/fields.php</filename>
+			<filename>tables/forms.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>tables/parameters.php</filename>
+			<filename>tables/tparameters.php</filename>
+			<filename>plugins/index.html</filename>
+			<filename>plugins/storage/index.html</filename>
+			<filename>plugins/storage/plugins.list</filename>
+			<filename>plugins/storage/Mail/index.html</filename>
+			<filename>plugins/storage/Mail/Mail.php</filename>
+			<filename>plugins/storage/Mail/Mail.xml</filename>
+			<filename>plugins/storage/Mail/param.xml</filename>
+			<filename>plugins/storage/Database/Database.php</filename>
+			<filename>plugins/storage/Database/Database.xml</filename>
+			<filename>plugins/storage/Database/index.html</filename>
+			<filename>plugins/storage/Database/param.xml</filename>
+			<filename>plugins/export/index.html</filename>
+			<filename>plugins/export/plugins.list</filename>
+			<filename>plugins/export/Xml/index.html</filename>
+			<filename>plugins/export/Xml/param.xml</filename>
+			<filename>plugins/export/Xml/Xml.php</filename>
+			<filename>plugins/export/Xml/Xml.xml</filename>
+			<filename>plugins/export/Xls/excel.php</filename>
+			<filename>plugins/export/Xls/index.html</filename>
+			<filename>plugins/export/Xls/param.xml</filename>
+			<filename>plugins/export/Xls/Xls.php</filename>
+			<filename>plugins/export/Xls/Xls.xml</filename>
+			<filename>plugins/export/Sql/index.html</filename>
+			<filename>plugins/export/Sql/param.xml</filename>
+			<filename>plugins/export/Sql/Sql.php</filename>
+			<filename>plugins/export/Sql/Sql.xml</filename>
+			<filename>plugins/export/Html/Html.php</filename>
+			<filename>plugins/export/Html/Html.xml</filename>
+			<filename>plugins/export/Html/index.html</filename>
+			<filename>plugins/export/Html/param.xml</filename>
+			<filename>plugins/export/Html/tmpl.html</filename>
+			<filename>plugins/export/Csv/Csv.php</filename>
+			<filename>plugins/export/Csv/Csv.xml</filename>
+			<filename>plugins/export/Csv/index.html</filename>
+			<filename>plugins/export/Csv/param.xml</filename>
+			<filename>plugins/elements/index.html</filename>
+			<filename>plugins/elements/plugins.list</filename>
+			<filename>plugins/elements/textbox/index.html</filename>
+			<filename>plugins/elements/textbox/param.xml</filename>
+			<filename>plugins/elements/textbox/textbox.js</filename>
+			<filename>plugins/elements/textbox/textbox.php</filename>
+			<filename>plugins/elements/textbox/textbox.png</filename>
+			<filename>plugins/elements/textbox/textbox.xml</filename>
+			<filename>plugins/elements/textbox/validation/AlphaNumeric.regx</filename>
+			<filename>plugins/elements/textbox/validation/Email.regx</filename>
+			<filename>plugins/elements/textbox/validation/index.html</filename>
+			<filename>plugins/elements/textbox/validation/NoValidation.regx</filename>
+			<filename>plugins/elements/textbox/validation/Numeric.regx</filename>
+			<filename>plugins/elements/textbox/validation/ZipCode.regx</filename>
+			<filename>plugins/elements/textarea/index.html</filename>
+			<filename>plugins/elements/textarea/param.xml</filename>
+			<filename>plugins/elements/textarea/textarea.js</filename>
+			<filename>plugins/elements/textarea/textarea.php</filename>
+			<filename>plugins/elements/textarea/textarea.png</filename>
+			<filename>plugins/elements/textarea/textarea.xml</filename>
+			<filename>plugins/elements/securimage/elephant.ttf</filename>
+			<filename>plugins/elements/securimage/index.html</filename>
+			<filename>plugins/elements/securimage/securimage-img.png</filename>
+			<filename>plugins/elements/securimage/securimage.js</filename>
+			<filename>plugins/elements/securimage/securimage.php</filename>
+			<filename>plugins/elements/securimage/securimage.png</filename>
+			<filename>plugins/elements/securimage/securimage.xml</filename>
+			<filename>plugins/elements/securimage/securimagelib.php</filename>
+			<filename>plugins/elements/securimage/securimage_play.php</filename>
+			<filename>plugins/elements/securimage/securimage_show.php</filename>
+			<filename>plugins/elements/securimage/words/.htaccess</filename>
+			<filename>plugins/elements/securimage/words/words.txt</filename>
+			<filename>plugins/elements/securimage/images/audio_icon.gif</filename>
+			<filename>plugins/elements/securimage/images/refresh.gif</filename>
+			<filename>plugins/elements/securimage/gdfonts/automatic.gdf</filename>
+			<filename>plugins/elements/securimage/gdfonts/bubblebath.gdf</filename>
+			<filename>plugins/elements/securimage/gdfonts/caveman.gdf</filename>
+			<filename>plugins/elements/securimage/gdfonts/crass.gdf</filename>
+			<filename>plugins/elements/recaptcha/index.html</filename>
+			<filename>plugins/elements/recaptcha/recaptcha-img.png</filename>
+			<filename>plugins/elements/recaptcha/recaptcha.js</filename>
+			<filename>plugins/elements/recaptcha/recaptcha.php</filename>
+			<filename>plugins/elements/recaptcha/recaptcha.png</filename>
+			<filename>plugins/elements/recaptcha/recaptcha.xml</filename>
+			<filename>plugins/elements/recaptcha/recaptchalib.php</filename>
+			<filename>plugins/elements/radio/index.html</filename>
+			<filename>plugins/elements/radio/param.xml</filename>
+			<filename>plugins/elements/radio/radio.js</filename>
+			<filename>plugins/elements/radio/radio.php</filename>
+			<filename>plugins/elements/radio/radio.png</filename>
+			<filename>plugins/elements/radio/radio.xml</filename>
+			<filename>plugins/elements/list/index.html</filename>
+			<filename>plugins/elements/list/list.js.php</filename>
+			<filename>plugins/elements/list/list.php</filename>
+			<filename>plugins/elements/list/list.png</filename>
+			<filename>plugins/elements/list/list.xml</filename>
+			<filename>plugins/elements/list/param.xml</filename>
+			<filename>plugins/elements/list/common_lists/countries.list</filename>
+			<filename>plugins/elements/list/common_lists/index.html</filename>
+			<filename>plugins/elements/list/common_lists/states.list</filename>
+			<filename>plugins/elements/juser/index.html</filename>
+			<filename>plugins/elements/juser/juser-image.png</filename>
+			<filename>plugins/elements/juser/juser.js</filename>
+			<filename>plugins/elements/juser/juser.php</filename>
+			<filename>plugins/elements/juser/juser.png</filename>
+			<filename>plugins/elements/juser/juser.xml</filename>
+			<filename>plugins/elements/juser/param.xml</filename>
+			<filename>plugins/elements/ip/index.html</filename>
+			<filename>plugins/elements/ip/ip-image.png</filename>
+			<filename>plugins/elements/ip/ip.js</filename>
+			<filename>plugins/elements/ip/ip.php</filename>
+			<filename>plugins/elements/ip/ip.png</filename>
+			<filename>plugins/elements/ip/ip.xml</filename>
+			<filename>plugins/elements/ip/param.xml</filename>
+			<filename>plugins/elements/html/html.js.php</filename>
+			<filename>plugins/elements/html/html.php</filename>
+			<filename>plugins/elements/html/html.png</filename>
+			<filename>plugins/elements/html/html.xml</filename>
+			<filename>plugins/elements/html/index.html</filename>
+			<filename>plugins/elements/file/file.js</filename>
+			<filename>plugins/elements/file/file.php</filename>
+			<filename>plugins/elements/file/file.png</filename>
+			<filename>plugins/elements/file/file.xml</filename>
+			<filename>plugins/elements/file/index.html</filename>
+			<filename>plugins/elements/file/param.xml</filename>
+			<filename>plugins/elements/entrydate/entrydate-image.png</filename>
+			<filename>plugins/elements/entrydate/entrydate.js</filename>
+			<filename>plugins/elements/entrydate/entrydate.php</filename>
+			<filename>plugins/elements/entrydate/entrydate.png</filename>
+			<filename>plugins/elements/entrydate/entrydate.xml</filename>
+			<filename>plugins/elements/entrydate/index.html</filename>
+			<filename>plugins/elements/entrydate/param.xml</filename>
+			<filename>plugins/elements/date/date.js</filename>
+			<filename>plugins/elements/date/date.php</filename>
+			<filename>plugins/elements/date/date.png</filename>
+			<filename>plugins/elements/date/date.xml</filename>
+			<filename>plugins/elements/date/index.html</filename>
+			<filename>plugins/elements/date/param.xml</filename>
+			<filename>plugins/elements/checkbox/checkbox.js</filename>
+			<filename>plugins/elements/checkbox/checkbox.php</filename>
+			<filename>plugins/elements/checkbox/checkbox.png</filename>
+			<filename>plugins/elements/checkbox/checkbox.xml</filename>
+			<filename>plugins/elements/checkbox/index.html</filename>
+			<filename>plugins/elements/checkbox/param.xml</filename>
+			<filename>plugins/elements/button/button.js</filename>
+			<filename>plugins/elements/button/button.php</filename>
+			<filename>plugins/elements/button/button.png</filename>
+			<filename>plugins/elements/button/button.xml</filename>
+			<filename>plugins/elements/button/index.html</filename>
+			<filename>models/form.php</filename>
+			<filename>models/form.xml</filename>
+			<filename>models/index.html</filename>
+			<filename>language/index.html</filename>
+			<filename>language/fr-FR/fr-FR.element.Button.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Checkbox.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Date.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Entrydate.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.File.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Html.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Ip.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Juser.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.List.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Radio.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Recaptcha.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Securimage.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Textarea.ini</filename>
+			<filename>language/fr-FR/fr-FR.element.Textbox.ini</filename>
+			<filename>language/fr-FR/fr-FR.export.Csv.ini</filename>
+			<filename>language/fr-FR/fr-FR.export.Html.ini</filename>
+			<filename>language/fr-FR/fr-FR.export.Sql.ini</filename>
+			<filename>language/fr-FR/fr-FR.export.Xls.ini</filename>
+			<filename>language/fr-FR/fr-FR.export.Xml.ini</filename>
+			<filename>language/fr-FR/fr-FR.storage.Database.ini</filename>
+			<filename>language/fr-FR/fr-FR.storage.Mail.ini</filename>
+			<filename>language/en-GB/en-GB.element.Button.ini</filename>
+			<filename>language/en-GB/en-GB.element.Checkbox.ini</filename>
+			<filename>language/en-GB/en-GB.element.Date.ini</filename>
+			<filename>language/en-GB/en-GB.element.Entrydate.ini</filename>
+			<filename>language/en-GB/en-GB.element.File.ini</filename>
+			<filename>language/en-GB/en-GB.element.Html.ini</filename>
+			<filename>language/en-GB/en-GB.element.Ip.ini</filename>
+			<filename>language/en-GB/en-GB.element.Juser.ini</filename>
+			<filename>language/en-GB/en-GB.element.List.ini</filename>
+			<filename>language/en-GB/en-GB.element.Radio.ini</filename>
+			<filename>language/en-GB/en-GB.element.Recaptcha.ini</filename>
+			<filename>language/en-GB/en-GB.element.Securimage.ini</filename>
+			<filename>language/en-GB/en-GB.element.Textarea.ini</filename>
+			<filename>language/en-GB/en-GB.element.Textbox.ini</filename>
+			<filename>language/en-GB/en-GB.export.Csv.ini</filename>
+			<filename>language/en-GB/en-GB.export.Html.ini</filename>
+			<filename>language/en-GB/en-GB.export.Sql.ini</filename>
+			<filename>language/en-GB/en-GB.export.Xls.ini</filename>
+			<filename>language/en-GB/en-GB.export.Xml.ini</filename>
+			<filename>language/en-GB/en-GB.storage.Database.ini</filename>
+			<filename>language/en-GB/en-GB.storage.Mail.ini</filename>
+			<filename>language/en-GB/index.html</filename>
+			<filename>JS/CElement.js</filename>
+			<filename>JS/CLabeledElement.js</filename>
+			<filename>JS/design.js.php</filename>
+			<filename>JS/dhtmlxcommon.js</filename>
+			<filename>JS/dhtmlxgrid.js</filename>
+			<filename>JS/dhtmlxgridcell.js</filename>
+			<filename>JS/event.js</filename>
+			<filename>JS/index.html</filename>
+			<filename>JS/mootools.1_20.js</filename>
+			<filename>JS/records.js.php</filename>
+			<filename>JS/sha1.js</filename>
+			<filename>JS/utilities.js</filename>
+			<filename>helper/design.php</filename>
+			<filename>helper/index.html</filename>
+			<filename>helper/JSON.php</filename>
+			<filename>helper/plugins.php</filename>
+			<filename>helper/records.php</filename>
+			<filename>helper/plugins/element.php</filename>
+			<filename>helper/plugins/export.php</filename>
+			<filename>helper/plugins/index.html</filename>
+			<filename>helper/plugins/storage.php</filename>
+			<filename>elements/form.php</filename>
+			<filename>elements/index.html</filename>
+
+		</files>		
+		<languages folder='administrator/language'>
+			<language tag="en-GB">en-GB.com_jforms.ini</language>
+			<language tag="fr-FR">fr-FR.com_jforms.ini</language>
+		</languages>
+	
+	</administration>
+</install>

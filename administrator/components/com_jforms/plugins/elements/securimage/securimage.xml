@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for securimage plugin
+*
+* @version		$Id: securimage.xml 123 2009-04-04 21:03:22Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='1' group='spam-control'>
+<name>securimage</name>
+<description>SECURIMAGEPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>securimage.js</file>
+	<file type='phpEntryPoint'>securimage.php</file>
+	<file type='icon'>securimage.png</file>
+</files>
+
+<parameters>
+	<param name="css" label="CSS Class" control="textbox" default='jfsecurimage' valueType='string' translate='0' />
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+</parameters>
+</JFormPlugin>

@@ -1,0 +1,12 @@
+/* @override 
+	http://localhost:8888/minimoo2/minimoo2.css
+	http://localhost:8888/joomla/slideshow/minimoo2.css
+	http://localhost:8888/joomla/slideshow/modules/mod_minimoo2/css/minimoo2.css
+*/
+
+.minimooThumbs {cursor:pointer}
+.minimooThumbs img {border:1px solid #eee;margin: 0 8px 8px 0;padding: 2px;}
+.minimooNext,.minimooPrev {cursor: pointer;}
+.minimooSlides a img{border: 1px solid #eee;padding: 4px;}
+.minimooSlides .jFlowSlideContainer {margin: 0;padding: 0;} 
+

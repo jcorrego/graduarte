@@ -1,0 +1,50 @@
+/**
+ * @package		Joomla Bamboo Zen Grid Framework
+ * @Type        Core CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+* 
+{font-weight: normal;font-family: inherit;	font-style: inherit; font-size: 100%; outline: 0;padding: 0;margin: 0;vertical-align: top;text-align: left} 
+img, a {border: none}
+tr td p {margin: 0}
+fieldset.input,fieldset {border: none}
+body, html {height: 100%;width: 100%;margin: 0;padding: 0}
+table {width: 100%;clear: both}
+ul,ol,ul.menu {margin: 10px 0 10px 0px;padding: 0}
+ul li{padding: 4px 0;list-style-type: disc;margin: 0 0 0 16px}
+ol li {padding: 4px 0;margin: 0 0 0 16px;list-style-type: decimal}
+
+body {background: #fff; font-family: Helvetica, Arial, sans-serif, Verdana; line-height: 1.8em; color: #444;width: 100%;text-align: left}
+
+h1,.componentheading {font-size: 2.8em;line-height: 1.2em;margin: 0;padding: 0;font-family: georgia}
+h2,.contentheading {font-size: 2.2em;line-height: 1.5em;margin: 0;padding: 0;font-family: georgia;position: relative;z-index: 1}
+h3,.moduletable h3 {font-size: 2.4em;line-height: 1.3em;margin: 0 0 10px 0;padding:0 0 4px 0;background: none}
+h4 {font-size: 1.2em;line-height: 1.3em;margin: 0 0 0.25em 0;padding: 0}
+h5 {font-size: 1.1em;line-height: 1.3em;margin: 0 0 0.25em 0;padding: 0}
+h6 {font-size: 1em;line-height: 1.3em;margin: 0 0 0.25em 0;padding: 0}
+span.author {float: right;width: 100%;text-align: right;font-style: italic;margin: 8px 0 20px}
+
+h1,.componentheading {color: #333} 
+h2,.contentheading,h2 a {color: #333}
+h3,.moduletable h3 {color: #333;font-size: 1.6em}
+h4 {color: #333} 
+h5 {color: #fff;background: #333;padding: 2px 0 2px 4px}
+h6 {color: #fff;background: #999;padding: 2px 0 2px 4px}
+
+p{margin: 8px 0}
+pre {font-family: monospace;font-size: 1.0em}
+strong, b {font-weight: bold}
+em, i {font-style:italic}
+code {font-family: "Courier New", Courier, monospace;font-size: 1em;white-space: pre}
+dl {margin: 0 0 1.5em 0;padding: 0;line-height: 1.4em}
+dl dt {font-weight: bold;margin: 0.25em 0 0.25em 0;padding: 0}
+dl dd {margin: 0 0 0 30px;padding: 0}
+
+
+/* Link Colours */
+a,a:link,#nav a#active_menu.mainlevel_current,#nav ul li a:hover,#nav a.mainlevel_active,#nav .mainlevel_current  {color: #375D81}
+a:hover {color: #333} 
+

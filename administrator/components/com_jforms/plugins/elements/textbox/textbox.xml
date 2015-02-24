@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for textbox plugin
+*
+* @version		$Id: textbox.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+<name>textbox</name>
+<description>TEXTBOXPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>textbox.js</file>
+	<file type='phpEntryPoint'>textbox.php</file>
+	<file type='icon'>textbox.png</file>
+</files>
+<parameters>
+	<param name="label" label="Label" control="textbox" default='Textbox' valueType='string' translate='1' />
+	<param name="css" label="CSS Class" control="textbox" default='jftextbox' valueType='string' translate='0' />
+	<param name="maxLength" label="Maximum length" control="textbox" default='50' valueType='integer' translate='0' />
+	<param name="required" label="Required" control="checkbox" default='0' valueType='integer' translate='0' />
+	<param name="isUserEmail" label="User E-mail?" control="checkbox" default='0' valueType='integer' translate='0' />
+	
+	<param name="validation" control="list" label="Validation" default='' valueType='string' translate='0'>
+		<option value='NoValidation'>No validation</option>
+		<option value='Email'>E-mail</option>
+		<option value='AlphaNumeric'>Alphanumeric</option>
+		<option value='Numeric'>Numeric</option>
+		<option value='ZipCode'>Zip Code</option>
+		<option value='Other'>Other (Specify)</option>
+	</param>
+	<param name="altValidation" label="Other validation rule" control="textbox" default='' valueType='string' translate='0' />
+	
+	<param name="lh" control="none" valueType='integer' default='16' translate='0' />
+	<param name="lw" control="none" valueType='integer' default='70' translate='0' />
+	<param name="ch" control="none" valueType='integer' default='16' translate='0' />
+	<param name="cw" control="none" valueType='integer' default='200' translate='0' />	
+	
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+	<param name="defaultValue" control="none" valueType='string' default='' translate='1' />
+
+
+	
+</parameters>
+<storage type='textfield' size='254' requirefs='false' />
+</JFormPlugin>

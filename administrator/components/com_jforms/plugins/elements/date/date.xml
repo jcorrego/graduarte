@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for date plugin
+*
+* @version		$Id: date.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='advanced'>
+<name>date</name>
+<description>DATEPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>date.js</file>
+	<file type='phpEntryPoint'>date.php</file>
+	<file type='icon'>date.png</file>
+</files>
+<parameters>
+
+	<param name="label" label="Label" control="textbox" default='Date' valueType='string' translate='1' />	
+	<param name="css" label="CSS Class" control="textbox" default='jfdate' valueType='string' translate='0' />
+	<param name="required" label="Required" control="checkbox" default='0' valueType='integer' translate='0' />
+	<param name="startYear" label="Start year" control="textbox" default='1950' valueType='integer' translate='0' />
+	<param name="span" control="list" label="Span" default='0' valueType='string' translate='0'>
+		<option value='10'>10</option>
+		<option value='25'>25</option>
+		<option value='50'>50</option>
+		<option value='75'>75</option>
+		<option value='100'>100</option>
+		<option value='0'>Till present</option>
+		<option value='-1'>Other</option>
+	</param>
+	<param name="ospan" control="textbox" label="Specify Span" default='' valueType='string' translate='0' />
+	<param name="lh" control="none" valueType='integer' default='16' translate='0' />
+	<param name="lw" control="none" valueType='integer' default='70' translate='0' />
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+	<param name="defaultValue" control="none" valueType='string' default='1950-1-1' translate='0' />
+
+</parameters>
+<storage type='date' requirefs='false' />
+</JFormPlugin>

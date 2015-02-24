@@ -1,0 +1,4 @@
+
+body {background:#222220 url(templates/<?php echo $this->template ?>/images/background/wallIcon2.jpg) no-repeat left 51px}#mainWrap {background: #fff url(../images/leftbackground/stone.png) repeat}
+
+a#openPanel,a#closePanel {color: #fff}#slideShowContainer1 span,span.breadcrumbs,.breadcrumbs a:hover,#footer ul li a:hover  {color: #fff;}

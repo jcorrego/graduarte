@@ -1,0 +1,94 @@
+<settings>
+  <General_Properties>
+    <direction value="horizontal"/>
+    <width value="600"/>
+    <height value="190"/>
+    <spacing value="2"/>
+    <thumbWidth value="152"/>
+    <thumbHeight value="90"/>
+    <offset value="50"/>
+    <preloader value="assets/redstripes.swf"/>
+    <useLightbox value="true"/>
+    <assets value="images.xml"/>
+    <showAbout value="true"/>
+  </General_Properties>
+  <Shade_Properties>
+    <useShade value="false"/>
+    <shadeColor value=""/>
+    <shadeAlpha value="0"/>
+    <shadeRatio value="0"/>
+    <shadeWidth value="0"/>
+    <shadeHeight value="0"/>
+  </Shade_Properties>
+  <Background_Properties>
+    <fillType value="solid"/>
+    <backgroundColor1 value=""/>
+    <backgroundColor2 value=""/>
+    <backgroundAlpha value="0"/>
+    <bgCornerRadius value="0"/>
+    <gradientRotation value="0"/>
+    <gradientRatio value="0"/>
+    <gradientPosX value="0"/>
+    <gradientPosY value="0"/>
+  </Background_Properties>
+  <Expand_Properties>
+    <direction value="center"/>
+    <percent value="25"/>
+    <func value="Back"/>
+    <method value="easeOut"/>
+    <duration value="0.6"/>
+  </Expand_Properties>
+  <Roll_Over_Properties>
+    <rollOverBehaviour value="smooth"/>
+    <brightnessOver value="35"/>
+    <brightnessOut value="-25"/>
+    <brightnessSpeed value="7"/>
+  </Roll_Over_Properties>
+  <Frame_Properties>
+    <color value="0xffffff"/>
+    <width value="0"/>
+    <alpha value="0"/>
+  </Frame_Properties>
+  <Reflection_Properties>
+    <useReflection value="true"/>
+    <reflectionDistance value="1"/>
+    <reflectionAlpha value="0.3"/>
+    <reflectionSpread value="116.3"/>
+  </Reflection_Properties>
+  <Scroll_Properties>
+    <scrollMode value="infinite"/>
+    <scrollOnRollOver value="both"/>
+    <onRollOverSpeed value="10"/>
+    <onRollOutSpeed value="1"/>
+    <stoppingSpeed value="24"/>
+    <stopOnRollOver value="false"/>
+    <inverseScrolling value="none"/>
+    <buttonScrollMode value="pixel by pixel"/>
+    <buttonImage value="assets/arrow1.png"/>
+    <buttonsX value="151"/>
+    <buttonsY value="175"/>
+    <buttonDistance value="302"/>
+  </Scroll_Properties>
+  <Tooltip_Properties>
+    <position value="followMouse"/>
+    <delay value="0.3"/>
+    <distance value="3"/>
+    <padding value="5"/>
+    <cornerRadius value="2"/>
+    <appearance value="center"/>
+    <easingFunction value="Strong"/>
+    <easingDuration value="0.3"/>
+    <fontFace value="verdana"/>
+    <fontSize value="13"/>
+    <fontColor value="16777215"/>
+    <backColor value="5592405"/>
+    <backColor2 value="11184810"/>
+    <backAlpha value="0.9"/>
+    <borderColor value="11184810"/>
+    <borderThickness value="1"/>
+    <useArrow value="true"/>
+    <arrowPos value="center"/>
+    <arrowSize value="5"/>
+    <embedFonts value="false"/>
+  </Tooltip_Properties>
+</settings>

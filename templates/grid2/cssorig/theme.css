@@ -1,0 +1,400 @@
+/* @override 
+	http://localhost:8888/joomla/1.5/grid2/templates/grid2/css/theme.css
+	http://localhost:8888/joomla/1.5/grid2/templates/Grid2_LightScratches/css/theme.css
+	http://localhost:8888/joomla/1.5/grid2/templates/BrownScratches/css/theme.css
+	http://localhost:8888/joomla/1.5/grid2/templates/LightScratches/css/theme.css
+*/
+
+/**
+ * @package		Joomla Bamboo Grid 2 Joomla Template - June 2010
+ * @Type        Theme CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		Commercial Joomla Template. All rights reserved. Anthony Olsen 2010.
+ */
+/* These styles set the background colour and any other style you want to attach to the rows int he theme.  */
+
+/* Wrapper and Shadows  */
+.fullWrap {padding-bottom: 130px;margin: 0} 
+#topShadow {width: 100%;padding-top: 15px}
+#leftShadow {width: 100%;background: url(../images/leftShadow.png) repeat-y 0 0;float: left;display: inline}
+#rightShadow {width: 100%;background: url(../images/rightShadow.png) repeat-y right top;float: left;display: inline}
+
+/* Widths and shadows for different template widths.  */
+.mainRow .containerBG.width780,.mainRow .containerBG.width780_two,.mainRow .containerBG.width780_three,.mainRow .containerBG.width780_four,.mainRow .containerBG.width780_five,.mainRow .containerBG.width780_six,.mainRow .containerBG.width780_noleft {background: url(../images/780/topShadow.png) center top repeat-x}
+.mainRow .containerBG.width887,.mainRow .containerBG.width887_two,.mainRow .containerBG.width887_three,.mainRow .containerBG.width887_four,.mainRow .containerBG.width887_five,.mainRow .containerBG.width887_six,.mainRow .containerBG.width887_noleft {background: url(../images/887/topShadow.png) center top repeat-x}
+.mainRow .containerBG.width980,.mainRow .containerBG.width980_two,.mainRow .containerBG.width980_three,.mainRow .containerBG.width980_four,.mainRow .containerBG.width980_five,.mainRow .containerBG.width980_six,.mainRow .containerBG.width980_noleft {background: url(../images/980/topShadow.png) center top repeat-x}
+
+/* Bottom Shadows  */
+#bottomShadow {float: left;width: 100%;height: 40px;position: relative;z-index: 1}
+#bottomShadow.width780,#bottomShadow.width780_two,#bottomShadow.width780_three,#bottomShadow.width780_four,#bottomShadow.width780_five,#bottomShadow.width780_two,#bottomShadow.width780_six {background: url(../images/780/bottomShadow.png) no-repeat center bottom} 
+#bottomShadow.width887,#bottomShadow.width887_two,#bottomShadow.width887_three,#bottomShadow.width887_four,#bottomShadow.width887_five,#bottomShadow.width887_six {background: url(../images/887/bottomShadow.png) no-repeat center bottom} 
+#bottomShadow.width980,#bottomShadow.width980_two,#bottomShadow.width980_three,#bottomShadow.width980_four,#bottomShadow.width980_five,#bottomShadow.width980_six {background: url(../images/980/bottomShadow.png) no-repeat center bottom} 
+
+
+
+/* Width 887 -Specific widths to keep shadows and containers happy  */
+.containerBG.width780_two .jbMeta {width: 593px}.containerBG.width780_three .jbMeta {width: 530px}.containerBG.width780_four .jbMeta {width: 466px}.containerBG.width780_five .jbMeta {width: 403px}.containerBG.width780_six .jbMeta {width: 340px}.containerBG.width887_two  .jbMeta {width: 682px}.containerBG.width887_three .jbMeta {width: 610px}.containerBG.width887_three .jbMeta {width: 100%;padding-right: 18px}.containerBG.width887_four .jbMeta {width: 538px}.containerBG.width887_five .jbMeta {width: 465px}.containerBG.width887_six .jbMeta {width: 393px}
+
+/* Width 980 -Specific widths to keep shadows and containers happy  */
+.containerBG.width980_two  .jbMeta {padding-right:27px}.containerBG.width980_three .jbMeta {padding-right:22px}.containerBG.width980_four .jbMeta {padding-right:18px}.containerBG.width980_five .jbMeta {padding-right:13px}.containerBG.width980_six .jbMeta {padding-right:8px}.containerBG.width980_two #bottomAdvert .moduletable {width: 740px}.containerBG.width980_three #bottomAdvert .moduletable {width: 660px}.containerBG.width980_four #bottomAdvert .moduletable {width: 500px}.containerBG.width980_five #bottomAdvert .moduletable {width: 488px}.containerBG.width980_six #bottomAdvert .moduletable {width: 410px}.containerBG.width980_four #bottomAdvert .moduletable {width: 580px}.containerBG.width980_five #bottomAdvert .moduletable {width: 500px}.containerBG.width980_six #bottomAdvert .moduletable {width: 420px}
+
+
+/* Main Wrap Areas */
+#mainContent {width: 94%}
+#mainWrap {float: left;width: 100%;background: #fff url(../images/gradientBottom.png) no-repeat left bottom;position: relative;z-index: 1}
+
+/* Sets the width of the left column image. */
+#mainWrapInner980six {background-position: 0 top}#mainWrapInner980five {background-position: -80px top}#mainWrapInner980four {background-position: -160px top}#mainWrapInner980three {background-position: -240px top}#mainWrapInner980two {background-position: -320px top}
+
+#mainWrapInner887six {background-position: -46px top}#mainWrapInner887five {background-position: -118px top}#mainWrapInner887four {background-position: -191px top}#mainWrapInner887three {background-position: -263px top}#mainWrapInner887two {background-position: -335px top}
+
+#mainWrapInner780six {background-position: -100px top}#mainWrapInner780five {background-position: -163px top}#mainWrapInner780four {background-position: -226px top}#mainWrapInner780three {background-position: -290px top}#mainWrapInner780two {background-position: -353px top}
+
+.fullWrap.light #banner span, .fullWrap.light .gridWrap1,.fullWrap.light .gridWrap2,.fullWrap.light .gridWrap3,.fullWrap.light .gridWrap4,.fullWrap.light .gridWrap5,.fullWrap.light .gridWrap6,.fullWrap.light .logoRow,.fullWrap.light .breadcrumbs,.fullWrap.light #banner h3, .fullWrap.light .gridWrap1 h3,.fullWrap.light .gridWrap2 h3,.fullWrap.light .gridWrap3 h3,.fullWrap.light .gridWrap4 h3,.fullWrap.light .gridWrap5 h3,.fullWrap.light .gridWrap6 h3,.fullWrap.light .logoRow h3,.fullWrap.light .breadcrumbs {color: #333}
+
+.fullWrap.dark #banner span, .fullWrap.dark .gridWrap1,.fullWrap.dark .gridWrap2,.fullWrap.dark .gridWrap3,.fullWrap.dark .gridWrap4,.fullWrap.dark .gridWrap5,.fullWrap.dark .gridWrap6,.fullWrap.dark .logoRow,.fullWrap.dark .breadcrumbs,.fullWrap.dark #banner h3, .fullWrap.dark .gridWrap1 h3,.fullWrap.dark .gridWrap2 h3,.fullWrap.dark .gridWrap3 h3,.fullWrap.dark .gridWrap4 h3,.fullWrap.dark .gridWrap5 h3,.fullWrap.dark .gridWrap6 h3,.fullWrap.dark .logoRow h3,.fullWrap.dark .breadcrumbs {color: #fff}
+
+.mainRow {padding: 30px 0 0}
+.mainRow .containerBG {padding: 0;position: relative;z-index: 2;padding-top: 41px}
+
+/* TopRow  */
+.topRow {padding: 0;background: url(../images/topnav/topNav.png) repeat-x left top} 
+.topRow .containerBG {padding: 8px 0 20px}
+
+/* Navrow  */
+.navRow {padding: 10px 0 0}
+.navRow .containerBG {padding: 0}
+
+
+/* Banner  */
+.bannerRow {}
+.bannerRow .containerBG {padding: 0}
+
+/* Footer Row  */
+.footerRow {padding-bottom: 50px;font-size: 90%;margin-top: 0}
+.footerRow .containerBG {border: 0;padding: 0;margin-top: -30px;position: relative;z-index: 2}
+.footerRow ul {margin-top: -8px}
+.footerRow ul li {list-style-type: none;margin: 0;float: left;margin-right: 20px}
+.footerRow #footer.dark ul li a {color: #fff}
+.footerRow #footer.light ul li a {color: #333}
+#footerLeft {margin-left: 10px}
+/* Pathway Classes */
+#breadcrumb {margin: 0 0 20px;padding: 0;font-style: italic;color: #333;position: absolute;left:20px;z-index: 10;margin-top: -25px}
+#breadcrumb.light {color: #333}
+#breadcrumb.dark {color: #fff}
+#breadcrumb .moduletable {margin-left: -20px}
+.pathway img {margin: 6px 2px 0}
+
+/* Left Column */
+#leftCol #logo img{padding-left: 5px}
+#leftCol #logoInner {float: left;width: 92%;background: url(../images/dividerDark.jpg) repeat-x left bottom;margin-bottom: 0;padding-bottom: 40px;clear: both}
+#leftCol #logo {margin-left: 15px;margin-bottom: 20px}
+#leftCol #tagline {font-size: 90%}
+#leftCol blockquote {font-size: 1.8em;line-height: 1.6em;font-family: georgia;padding:4px 0;background: url(../images/blockquote.png) no-repeat center center;color: #e5e5e5} 
+#leftCol p {margin: 0}
+#leftCol {padding-top: 20px;color: #D2D2D2;font-size: 90%;margin: 0}
+#leftCol .moduletable,#leftCol .moduletable-noborder,#leftCol .moduletable-slide,#leftCol .moduletable-panelmenu,#leftCol .moduletable_menu{margin-bottom: 30px;margin-left: 20px;clear: both}
+#leftCol .moduletable-noborder {background: none;padding-top: 4px}
+#leftCol .moduletable-nopadding {margin-left: 30px;padding: 0}
+#leftCol .moduletable-border {padding:0 0 20px 0;background: url(../images/dividerDark.jpg) repeat-x left bottom;margin-left: 20px;margin-bottom: 10px;clear: both;height: 140px}
+#leftCol h3 {color: #fff;margin: 0 0 0 0;clear: both;display: block}
+#leftCol .sidequote {font-size: 1.4em;font-family:georgia;line-height: 1.8em;background: url(../images/quote.png) no-repeat left center;clear: both}
+.leftStyle {float: left;width: 100%;position: relative;z-index: 3}
+
+
+/* Top Advert */
+#topAdvert {margin-left: 20px;padding-top: 20px}
+#topAdvert.width780 {width: 510px}
+#topAdvert.width887{width: 590px}
+#topAdvert.width980 {width: 630px}
+
+/* Main Content Row Classes */
+#midCol{background: #fff url(../images/midColGradient.png) repeat-x;position: relative;z-index: 2}
+.midColGradient,#mainBottomGradient {float: left;width: 100%} 
+.containerBG.width980_noleft .midColGradient,.containerBG.width887_noleft .midColGradient,.containerBG.width780_noleft .midColGradient {background: none}
+.midColGradientBottom {float: left;width: 100%; background: url(../images/gradeientBottom.png) no-repeat left bottom;padding-top: 15px} 
+.containerBG.width980_noleft .midColGradientBottom,.containerBG.width887_noleft .midColGradientBottom,.containerBG.width780_noleft .midColGradientBottom { background: url(../images/gradientBottom.png) no-repeat -15px bottom}
+
+
+#above,#below {padding: 20px 0 20px 20px;width: 94%;}
+#below {padding-top: 0;}
+#mainContent {margin-left: 20px}
+
+/* Bottom Advert */
+#bottomAdvert .moduletable{padding-left: 20px;padding-right: 20px;margin-bottom: 60px;background: url(../images/col2separator.png) repeat-x left top}
+#bottomAdvert .moduletable h3 {margin-bottom: 30px}
+.containerBG.width980_noleft #bottomAdvert .moduletable{width: 900px;background: url(../images/col2separator.png) repeat-x}
+.containerBG.width887_noleft #bottomAdvert .moduletable{width: 807px;background: url(../images/col2separator.png) repeat-x}
+.containerBG.width780_noleft #bottomAdvert .moduletable{width: 700px;background: url(../images/col2separator.png) repeat-x}
+.containerBG.width780_three #bottomAdvert .moduletable {width: 510px}
+.containerBG.width780_two #bottomAdvert .moduletable {width: 572px}
+.containerBG.width887_two #bottomAdvert .moduletable {width: 662px}
+.containerBG.width887_four #bottomAdvert .moduletable {width: 518px}
+.containerBG.width887_five #bottomAdvert .moduletable {width: 445px}
+.containerBG.width887_six #bottomAdvert .moduletable {width: 373px}
+.containerBG.width980 #bottomAdvert .moduletable {width: 645px}
+
+
+/* Search Styling */
+#search .inputbox,#search_searchword {padding: 20px 8px;background: url(../images/fieldShadow.jpg) repeat-x;	border: 1px solid #ddd; font-size: 13px;color: #333333;padding-bottom: 0;margin: 0;width: 90%}
+#searchForm .button {margin-top: 8px}
+
+/* Joomla Results */
+.results h3 {margin: 0}
+.results ol.list li {margin-left: -20px;padding: 40px 19px 0;list-style-position: inside;width: 100%;background: url(../images/col2separator.png) repeat-x left -15px}
+
+
+/* Links */
+a {color:#999}
+#leftCol a:hover {color: #fff}
+
+/* Headings */
+h1,.componentheading {color: #333;margin-top: 20px;padding-bottom: 20px} 
+h2,.contentheading,h2 a {color: #333}
+h2,.contentheading {line-height: 1.4em;font-size:1.8em}
+h3,.moduletable h3 {color: #333;font-size: 1.6em}
+h4 {color: #333} 
+h5 {color: #fff;background: #333;padding: 2px 0 2px 4px}
+h6 {color: #fff;background: #999;padding: 2px 0 2px 4px}
+
+/*Nav - Top levels 
+---------------------------------------------------*/
+.moduletable-superfish ul,#nav ul 
+{float: right;margin-top: 30px;padding: 0;margin: 0}
+
+/* Reset Margins */
+.moduletable-superfish ul li,#nav ul li  
+{margin: 0}
+
+/* Top level padding, colour and font size */
+.moduletable-superfish ul li a,#nav  ul li a,#nav span.expanded,.moduletable-superfish span.expanded,.moduletable-superfish a.mainlevel.sf-with-ul, #nav a.mainlevel.sf-with-ul,.moduletable-superfish a.mainlevel.sf-with-ul,.moduletable-superfish a.mainlevel_active.sf-with-ul,#nav a.mainlevel.sf-with-ul,#nav a.mainlevel_active.sf-with-ul,#nav ul span.mainlevel,.moduletable-superfish ul li span.mainlevel 
+{padding: 5px 10px; color: #fff;font-size: 1.1em}
+
+
+/* Top Level Active Menu State */
+.topRow ul li#current a,.topRow ul li.active a,#nav ul li.active a, #nav ul li#current a {padding: 8px 15px;-moz-border-radius: 4px;-khtml-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;text-decoration: none;border-bottom: 1px solid #000}
+
+/* Reset for sub level items based on top level active state */
+.topRow ul li#current ul li a,.topRow ul li.active li a,.topRow ul li#current li#current.active a,.topRow ul li.active li#current.active a,#nav ul li#current ul li a,#nav ul li.active li a,#nav ul li#current li#current.active a,#nav ul li.active li#current.active a,.topRow ul li#current li#current.active a,.topRow ul li.active li#current.active a,#nav ul li#current li#current.active a,#nav ul li.active li#current.active a {background: none;-moz-border-radius: 0px;-khtml-border-radius: 0px;-webkit-border-radius: 0px;border-radius: 0px;width: 96%;border-bottom-color: #000;color: #fff;}
+
+
+/* Nav - Second and third levels 
+---------------------------------------------------*/
+.topRow .moduletable-superfish ul ul,#nav ul ul
+{-moz-border-radius-bottomright:6px; -webkit-border-bottom-right-radius:6px;-moz-border-radius-bottomleft:6px; -webkit-border-bottom-left-radius:6px;border-top: 0;padding: 6px}
+
+.topRow .moduletable-superfish ul li li,#nav ul li li  {padding: 0}
+
+/* Sublevel menu items and spans */
+.topRow .moduletable-superfish ul li li a, .topRow .moduletable-superfish ul li li span.mainlevel, #nav ul li li a, #nav ul li li span.mainlevel 
+{padding: 8px 0 8px 15px;color: #fff;border-bottom: 1px solid #000;display:block;width:228px;}
+
+/* Sublevel active and parent menu items and spans */
+.moduletable-superfish ul ul a.mainlevel.sf-with-ul, .moduletable-superfish ul li#current ul a.mainlevel.sf-with-ul, .moduletable-superfish ul li#current.active ul a.mainlevel.sf-with-ul,.moduletable-superfish ul ul a.mainlevel_active.sf-with-ul,#nav ul ul a.mainlevel.sf-with-ul,#nav ul ul a.mainlevel_active.sf-with-ul,#nav ul ul li span.mainlevel,.topRow .moduletable-superfish ul ul li span.mainlevel  
+{color: #fff;font-size: 1em;padding: 8px 0 8px 20px;}
+
+/* Sublevel spans that need a bullet */
+.moduletable-superfish ul ul li a.mainlevel.sf-with-ul, .moduletable-superfish ul li#current li a.sf-with-ul, .topRow .moduletable-superfish ul li.active li a.sf-with-ul, .topRow .moduletable-superfish ul li#current.active li a.sf-with-ul, #nav ul li.active li a.sf-with-ul, #nav ul li#current.active li a.sf-with-ul, .moduletable-superfish ul ul li a.mainlevel_active.sf-with-ul,#nav ul ul li a.mainlevel.sf-with-ul,#nav ul ul li a.mainlevel_active.sf-with-ul, #nav ul li li span.mainlevel, .topRow .moduletable-superfish ul li li span.mainlevel 
+{background: url(../images/navParentSub.png) no-repeat 4px 10px;}
+
+.moduletable-superfish ul li li span.mainlevel,#nav ul li li span.mainlevel{padding-top: 10px;float: left;background-position: 4px 14px;}
+.moduletable-superfish li:hover ul,.moduletable-superfish ul li.sfHover ul,#nav li:hover ul,#nav ul li.sfHover ul {left:0px;top:30px}
+
+/* Style for the entire sub menu ul */
+.moduletable-superfish li ul,#nav li ul {border-width: 0 1px 1px 1px;background: url(../images/blackOverlay.png) repeat}
+.moduletable-superfish ul li li a,#nav ul li li a,.topRow ul li li span.mainlevel {font-size: 1em}
+.moduletable-superfish ul li li span.expanded,.topRow ul li li span.expanded,#nav ul li li span.expanded   {padding-left: 15px}
+
+/* Adds a border around the sub level ul's */
+.moduletable-superfish ul ul,#nav ul ul {border-width: 1px}
+
+/* Positioning for the sub menu ul */
+.moduletable-superfish ul li.sfHover ul,#nav ul li.sfHover ul {left:0px;top:26px}
+
+/* CSS3 round borders on the sublevels */
+.moduletable-superfish li ul li ul,#nav li ul li ul{-moz-border-radius:6px; -webkit-border-radius:6px;-moz-border-radius:6px; -webkit-border-radius:6px}
+.moduletable-superfish ul li.sfHover ul ul,#nav ul li.sfHover ul ul{left:240px;top: 0}
+
+/* Resets for menu items just published to the menu position*/
+#nav  ul li a,#nav span.expanded,#nav span.expanded,#nav a.mainlevel.sf-with-ul, #nav a.mainlevel.sf-with-ul{color: #333;}
+.topRow ul li#current.active  li a,.topRow .moduletable-superfish ul li.active li a,#nav ul li#current.active  li a,#nav ul li.active li a,#nav ul li.active ul li#current.active li a{color: #fff;background: none;border-bottom: 1px solid #000;} 
+
+/* Left lists and panel menu */
+#leftCol ul{margin: 0;padding: 0} 
+#leftCol ul li{margin: 0;padding: 0}
+#leftCol ul li a,#leftCol ul li span.separator{font-size: 1em}
+#leftCol ul ul {border:none}
+
+#leftCol ul li li a,.moduletable-panelmenu ul li li a {padding: 4px 0 0 16px;font-size: 95%}
+#leftCol ul li li li a,.moduletable-panelmenu ul li li li a {padding: 4px 0 0 30px;font-size: 95%;background: url(../images/arrow.png) no-repeat 15px 11px}
+/* Styling for parent on panel menu */
+#leftCol span.expanded,#leftCol span.mainlevel span {background: url(../images/accordionParent.png) no-repeat left 8px;display: block;padding-left: 19px;cursor: pointer;font-size: 1.2em} 
+#leftCol span.expanded:hover,#leftCol span.mainlevel span:hover{background: url(../images/accordionParent.png) no-repeat left 8px}
+
+/* Hidden Panel
+---------------------------------------------------*/
+#paneltab {color: #333;height: 60px;overflow: hidden;position: absolute;padding: 0;width: 120px;z-index: 10;margin-top: -32px;right: 0;font-size: 90%}
+#paneltab.width780 {margin-left: 650px}
+a#openPanel {padding-bottom: 30px}
+#paneltabRight { height: 40px; line-height: 26px; display: block; padding: 0 16px 0 10px; margin-left: 6px; color: #fff; font-weight: bold;position: relative;padding-bottom: 20px; }
+.fullWrap.light #paneltab a#openPanel,.fullWrap.light  #paneltab a#closePanel {color: #333}
+#paneltab a#openPanel,#paneltab a#closePanel {color: #fff} 
+a#openPanel,a#closePanel {position: absolute;text-align: center}
+a#closePanel.active {margin-top: 0;float: left;padding-bottom: 30px;margin-left: 0}
+a#openPanel.active {margin-top: -60px;float: left;margin-left: 2px}
+a#closePanel {margin-top: -60px}
+#memberArea h3 {color: #fff} 
+#memberArea {position: absolute;background: url(../images/blackOverlay.png);z-index: 9;display: none;margin-top: 0;margin-left: 216px;width: 631px;overflow: hidden;color: #fff}
+#memberAreaInner {padding: 30px 20px 30px;width: 100%}
+#memberArea.light {background: url(../images/whiteOverlay.png);color: #333}
+#memberArea.light h3 {color: #333} 
+#memberArea ul.flatLogin li {margin-top: 20px;background-position: right top;padding-right: 20px}
+.flatLogin fieldset {width: 100%}
+#memberArea ul.flatLogin li a{float: left}
+.moretab {float: right;color: #fff;margin-left: 200px}
+#moreArea {position: absolute;background: #000;margin-top: 100px;z-index: 20}
+ 
+ 
+ /* Back to top styling 
+---------------------------------------------------*/
+#toTop {background: url(../images/blackOverlay.png) repeat;;color: #fff;border: 0;padding:4px;-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;bottom: 10px;right: 10px }
+
+/* Input Styling */
+#memberArea .inputbox,input#email { background: #eee;	border: 1px solid #ddd;	font-size: 13px}
+.inputbox,input#email { background: #fff;	border: 1px solid #eee;	font-size: 13px; color: #333}
+
+.search input {-moz-border-radius: 8px;-khtml-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;text-decoration: none;width: 81%;background: url(../images/glass.png) no-repeat left center;padding-left:40px;margin: 2px 0 0 0;border: none;color: #fff}
+.search input:focus {border: none}
+.filter input {background: #fff;border: 1px solid #ddd;width: 90%;color: #333}
+
+/* Overrides */
+/* Page classes */
+div.jbFrontPage {margin-top: -8px}
+div#jbArticle {padding: 20px 0 0}
+div.jbSection {padding-top: 20px}
+div.jbCategory {padding-top: 20px;width: 100%;}
+.article_separator {height: 0;padding: 0}
+
+.jbMeta {float: left;margin-left: -20px;position: relative;z-index: 1;padding-left: 20px;background: url(../images/col2separator.png) repeat-x left 25px;width:100%;padding-bottom: 50px}
+.containerBG.width980_noleft .jbMeta {width: 920px;background: url(../images/col2separator.png) repeat-x left 30px}
+.containerBG.width887_noleft .jbMeta {width: 827px;background: url(../images/col2separator.png) repeat-x left 30px} 
+.containerBG.width780_noleft .jbMeta {width: 720px;background: url(../images/col2separator.png) repeat-x left 30px} 
+
+.article_column.cols2 .jbMeta,.article_column.cols3 .jbMeta,.article_column.cols4 .jbMeta {background: none}
+
+
+ 
+ .containerBG.width887_noleft .cols2 .jbMeta {width: 100%}
+
+.containerBG.width780_noleft .cols2 .jbMeta,.containerBG.width780_noleft .cols3 .jbMeta,.containerBG.width780_noleft .cols4 .jbMeta,
+.containerBG.width887_noleft .cols2 .jbMeta,.containerBG.width887_noleft .cols3 .jbMeta,.containerBG.width887_noleft .cols4 .jbMeta,
+.containerBG.width980_noleft .cols2 .jbMeta,.containerBG.width980_noleft .cols3 .jbMeta,.containerBG.width980_noleft .cols4 .jbMeta {background: none;width: 100%;margin: 0;padding: 0}
+
+.cols2 .contentheading,.cols3 .contentheading,.cols4 .contentheading {font-size: 1.4em}
+.cols2 .jbSections,.cols3 .jbSections,.cols4 .jbSections {font-size: 90%;clear: both;}
+
+.cols2 .jbAuthor,.cols3 .jbAuthor,.cols4 .jbAuthor {line-height: 1.2em}
+.cols2 div.jbSectCat,.cols3 div.jbSectCat,.cols4 div.jbSectCat {margin: 0}
+.cols2 span.jbCategories,.cols2 .jbSections,.cols3 span.jbCategories,.cols3 .jbSections,.cols4 span.jbCategories,.cols4 .jbSections {float: left;line-height: 1.3em;margin: 0 10px 0 0}
+.cols2 .buttons,.cols3 .buttons,.cols4 .buttons {margin-top: 4px}
+.cols2 div.jbCreatedate span.dateyear,.cols3 div.jbCreatedate span.dateyear,.cols4 div.jbCreatedate span.dateyear {font-size: 1em}
+
+.cols4 div.jbCreatedate,.cols3 div.jbCreatedate {float: none;margin: 0;text-align: left;height: 25px;margin-bottom: 10px;display: block;width: 100%;}
+.cols4 div.jbCreatedate span.dateyear,.cols3 div.jbCreatedate span.dateyear {display: inline;text-align: left;line-height: 1.9;}
+
+/* Pdf Buttons etc */
+span.buttons {margin-left: 20px;float: right;width: 55px}
+
+/* Div around the title and author, date etc */
+/* Section and Categories */
+div.jbSectCat {float: left;font-size: 90%}
+div.jbSectCat.dateheading {}
+span.jbSections {float: left;margin-right: 10px;line-height: 1}
+span.jbCategories {float: left;line-height: 1}
+.jbAuthor {float: left;margin-right: 20px;;color: #999;font-style: italic;font-size: 90%;line-height: 1}
+span.jbModifydate {float: right;font-size: 90%;font-style: italic;color: #999}
+div.jbReadmore {float: right;margin-top: 8px;background: #f9f9f9 url(../images/readmore.png) no-repeat 8px 5px;padding: 0 12px 0 25px;border: 1px solid #eee}
+
+
+/* Author and date styling */
+span.jbModifydate {float: right;font-size: 90%;color: #ccc;font-style: italic}
+.itemTitle,.sectionitemTitle,.catitemTitle {float: left;padding-bottom: 20px;width: 100%;}
+.itemTitle h2 {margin-bottom: 5px}
+.sectionitemTitle h2,.catitemTitle  h2 {margin-bottom: 10px}
+.titleWrapper {float: left;width: 83%}
+.cols4 .titleWrapper,.cols3 .titleWrapper,.cols2 .titleWrapper {float: none;}
+.titleWrapper.full {width: 100%}
+div.jbCreatedate {width: 10%;height: 50px;text-align: center;z-index: 10;float: left;margin-right: 20px}
+div.jbCreatedate span.datemonth {margin-right: 2px}
+div.jbCreatedate span.dateyear {font-size: 2em;display: block;text-align: center;line-height: 1.2em}
+
+
+/* Read more */
+a.jbReadmore {}
+
+div.jbsocial {margin-top: 10px}
+a.social {margin-right: 10px}
+.tooltip {position: absolute}
+
+/* Overrides */
+.article_row,.leading {padding: 0 0 30px;margin: 0 0 10px;clear: both;position: relative}
+
+.leading {float: left;width: 100%}
+/* Page classes */
+div.jbFrontPage {clear: both;float: left;background: url(../images/divider.png) repeat-x left top;padding-top: 8px;position: relative;width: 100%}
+
+
+/* Section and Categories */
+ul.sectionlist li {list-style-type: none;margin: 0}
+ul.sectionlist li a {display: block;border-bottom: 1px solid #ededed}
+
+
+/* Read more */
+.blog_more ul li {list-style-type: none;margin: 0}
+.blog_more ul li a {padding-bottom: 8px;border: none;display: block;border-bottom: 1px solid #eee}
+ul.pagination {margin: 0 0 20px 0}
+ul.pagination li {float: left;list-style-type: none;margin: 0;background: #eee;margin-right: 10px}
+ul.pagination li a {padding: 4px 8px}
+ul.pagination li a:hover {background: #eee}
+
+
+/* Misc Module Settings */
+.tweet {font-size: 2em;line-height: 1.4em}
+#slideShowContainer1 .tickerLabel {top: 7px;position: absolute;z-index: 10}
+#slideShowContainer1 {position: absolute;margin-top: 35px}
+
+.gallery-flickr img {padding: 2px;background: #111;margin-right: 2px;margin-bottom: 4px}
+
+/* Slide Settings and Module Classes */
+.moduletable-slide h3 {cursor: pointer;background: url(../images/accordionParentOpen.png) no-repeat left 6px;padding-left: 20px}
+.moduletable-slide h3.open {background: url(../images/accordionParent.png) no-repeat left 6px}
+.moduletable-slide {margin-left: 25px;clear: both;margin-bottom: 30px;padding: 0}
+.moduletable-pink h3,.moduletable-slide.pink h3.open{background: url(../images/moduleClasses/pinkSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-blue h3,.moduletable-slide.blue h3.open {background: url(../images/moduleClasses/blueSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-brown h3,.moduletable-slide.brown h3.open {background: url(../images/moduleClasses/brownSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-olive h3,.moduletable-slide.olive h3.open {background: url(../images/moduleClasses/oliveSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-purple h3,.moduletable-slide.purple h3.open {background: url(../images/moduleClasses/purpleSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-red h3,.red h3,,.moduletable-slide.red h3.open {background: url(../images/moduleClasses/redSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-yellow h3,.moduletable-slide.yellow h3.open {background: url(../images/moduleClasses/yellowSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-green h3,.moduletable-slide.green h3.open {background: url(../images/moduleClasses/greenSquares.png) no-repeat left 5px;padding-left: 20px}
+.moduletable-orange h3,.moduletable-slide.orange h3.open {background: url(../images/moduleClasses/orangeSquares.png) no-repeat left 5px;padding-left: 20px}
+#leftCol .moduletable-pink,#leftCol .moduletable-blue,#leftCol .moduletable-brown,#leftCol .moduletable-olive,#leftCol .moduletable-purple,#leftCol .moduletable-red,#leftCol .moduletable-yellow,#leftCol .moduletable-green,#leftCol .moduletable-orange,.moduletable-panelmenu,.moduletable-slide {margin-left: 20px;margin-bottom: 20px;margin-top: 20px;clear: both;background: url(../images/dividerBlue.png) repeat-x left bottom;padding-bottom: 20px;}
+.moduletable-light {padding: 8px;border: 1px solid #eee;background: #f9f9f9;color: #333}
+.moduletable-dark {padding: 8px;border: 1px solid #222;background: #666;color: #fff}
+.fullWrap.light .moduletable-dark h3 {color: #fff}
+
+ul.pink li{background: url(../images/moduleClasses/pinkSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.blue li{background: url(../images/moduleClasses/blueSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.brown li{background: url(../images/moduleClasses/brownSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.green li{background: url(../images/moduleClasses/greenSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.olive li{background: url(../images/moduleClasses/oliveSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.orange li{background: url(../images/moduleClasses/orangeSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.purple li{background: url(../images/moduleClasses/purpleSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.red li{background: url(../images/moduleClasses/redSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+ul.yellow li{background: url(../images/moduleClasses/yellowSquares.png) no-repeat left center;padding-left: 20px;list-style-type: none;margin: 0;}
+
+.templatechooser #select{margin-left: 40px;}
+#leftCol .border {background: #333;border: 1px solid #000;}
+img.jbLogo {z-index: 1;position: relative;}

@@ -1,0 +1,48 @@
+/* @override 
+	http://showcase.joomlabamboo.com/oct09/modules/mod_jTweet/css/jTweet.css
+	http://localhost:8888/joomla/1.5/1514/modules/mod_jTweet/css/jTweet.css
+*/
+
+/* @group General jTweet Styling */
+
+.jTweet{clear:both;position: relative;z-index: 1;}
+.jTweet ul.tweet_list li.tweet_first{padding-bottom: 20px;}
+.tweet {font-family: Georgia, serif;padding: 0;margin: 0px 0px 0px 0px}
+ul.tweet_list li {list-style-type: none;text-align: left;background: none;}
+.tweet .tweet_list {list-style-type: none;margin: 0; padding: 0;}
+ul.tweet_list li a,ul.tweet_list li a   {border: none;padding: 0}
+.tweet .tweet_list li {overflow: hidden;padding: 4px 0 8px;margin: 0 0 8px;border-bottom: 1px dashed #ddd;}
+.tweet .tweet_list .tweet_avatar {padding:4px;margin: 0;float: left; }
+.tweet .tweet_list .tweet_avatar img { vertical-align: middle;margin: 0 8px 0 0;border: 1px solid #ddd;padding: 4px; }
+.tweet_text {font-size: 0.9em;font-style: italic;display: block;}
+.jTweetClear {clear: both;}
+
+/* @end */
+
+/* @group Popup Styling */
+.bubbleInfo {position: relative}
+.popup {position: absolute;	display:none;background: url(../images/whiteOverlay.png)!important;background: #fff;height: 130px;color:#141E27;width: 400px;border: 4px solid #ddd;}
+.popupInner {margin-left: 10px;width: 400px;float: left;padding: 15px;}
+.popup img{float:left}
+.popupAvatar {float: left;width: 80px;margin-right: 20px}
+span.popupFollow {float: left;margin-top: 8px;margin-left: 8px;}
+.popup .infoAvatar {;border: 1px solid #ddd;padding: 4px}
+.popup ul{float:left;margin: 0;}
+.popup ul li {height: 14px;list-style-type: none;margin: 0 0 0 12px;background: none;}
+.popup ul li{float:left;clear:left;padding:2px 4px 4px 6px;}
+div.jTweetUsername {float:left; font-weight:bold; color:#141E27;width: 280px;margin-left: 0px}
+/* @end */ 
+
+/* @group Trigger Styling */
+.noPopup img {margin-left: 4px;}
+.jTweetInfo {float: left;width: 70px;padding: 8px;margin-right: 20px;margin-top: 10px;}
+.jTweetFollow{float:left}
+.trigger{display: block;text-decoration: none;margin-top: -20px;cursor: pointer}
+.trigger img {margin-left: 4px;}
+span.triggerDetail {clear: both;float: left;padding: 0px 8px;margin-top: 10px;border: 2px solid #ddd;font-style: italic;text-transform: lowercase;font-family: georgia;font-size: 0.9em;color: #343434;}
+span.triggerDetail a {color: #333;display: inline;width: 100%;}
+/* @end */
+
+.jTweetBody {float: left;width: 84%;}
+.tweetInfoCol {width: 6%;float: left;}
+.tweet {float: left;width: 80%}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for checkbox plugin
+*
+* @version		$Id: checkbox.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+<name>checkbox</name>
+<description>CHECKBOXPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>checkbox.js</file>
+	<file type='phpEntryPoint'>checkbox.php</file>
+	<file type='icon'>checkbox.png</file>
+</files>
+<parameters>
+	<param name="label" label="Label" control="textbox" default='Checkbox Group' valueType='string' translate='1' />
+	<param name="css" label="CSS Class" control="textbox" default='jfcheckbox' valueType='string' translate='0' />
+	<param name="elements" control="textarea" label="Options" default='Option 1\nOption 2\nOption 3' valueType='string' translate='1' />
+	<param name="required" label="Required" control="checkbox" default='0' valueType='integer' translate='0' />
+	<param name="layout" label="Layout" control="list" default='List' valueType='string' translate='0'>
+		<option value='Inline'>Inline</option>
+		<option value='List'>List</option>
+	</param>
+	<param name="align" label="Button Alignment" control="list" default='Left' valueType='string' translate='0'>
+		<option value='Left'>Left</option>
+		<option value='Right'>Right</option>
+	</param>
+	
+	<param name="ch" control="none" valueType='integer' default='90' translate='0' />
+	<param name="cw" control="none" valueType='integer' default='90' translate='0' />
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+	<param name="defaultValue" control="none" valueType='string' default='' translate='1' />
+	
+
+</parameters>
+<storage type='textfield' size='254' requirefs='false' />
+</JFormPlugin>

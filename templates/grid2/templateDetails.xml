@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="template">
+	<name>Grid2</name>
+	<creationDate>June, 2010</creationDate>
+	<author>Anthony Olsen</author>
+	<copyright>Joomla Bamboo, 2010.</copyright>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>1.0.2</version>
+	<description>
+		<![CDATA[<p style="line-height:180%;font-size:1.2em"><a href="http://www.joomlabamboo.com"><img src="http://www.joomlabamboo.com/images/JB_logo.jpg" alt="joomla Bamboo" style="float:left;margin:0 20px 20px 0px"/></a><br style="clear:both" />The Zen Grid template is a base skeleton template for you to build your joomla theme with. Please refer to documentation on the Joomla Bamboo site for full documentation.</p>]]>
+	</description>
+		<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<folder>layout</folder>
+		<filename>component.php</filename>
+		<filename>params.ini</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateTeaser.jpg</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<positions>
+		<position>panel1</position>
+		<position>panel2</position>
+		<position>panel3</position>
+		<position>panel4</position>
+		<position>banner</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>header1</position>
+		<position>header2</position>
+		<position>header3</position>
+		<position>header4</position>
+		<position>menu</position>
+		<position>breadcrumb</position>
+		<position>grid1</position>
+		<position>grid2</position>
+		<position>grid3</position>
+		<position>grid4</position>
+		<position>grid5</position>
+		<position>grid6</position>
+		<position>grid7</position>
+		<position>grid8</position>
+		<position>grid9</position>
+		<position>grid10</position>
+		<position>grid11</position>
+		<position>grid12</position>
+		<position>above</position>
+		<position>left</position>
+		<position>center</position>
+		<position>advert1</position>
+		<position>advert2</position>
+		<position>advert3</position>
+		<position>advert4</position>
+		<position>advert5</position>
+		<position>advert6</position>
+		<position>right</position>
+		<position>below</position>
+		<position>grid13</position>
+		<position>grid14</position>
+		<position>grid15</position>
+		<position>grid16</position>
+		<position>grid17</position>
+		<position>grid18</position>
+		<position>grid19</position>
+		<position>grid20</position>
+		<position>grid21</position>
+		<position>grid22</position>
+		<position>grid23</position>
+		<position>grid24</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+	<params addpath="/templates/zengridframework/elements">
+	<param name="@tabs" type="jbtabs" />
+		<param name="open" type="jbtabopen" default="Template Display Settings" label="" description="" />
+		<param name="@jboverview" type="jboverview" default="Menu Settings" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Template Style - Look and Feel" />
+		<param name="backgroundOptions" type="list" default="no-repeat" label="Use a preset theme configuration or customise using the options below?" description="Set this to yes to use the options for styling the background below.">
+			<option value="0">Preset</option>
+			<option value="1">Customisation</option>
+		</param>
+		<param name="@jbtitle" type="jbtitle" default="Link and Heading Colours" />
+		<param name="@desc" type="jbdesc" default="The options below are enabled if you select preset in the option above. You can select the colour hilite to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/css/[your template name]/hilite folder." />
+		<param name="hilite" type="jbhilitelist" default="" label="Typography Hilite"  description="Select the colour hilite to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/css/hilite folder" exclude="" directory="" stripext="true" />
+		<param name="@jbtitle" type="jbtitle" default="Customise your theme" />
+		<param name="@desc" type="jbdesc" default="The following options determine the settings for the various visual elements in this theme. If you do not want to use the options below simply set the first option to no. Or if you would like to specify the background colour without an image set the background image option to none selected. " />
+		<param name="custombackgroundContrast" type="list" default="no-repeat" label="are you using a light or a dark background?" description="This option is designed to change the colour of the links and text that are directly on the background eg breadcrumb or footer links. Because you have a lot of control over the way that the background appears in this theme you may need to use this setting in order to view text published in positions that are not ditting in the top nav area or the main area. If you would prefer to control the colour of these areas yourself simply set this option to override and control the colour of these areas via your hilite file selected in the settings above.">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+			<option value="override">Not applicable</option>
+		</param>
+		<param name="backgroundColor" type="text" default="#333" label="Background Color" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="backgroundImage" type="filelist" default="" label="Background Image"  description="Select the back to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/css/hilite folder" exclude="" directory="templates/jb_grid2/images/background" />
+		<param name="backgroundRepeat" type="list" default="no-repeat" label="Background repeat" description="Set the repeat rule for the background image.">
+			<option value="repeat">Repeat</option>
+			<option value="repeat-x">Repeat X</option>
+			<option value="repeat-y">Repeat Y</option>
+			<option value="no-repeat">No Repeat</option>
+		</param>
+		<param name="backgroundPosition" type="text" default="left top" label="Background Position" description="This setting controls the position of the background if you have set a background image." />
+		<param name="@jbtitle" type="jbtitle" default="Left Column Image" />
+		<param name="leftBackgroundImage" type="filelist" default="" label="Left Column Image"  description="Select the colour hilite to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/images/leftbackground folder" exclude="" directory="templates/jb_grid2/images/leftbackground"  />
+		<param name="leftLinkColor" type="text" default="#333" label="Left Link Color" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="@jbtitle" type="jbtitle" default="General Link Colors" />
+		<param name="linkColor" type="text" default="#333" label="Link Color" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="linkHover" type="text" default="#333" label="Link Hover Color" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="@jbtitle" type="jbtitle" default="Top Menu Link Colors" />
+		<param name="topNavImage" type="filelist" default="" label="Top Nav Background Image"  description="Select the colour hilite to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/images/topnav/ folder" exclude="" directory="templates/jb_grid2/images/topnav"  />
+		<param name="activeMenuBackground" type="text" default="#333" label="Top menu active background" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="activeMenuColor" type="text" default="#333" label="Top menu active menu color" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="menuHoverColor" type="text" default="#333" label="Top menu hover color" description="You can enter any value here that can usually be used in the css rule for background color eg #fff for white or #000 for black etc." />
+		<param name="@jbtitle" type="jbtitle" default="Bottom Background Image" />
+		<param name="bottomBackgroundImage" type="filelist" default="" label="Bottom Background Image"  description="Select the back to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/css/hilite folder" exclude="" directory="templates/jb_grid2/images/background" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Logo Settings" />
+		<param name="@desc" type="jbdesc" default="If you change the &lt;strong&gt;logo folder&lt;/strong&gt; used to source your logo image please make sure that you hit apply in order to load the new image files in the logo image dropdownlist.&lt;br /&gt; The dropdownlist that contains the images that are available for the logo will &lt;strong&gt;not&lt;/strong&gt; refresh until you do this.&lt;br /&gt;&lt;br /&gt; Please note that the width assigned to the logo position needs to balance according it's position. eg If assigned to the same row as the nav then the logo width needs to take the width assigned to the menu in the nav settings. " />
+		<param name="logoLocation" type="jblogolocation" default="" label="Logo Location" description="Select if you wish to use the default logo location inside of the template's images folder, or a folder inside of the template's images directory" />
+		<param name="logoFile" type="jblogofile" default="" label="Logo image"  description="Select the image to use for your logo. Your logo should be uploaded to the templates/[template]/images/logo folder" exclude="" stripext="" />
+				<param name="logoPosition" type="list" default="below" label="Logo Position" description="Set the row for where the logo should be positioned.">
+			<option value="above">On same row as header module positions</option>
+			<option value="below">On same row as the nav</option>
+			<option value="left">Above left column</option>
+			<option value="none">No Logo</option>
+		</param>
+		<param name="logoWidth" type="jbgrid" default="four" label="Logo Width" description="Set the width of this module position." />
+		<param name="logoDivHeight" type="text" default="160" label="Set the height of the logo area" description="This is a unique setting for this template that allows you to correctly align the separator beneath the logo to line up with the images on your front page. No need to use px values in this field." />
+		<param name="logoLink" type="text" default="index.php" label="Logo hyperlink" description="Type the relative or absolute url for the link attached to the logo." />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+			<param name="@jbtitle" type="jbtitle" default="Font Stacks" />
+		<param name="@desc" type="jbdesc" default="The following parameters control the overall look and feel of the template." />
+		<param name="fontStackBody" type="list" default="default" label="Font-Family Body" description="Select the font stack to use for the body styling">
+			<option value="courier">“Courier new”, Courier, “Andale Mono”</option>
+			<option value="helvetica">Helvetica Neue, Helvetica, Arial, sans-serif;</option>
+			<option value="baskerville">Baskerville, Palatino, ‘Palatino Linotype’, Georgia, Serif</option>
+			<option value="geneva">Geneva, ‘Lucida Sans’, Verdana, sans-serif</option>
+			<option value="gillsans">GillSans, Calibri, Trebuchet, arial sans-serif</option>
+			<option value="cambria">Cambria, Georgia, Times, ‘Times New Roman’, serif</option>
+			<option value="lucida">Lucida Grande, Geneva, Helvetica, sans-serif</option>
+		</param>
+		<param name="fontStackHeading" type="list" default="default" label="Font-Family Headings" description="Select the font stack to use for the headings styling">
+			<option value="courier">“Courier new”, Courier, “Andale Mono”</option>
+			<option value="garamond">Garamond, ‘Times New Roman’, Times, serif</option>
+			<option value="cambria">Cambria, Georgia, Times, Times New Roman, serif</option>
+			<option value="helveticaH">Helvetica Neue, Helvetica, Arial, sans-serif</option>
+			<option value="lucida">Lucida Grande, Geneva, Helvetica, sans-serif</option>
+			<option value="caslon">Adobe Caslon Pro, Georgia, Garamond, Times, serif</option>
+			<option value="georgia">Georgia, Times, ‘Times New Roman’, serif</option>
+			<option value="tahoma">Tahoma, Verdana, Geneva</option>
+			<option value="trebuchet">trebuchet ms, Tahoma, Arial, sans-serif</option>
+			<option value="palatino">Palatino, ‘Times New Roman’, serif</option>
+		</param>
+		<param name="fontStackNav" type="list" default="helvetica" label="Navigation Font Stack" description="Select the font stack to use for the navigation styling">
+			<option value="courier">“Courier new”, Courier, “Andale Mono”</option>
+			<option value="garamond">Garamond, ‘Times New Roman’, Times, serif</option>
+			<option value="cambria">Cambria, Georgia, Times, Times New Roman, serif</option>
+			<option value="helvetica">Helvetica Neue, Helvetica, Arial, sans-serif</option>
+			<option value="baskerville">Baskerville, Palatino, ‘Palatino Linotype’, Georgia, Serif</option>
+			<option value="geneva">Geneva, ‘Lucida Sans’, Verdana, sans-serif</option>
+			<option value="lucida">Lucida Grande, Geneva, Helvetica, sans-serif</option>
+			<option value="caslon">Adobe Caslon Pro, Georgia, Garamond, Times, serif</option>
+			<option value="gillsans">GillSans, Calibri, Trebuchet, arial sans-serif</option>
+			<option value="georgia">Georgia, Times, ‘Times New Roman’, serif</option>
+			<option value="tahoma">Tahoma, Verdana, Geneva</option>
+			<option value="trebuchet">trebuchet ms, Tahoma, Arial, sans-serif</option>
+			<option value="palatino">Palatino, ‘Times New Roman’, serif</option>
+		</param>
+		<param name="fontSize" type="text" default="80%" label="Font Size" description="This can be a px or % and sets the base size of the fonts on the site." />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@title" type="jbtitle" default="General Layout Settings" label="" description="" />
+		<param name="@desc" type="jbdesc" default="The following values control the general and overall layout of the template. Set the template width, the number of the columns the page should be divided into and then specify the the width of the gutter in between each column." />
+		<param name="position" type="list" default="1" label="Main Container alignment" description="Select the alignment of the main container">
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+		</param>
+
+		<param name="containerMargin" type="text" default="0" label="Left or right offset" description="Set th eleft or right offset of the main container if the template is positioned to the left or right using the position setting above." />
+		<param name="tWidth" type="list" default="887px" label="Template Width" description="This setting controls the overall width of the template including the margins.">
+			<option value="780">Thin 780px</option>
+			<option value="887">Mid 887px</option>
+			<option value="980">Wide 980px</option>
+		</param>
+		<param name="cols" type="list" default="12" label="Number of Columns" description="Select the background image of the template">
+			<option value="12">12</option>
+			<option value="16">16</option>
+		</param>
+		<param name="allEqual" type="list" default="12" label="Equalise all module positions widths?" description="This setting overrides the individual option to equalise all module position widths. Set this option to no if you want to apply specific widths for module positions in the row specific tab options.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="gutter" type="text" default="20" label="Gutter Width" description="This setting controls the margin between each grid element." />
+		<param type="jbtabsplit" name="two" default="Top Module Layout" label="" description="" />
+		<param name="@title" type="jbtitle" default="Top Row of Modules" label="" description="" />
+		<param name="@desc" type="jbdesc" default="The following values need to add up to the total number of columns specified above. If any of the module positions in this row arent published then the value assigned to them does not count." label="" description="" />
+		<param name="topEqual" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="top1Width" type="jbgrid" default="yes" label="Top1 Width" description="Set the width of this module position." />
+		<param name="top2Width" type="jbgrid" default="yes" label="Top2 Width" description="Set the width of this module position." />
+		<param name="top3Width" type="jbgrid" default="yes" label="Top3 Width" description="Set the width of this module position." />
+		<param name="top4Width" type="jbgrid" default="yes" label="Top4 Width" description="Set the width of this module position." />
+		
+			<param type="jbtabsplit" name="three" default="Template Layout" label="" description="" />
+		<param name="@title" type="jbtitle" default="Header Modules Layout" label="" description="" />
+		<param name="@desc" type="jbdesc" default="The following values need to add up to the total number of columns specified above. If any of the module positions in this row arent published then the value assigned to them does not count. Please note that if you have chosen to display the logo on the same level as the menu then this row contains header1, header2, header3 and header4 module positions, otherwise if you display the logo in this row then there are only modules header2 to header4 available." label="" description="" />
+		<param name="headerEqual" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="header1Width" type="jbgrid" default="yes" label="Header1 Width" description="Set the width of this module position." />
+		<param name="header2Width" type="jbgrid" default="yes" label="Header2 Width" description="Set the width of this module position." />
+		<param name="header3Width" type="jbgrid" default="yes" label="Header3 Width" description="Set the width of this module position." />
+		<param name="header4Width" type="jbgrid" default="yes" label="Header4 Width" description="Set the width of this module position." />
+		
+			<param type="jbtabsplit" name="twob" default="Template Layout" label="" description="" />
+		<param name="@title" type="jbtitle" default="Navigation Strip" />
+		<param name="@desc" type="jbdesc" default="The following values need to add up to the total number of columns specified above. If any of the module positions in this row arent published then the value assigned to them does not count. If the logo is published to the header row then it takes the position of the header1 image." label="" description="" />
+		<param name="navLeft" type="list" default="below" label="Menu alignment" description="Select whether to align the menu to the left or the right. Select the left if you are choosing to hide the logo or display the logo in the header row.">
+			<option value="1">Align menu to the left</option>
+			<option value="0">Align menu to the right</option>
+		</param>
+		<param name="navWidth" type="jbgrid" default="twelve" label="Navigation Width" description="Set the width of this module position."/>
+		<param type="jbtabsplit" name="three" default="Template Module Settings" label="" description="" />
+		<param name="@jbtitle" type="jbtitle"  default="Grid positions Grid1 to Grid12." />
+		<param name="@desc" type="jbdesc" default="The following settings control the width of the modules published to the module positions grid1 to grid4.&lt;br /&gt; &lt;strong&gt;Please note that if you are publishing less than four modules in any row then at least one of the modules needs to be the last module in the row e.g. grid16.&lt;/strong&gt;" label="" description="" />
+		<param name="@title" type="jbtitle" default="Grid1 to Grid4" />
+		<param name="grid1Equal" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="grid1Width" type="jbgrid" default="three" label="Grid1 Width" description="Set the width of this module position." />
+		<param name="grid2Width" type="jbgrid" default="three" label="Grid2 Width" description="Set the width of this module position." />
+		<param name="grid3Width" type="jbgrid" default="three" label="Grid3 Width" description="Set the width of this module position." />
+		<param name="grid4Width" type="jbgrid" default="three" label="Grid4 Width" description="Set the width of this module position." />
+		<param name="@title" type="jbtitle" default="Grid5 to Grid8" />
+		<param name="grid2Equal" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="grid5Width" type="jbgrid" default="three" label="Grid5 Width" description="Set the width of this module position." />
+		<param name="grid6Width" type="jbgrid" default="three" label="Grid6 Width" description="Set the width of this module position." />
+		<param name="grid7Width" type="jbgrid" default="three" label="Grid7 Width" description="Set the width of this module position." />
+		<param name="grid8Width" type="jbgrid" default="three" label="Grid8 Width" description="Set the width of this module position." />
+		<param name="@title" type="jbtitle" default="Grid9 to Grid12" />
+		<param name="grid3Equal" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="grid9Width" type="jbgrid" default="three" label="Grid9 Width" description="Set the width of this module position." />
+		<param name="grid10Width" type="jbgrid" default="three" label="Grid10 Width" description="Set the width of this module position." />
+		<param name="grid11Width" type="jbgrid" default="three" label="Grid11 Width" description="Set the width of this module position." />
+		<param name="grid12Width" type="jbgrid" default="three" label="Grid12 Width" description="Set the width of this module position." />
+
+		<param type="jbtabsplit" name="three" default="Main Body / Component Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+		<param name="@jbtitle" type="jbtitle"  default="Main Content Area - Center Module" />
+		<param name="@desc" type="jbdesc" default="The following parameters do not apply to this template." label="" description="" />
+		<param type="jbtabsplit" name="three" default="Advert Module Settings" label="" description="" />
+		<param name="@jbtitle" type="jbtitle"  default="Advert 1-3 row" />
+		<param name="@desc" type="jbdesc" default="The following three blocks of parameters refer to the top three Advert module positions which sit above the main content or component area.." label="" description="" />
+		<param name="advert1Width" type="jbgrid" default="two" label="Advert1 Width" description="Set the width of this module position." />
+		<param name="advert2Width" type="jbgrid" default="two" label="Advert2 Width" description="Set the width of this module position." />
+		<param name="advert3Width" type="jbgrid" default="two" label="Advert3 Width" description="Set the width of this module position." />
+		<param name="@title" type="jbtitle" default="Advert 4-6 row" />
+		<param name="@desc" type="jbdesc" default="The following three blocks of parameters refer to the bottom three Advert module positions." label="" description="" />
+		<param name="advert4Width" type="jbgrid" default="two" label="Advert4 Width" description="Set the width of this module position." />
+		<param name="advert5Width" type="jbgrid" default="two" label="Advert5 Width" description="Set the width of this module position." />
+		<param name="advert6Width" type="jbgrid" default="two" label="Advert6 Width" description="Set the width of this module position." />
+<param type="jbtabsplit" name="three" default="Bottom Grid Module Settings" label="" description="" />
+		<param name="@jbtitle" type="jbtitle"  default="Grid13 to Grid 24" />
+		<param name="@desc" type="jbdesc" default="The following three blocks of parameters refer to the bottom three rows of grid modules. &lt;br /&gt; &lt;strong&gt;Please note that if you are publishing less than four modules in any row then at least one of the modules needs to be the last module in the row e.g. grid4.&lt;/strong&gt;" label="" description="" />
+		<param name="@title" type="jbtitle" default="Grid13 to Grid16" label="" description="" />
+		<param name="grid4Equal" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="grid13Width" type="jbgrid" default="three" label="Grid13 Width" description="Set the width of this module position." />
+		<param name="grid14Width" type="jbgrid" default="three" label="Grid14 Width" description="Set the width of this module position." />
+		<param name="grid15Width" type="jbgrid" default="three" label="Grid15 Width" description="Set the width of this module position." />
+		<param name="grid16Width" type="jbgrid" default="three" label="Grid16 Width" description="Set the width of this module position." />
+
+		<param name="@title" type="jbtitle" default="Grid17 to Grid20" label="" description="" />
+		<param name="grid5Equal" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="grid17Width" type="jbgrid" default="three" label="Grid17 Width" description="Set the width of this module position." />
+		<param name="grid18Width" type="jbgrid" default="three" label="Grid18 Width" description="Set the width of this module position." />
+		<param name="grid19Width" type="jbgrid" default="three" label="Grid19 Width" description="Set the width of this module position." />
+		<param name="grid20Width" type="jbgrid" default="three" label="Grid20 Width" description="Set the width of this module position." />
+		
+		<param name="@title" type="jbtitle" default="Grid21 to Grid24" label="" description="" />
+		<param name="grid6Equal" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="grid21Width" type="jbgrid" default="three" label="Grid21 Width" description="Set the width of this module position." />
+		<param name="grid22Width" type="jbgrid" default="three" label="Grid22 Width" description="Set the width of this module position." />
+		<param name="grid23Width" type="jbgrid" default="three" label="Grid23 Width" description="Set the width of this module position." />
+		<param name="grid24Width" type="jbgrid" default="three" label="Grid24 Width" description="Set the width of this module position." />
+
+<param type="jbtabsplit" name="three" default="Advert Module Settings" label="" description="" />
+		<param name="@title" type="jbtitle" default="Bottom Module Positions" label="" description="" />
+		<param name="@desc" type="jbdesc" default="The following values need to add up to the total number of columns specified above. If any of the module positions in this row arent published then the value assigned to them does not count." label="" description="" />
+		<param name="bottomEqual" type="list" default="1" label="Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="bottom1Width" type="jbgrid" default="yes" label="Bottom1 Width" description="Set the width of this module position." />
+		<param name="bottom2Width" type="jbgrid" default="yes" label="Bottom2 Width" description="Set the width of this module position." />
+		<param name="bottom3Width" type="jbgrid" default="yes" label="Bottom3 Width" description="Set the width of this module position." />
+		<param name="bottom4Width" type="jbgrid" default="yes" label="Bottom4 Width" description="Set the width of this module position." />
+		<param type="jbtabsplit" name="four" default="Menu Scripts" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Scripts for superfish and panel menus" />
+		<param name="@desc" type="jbdesc" default="The following settings controls the superfish and panel menu. In order to trigger the superfish or panel menu simply add the module class suffixes &lt;strong&gt;-panelmenu&lt;/strong&gt; or &lt;strong&gt;-superfish&lt;/strong&gt; depending on the menu that you require. &lt;br /&gt;&lt;br /&gt;If you decide not to use either of these menus then it may be best to disable them in order cut down on load time for your site." label="" description="" />
+		<param name="superfish" type="list" default="yes" label="Enable scripts for Superfish Menu" description="This option enables the script for the superfish menu for the template. This script will only be output on the page if the left or right module positions have modules published to them.">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="sfEffect" type="list" default="yes" label="Superfish Transition Type" description="Select the type of transition you would like applied to the superfish menu.">
+			<option value="1">Vertical</option>
+			<option value="2">Horizontal</option>
+			<option value="3">Fade</option>
+			<option value="4">Horizontal and Fade</option>
+			<option value="5">Vertical and Fade</option>
+			<option value="6">Vertical and Horizontal and Fade</option>
+			<option value="7">Vertical and Horizontal</option>
+		</param>
+		<param name="panelMenu" type="list" default="yes" label="Enable scripts for Panel Menu" description="This option enables the script for the panel menu for the template. This script will only be output on the page if the left or right module positions have modules published to them.">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+
+		<param type="jbtabsplit" name="five" default="Panel Settings" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Hidden Panel Settings" />
+		<param name="@desc" type="jbdesc" default="The following values control the hidden panel in the template. The values below need to add up to the total number of columns specified above. If any of the module positions in this row arent published then the value assigned to them does not count. The following settings change the text for the open and close button for the drop panel. In order for the button to appear you need to make sure that at least one module is published to the panel1, panel2, panel3 or panel4 positions.&lt;br /&gt;&lt;br /&gt; &lt;strong&gt;If you would like to disable the panel then make sure there are no modules published to these positions.&lt;/strong&gt;" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Hidden Panel Appearance" />
+		<param name="openPanel" type="text" default="Open Panel" label="Panel Open Text" description="Enter the text you would like displayed in the tab that triggers the sliding panel to open." />
+		<param name="closePanel" type="text" default="Close Panel" label="Panel Close Text" description="Enter the text you would like displayed in the tab that triggers the sliding panel to open." />
+		<param name="panelCloseImage" type="imagelist" default="" label="Panel Closed image colour"  description="Select the colour hilite to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/images/panel folder" exclude="" directory="templates/jb_grid2/images/panel/open"  />
+		<param name="panelOpenImage" type="imagelist" default="" label="Panel Open image colour"  description="Select the colour hilite to use on your site. Should you want to create your own your hilite the css file should be uploaded to the templates/[your template name]/images/panel folder" exclude="" directory="templates/jb_grid2/images/panel/close"  />
+			<param name="@jbtitle" type="jbtitle" default="Transition and Overlay Color" />
+			<param name="@desc" type="jbdesc" default="The following settings determine the transition and colour of the overlay for the hidden panel." label="" description="" />
+			<param name="paneltype" type="list" default="opacity" label="Select the type of transition you woudl like to use in order to make the hidden panel appear.">
+			<option value="width">Left to Right</option>
+			<option value="height">Top to Bottom</option>
+			<option value="opacity">Opacity</option>
+		</param>
+		<param name="panelColor" type="list" default="dark" label="Panel Color">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</param>
+		<param name="@jbtitle" type="jbtitle" default="Hidden Panel Widths" />
+		<param name="@desc" type="jbdesc" default="The following settings control the width of the modules in the hidden panel." label="" description="" />
+			<param name="panelHeight" type="text" default="600" label="Hidden Panel Height" description="Enter the desired height of the hidden panel." />
+			<param name="panelWidth" type="text" default="600" label="Hidden Panel Width" description="Enter the desired width of the hidden panel." />
+			<param name="panelEqual" type="list" default="1" label="Panel Module widths" description="Select whether to equalise the modules published to a specific row. If set to use individual widths then the ratios below will have a bearing on the widths.">
+			<option value="0">Use individual module position widths below</option>
+			<option value="1">Equalise width according to number of modules published</option>
+		</param>
+		<param name="panel1Width" type="jbgrid" default="yes" label="Panel1 Width" description="Set the width of this module position." />
+		<param name="panel2Width" type="jbgrid" default="yes" label="Panel2 Width" description="Set the width of this module position." />
+		<param name="panel3Width" type="jbgrid" default="yes" label="Panel3 Width" description="Set the width of this module position." />
+		<param name="panel4Width" type="jbgrid" default="yes" label="Panel4 Width" description="Set the width of this module position." />
+
+
+		<param type="jbtabsplit" name="six" default="Miscellaneous" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Analytics Code" />
+		<param name="@desc" type="jbdesc" default="This option allows you to add code for your google anayltics directly into your template. The code is placed at the very bottom of the template (before the closing body tag) and so can also be used for placing other javascript into your template." label="" description="" />
+		<param name="analytics" type="textarea" rows="20" cols="50" default="" label="Analytics Code" description="Enter the javascript for your statistics software including the script tags." />
+		<param type="jbtabsplit" name="six" default="Miscellaneous" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Template Performance" />
+		<param name="@desc" type="jbdesc" default="The following group of settings contain some tweaks to the performance of your template.&lt;br /&gt;&lt;br /&gt; The &lt;strong&gt;css compression&lt;/strong&gt; setting determines whether you compress the output of the Zen Grid core and Joomla system css files. Enabling this setting can significantly the load time and http requests for css files on your site.&lt;br /&gt;&lt;br /&gt;The setting to &lt;strong&gt;remove mootools&lt;/strong&gt; must be used cautiously and only if you do not operate or need the mootools library to load on the frontend of your site." label="" description="" />
+		<param name="csscompress" type="list" default="1" label="Compress System and core css files?" description="Select whether to compress and significantly reduce the file size of the system anf core css files.">
+			<option value="1">Enable CSS Compression</option>
+			<option value="0">Disable CSS Compression</option>
+		</param>
+		<param name="removeMootools" type="list" default="0" label="Remove Mootools and Caption javascript?" description="Select whether to remove mootools and caption javascript files from the frontend output. By setting this option to yes you can significantly reduce page load but please only disable this if you do not use any other scripts on the page that depend on mootools to function.">
+			<option value="1">Remove Mootools from output</option>
+			<option value="0">Keep Mootools in output</option>
+		</param>
+		<param name="combinescripts" type="list" default="1" label="Combine core javascript files?" description="Select whether to load all Zen Grid javascripts into one file. Setting this option to yes negates any other setting regarding enabling the menu scripts etc and reduces the number of http requests made by the template.">
+			<option value="1">Combine core framework javascript</option>
+			<option value="2">GZip combined core framework javascript</option>
+			<option value="0">Do not combine core framework javascript</option>
+		</param>
+		<param name="removeJgen" type="list" default="0" label="Remove Joomla metatag generator?" description="This option removes the Joomla generator metatag from the website output. This can be used as a security consideration to remove an identifier marker that tells people that you are using Joomla.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param type="jbtabsplit" name="six" default="Miscellaneous" label="" description="" />
+		<param name="@jboverridecheck" type="jboverridecheck" default="System Checks" />
+		<param name="banner" type="jboverridechecker" default="1" label="Banner" />
+		<param name="bottom" type="jboverridechecker" default="1" label="Bottom" />
+		<param name="closeContainer" type="jboverridechecker" default="1" label="Close Container" />
+		<param name="footer" type="jboverridechecker" default="1" label="Footer" />
+		<param name="frontpage" type="jboverridechecker" default="1" label="Frontpage" />
+		<param name="grid1" type="jboverridechecker" default="1" label="Grid 1" />
+		<param name="grid2" type="jboverridechecker" default="1" label="Grid 2" />
+		<param name="grid3" type="jboverridechecker" default="1" label="Grid 3" />
+		<param name="grid4" type="jboverridechecker" default="1" label="Grid 4" />
+		<param name="grid5" type="jboverridechecker" default="1" label="Grid 5" />
+		<param name="grid6" type="jboverridechecker" default="1" label="Grid 6" />
+		<param name="header" type="jboverridechecker" default="1" label="Navigation" />
+		<param name="main" type="jboverridechecker" default="1" label="Main Content" />
+		<param name="nav" type="jboverridechecker" default="1" label="Navigation" />
+		<param name="openContainer" type="jboverridechecker" default="1" label="Open Container" />
+		<param name="panel" type="jboverridechecker" default="1" label="Panel" />
+		<param name="top" type="jboverridechecker" default="1" label="Top" />
+		
+		<param type="jbtabsplit" name="six" default="Miscellaneous" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="CSS Overrides" />
+		<param name="@desc" type="jbdesc" default="The following settings override the core css of the active theme of the site. To enable the overrides please ensure you have the first option ste to yes. For any rule that you do not want to alter leave blank. " />
+		<param name="overwriteCSS" type="list" default="1" label="Overwrite link and heading styling?" description="If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="bodyColour" type="text" default="" label="Body css"  description="Define body css."  />
+		<param name="h1Colour" type="text" default="" label="H1 css"  description="Define H1 css. If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling. Full css syntax can be used in this field."  />
+		<param name="h2Colour" type="text" default="" label="H2 css"  description="Define H2 css. If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling. Full css syntax can be used in this field."  />
+		<param name="h3Colour" type="text" default="" label="H3 css"  description="Define H3 css. If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling. Full css syntax can be used in this field."  />
+		<param name="h4Colour" type="text" default="" label="H4 css"  description="Define H4 css. If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling. Full css syntax can be used in this field."  />
+		<param name="h5Colour" type="text" default="" label="H5 css"  description="Define H5 css. If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling. Full css syntax can be used in this field."  />
+		<param name="h6Colour" type="text" default="" label="H6 css"  description="Define H6 css. If set to yes this option will insert the relevant css into the head of your template. Leave fields blank if you do not want to affect their styling. Full css syntax can be used in this field."  />
+		<param name="aColour" type="text" default="" label="Link css"  description="Define Link colour."  />
+		<param name="ahoverColour" type="text" default="" label="Link Hover css"  description="Define Link hover colour."  />
+		<param name="taglineCSS" type="text" default="" label="Specific css for the tagline"  description="You can enter any css syntax here to change the styling of the tagline."  />
+		<param name="extraCSS" type="text" default="" label="Extra CSS"  description="This parameter allows you to place extra css rules into the template head. The syntax must follow the usual css syntax - Please see the documentation for more details."  />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbtitle" type="jbtitle" default="Tagline settings" />
+		<param name="@desc" type="jbdesc" default="Your tagline is a small piece of text that sits under or next to your logo. You can position the tagline using the left and top offset using both +ve and -ve px values. In addition you can override the styling of the tagline in the css overrides section." />
+		<param name="enableTagline" type="list" default="1" label="Enable tagline?" description="Set this to yes if you want to display a tagline below the logo.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="tagline" type="text" default="" label="Tagline"  description="Select the text you want to display underneath the logo. You can use html in this box to add links etc to the tagline."  />
+		<param name="taglineTop" type="text" default="0px" label="Tagline top offset"  description="Set the absolute position for the tagline to appear - you can use +ve or -ve px values here."  />
+		<param name="taglineLeft" type="text" default="0px" label="Tagline left offset"  description="Set the absolute position for the tagline to appear - you can use +ve or -ve px values here."  />
+<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+	<param name="@title" type="jbtitle" default="Main Content Widths - Left Column" />
+		<param name="@desc" type="jbdesc" default="&lt;span class=&quot;leftright&quot;&gt;The following parameters control the layout and widths for the left and main content/component space in the template in left column mode. This mode is triggered when you have at least one module published to the left position and no modules published to the right and center positions.&lt;/span&gt;" label="" description="" />
+		<param name="leftCols2L" type="jbgrid" default="three" label="Left Column Width" description="Set the width of this module position." />
+		<param name="midCols2L" type="jbgrid" default="nine" label="Main Content Width" description="Set the width of this module position." />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+		<param name="@title" type="jbtitle" default="Main Content Widths - Right Column" />
+		<param name="@desc" type="jbdesc" default="The following parameters do not apply to this template." label="" description="" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+		<param name="@title" type="jbtitle" default="Main Content Widths - Three Columns" />
+		<param name="@desc" type="jbdesc" default="The following parameters do not apply to this template." label="" description="" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+		<param name="@title" type="jbtitle" default="Main Content Widths - Four Columns (left + center + maincontent + right)" />
+		<param name="@desc" type="jbdesc" default="The following parameters do not apply to this template." label="" description="" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+		<param name="@title" type="jbtitle" default="Main Content Widths - Three Columns (left + center + main content)" />
+		<param name="@desc" type="jbdesc" default="The following parameters do not apply to this template." label="" description="" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@jbmaincontentnav" type="jbmaincontentnav"  default="Main Content Area - Center Module" />
+		<param name="@title" type="jbtitle" default="Main Content Widths - Three Columns (main content + center + right)" />
+		<param name="@desc" type="jbdesc" default="The following parameters do not apply to this template." label="" description="" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@title" type="jbtitle" default="Template Documentation" />
+		<param name="@jbdocs" type="jbdocs"  default="Main Content Area - Center Module" />
+		<param type="jbtabsplit" name="two" default="Template Layout" label="" description="" />
+		<param name="@title" type="jbtitle" default="IE6 PNG Fix" />
+		<param name="@desc" type="jbdesc" default="&lt;span class=&quot;leftright&quot;&gt;The IE6 png fix loads an extra javascript file when the user is using IE6 which enables .png images to be rendered with transparent background.&lt;/span&gt;" label="" description="" />
+		<param name="pngfix" type="list" default="0" label="Enable PNG Fix for IE6" description="This option inserts the DD Belated PNG Fix to cater to IE6's inability to display transparent background images on PNG images.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="pngfixrules" type="textarea" rows="20" cols="50" default=".pathway img,#logo a img,.topInner,.jbLogo,#topShadow,.slideShowNav.indexNavButtons  a.activeSlide,#slideShowNav.indexNavButtons  a:hover,div.jbReadmore,.mbMoreFlat .readon,.itemRatingList,.itemRatingList a:hover,.itemRatingList .itemCurrentRating,.k2ReadMore" label="CSS rules to apply the pngfix to:" description="Enter the css classes that you want to apply the pngfix to separated by a comma." />
+		<param type="jbtabsplit" name="two" default="Extra Scripts" label="" description="" />
+		<param name="@title" type="jbtitle" default="Extra Scripts" />
+		<param name="@desc" type="jbdesc" default="You can use this text area to add extra javascript or css o the head of your template. This can be done by following the established techniques used to add script references, inline css or javascript. This variable is directly output in the template head." label="" description="" />
+		<param name="extraScripts" type="textarea" rows="20" cols="50" default="" label="Add extra scripts to the head of the template?" description="Enter the css classes that you want to apply the pngfix to separated by a comma." />
+		<param type="jbtabclose" name="closer" label="close" />
+	</params>
+</install>

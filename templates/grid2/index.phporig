@@ -1,0 +1,42 @@
+<?php
+
+/**
+*** Zen Grid 2.0 Joomla Template Framework is a commercial Joomla template from Joomla Bamboo
+*** @author    Joomlabamboo
+*** @copyright (C) 2010 by Joomlabamboo
+*** @license   Commercial
+**/
+
+// no direct access
+defined( '_JEXEC' ) or die( 'Restricted index access' );
+define('ZEN_DOCUMENT_ROOT',		isset($_SERVER['DOCUMENT_ROOT']) ? $_SERVER['DOCUMENT_ROOT'] : '');
+define('ZEN_SCRIPT_FILENAME',	isset($_SERVER['SCRIPT_FILENAME']) ? $_SERVER['SCRIPT_FILENAME'] : '');
+define('ZEN_SCRIPT_NAME',	isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : '');
+
+$zenDocRoot	= preg_replace('/\/$/', '', ZEN_DOCUMENT_ROOT);
+$zenBaseUrl = preg_replace('/\/~(\w+)/','',JURI::root(true));
+if(!(file_exists( $zenDocRoot.$zenBaseUrl."/templates/zengridframework/index.php")))
+{
+	// Remove '~path/' if exists
+	$scriptName = preg_replace('/~(\w+)\//','',ZEN_SCRIPT_NAME);
+	// Build doc root from other server variables
+	$zenDocRoot = str_replace($scriptName,'',ZEN_SCRIPT_FILENAME);
+	// Strip possible trailing slash
+	$zenDocRoot = preg_replace('/\/$/', '', $zenDocRoot);
+}
+
+
+
+if(file_exists( $zenDocRoot.$zenBaseUrl."/templates/zengridframework/index.php")) :
+	require("templates/zengridframework/index.php");
+
+// otherwise get to work
+else :
+
+?>
+<body style="background:#f9f9f9">
+<div style="width:500px;margin:140px auto;height:70px;background:#fffbcc;padding:20px;border:1px solid #ddd;color:#444;line-height:2em">The template you are attempting to use requires the Zen Grid2 Framework.<br /> Please refer to the Zen Grid2 framework documentation for more information.</div>
+</body>
+<?php
+endif;
+?>

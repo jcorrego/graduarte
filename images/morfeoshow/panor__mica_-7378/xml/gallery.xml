@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleviewergallery maxImageWidth="480" maxImageHeight="480" textColor="0x333333" frameColor="0x999999" frameWidth="0" stagePadding="0" navPadding="40" thumbnailColumns="6" thumbnailRows="2" navPosition="bottom" vAlign="center" hAlign="center" title="" enableRightClickOpen="true" backgroundImagePath="" imagePath="http://graduarte.net/sitio/images/morfeoshow/panor__mica_-7378/big/" thumbPath="http://graduarte.net/sitio/images/morfeoshow/panor__mica_-7378/thumbs/">
+<image>
+<filename>panoramicapersonalescudoaltorelieve-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>panoramicapersonalescudocolor-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>panoramicapersonalescudocolor2-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+</simpleviewergallery>

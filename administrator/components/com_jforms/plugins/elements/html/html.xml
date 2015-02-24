@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for html plugin
+*
+* @version		$Id: html.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+<name>html</name>
+<description>HTMLPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>html.js.php</file>
+	<file type='phpEntryPoint'>html.php</file>
+	<file type='icon'>html.png</file>
+</files>
+<parameters>
+	<param name="htmlValue" label="HTML Code" control="hidden" default='SGVsbG8gd29ybGQ=' valueType='string' translate='1' />
+	<param name="css" label="CSS Class" control="textbox" default='jfhtml' valueType='string' translate='0' />
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+</parameters>
+</JFormPlugin>

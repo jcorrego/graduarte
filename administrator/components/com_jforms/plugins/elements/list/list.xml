@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for list plugin
+*
+* @version		$Id: list.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+<name>list</name>
+<description>LISTPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>list.js.php</file>
+	<file type='phpEntryPoint'>list.php</file>
+	<file type='icon'>list.png</file>
+</files>
+<parameters>
+	<param name="label" label="Label" control="textbox" default='List' valueType='string' translate='1' />
+	<param name="css" label="CSS Class" control="textbox" default='jflist' valueType='string' translate='0' />
+	<param name="elements" control="textarea" label="Options" default='Option 1\nOption 2\nOption 3' valueType='string' translate='1' />
+	<param name="multi" label="Multi-Select" control="checkbox" default='0' valueType='integer' translate='0' />
+	<param name="required" label="Required" control="checkbox" default='0' valueType='integer' translate='0' />
+	<param name="commonList" label="Common List" control="list" default='Manual' valueType='string' translate='0'>
+		<option value='Manual'>Manual</option>
+		<option value='states'>US States</option>
+		<option value='countries'>Countries</option>
+	</param>
+	
+	<param name="lh" control="none" valueType='integer' default='20' translate='0' />
+	<param name="lw" control="none" valueType='integer' default='50' translate='0' />
+	<param name="ch" control="none" valueType='integer' default='20' translate='0' />
+	<param name="cw" control="none" valueType='integer' default='70' translate='0' />
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+	<param name="defaultValue" control="none" valueType='string' default='' translate='1' />
+
+</parameters>
+<storage type='textfield' size='254' requirefs='false' />
+</JFormPlugin>

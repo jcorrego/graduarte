@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JFlickr</name>
+	<author>Joomla Bamboo</author>
+	<creationDate>August 2008</creationDate>
+	<copyright>(C) 2008 Joomla Bamboo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>1.1.4</version>
+	<description>This is a Joomla module of the original JQuery Flickr script by Project Atomic (http://www.projectatomic.com/2008/04/jquery-flickr/).
+	This is a free module released to the Joomla community by Joomla Bamboo.
+	</description>
+	<files>
+		<filename module="mod_JFlickr">mod_JFlickr.php</filename>
+		<filename module="mod_JFlickr">js/JFlickr.js</filename>
+		<filename module="mod_JFlickr">js/jquery.easing.1.3.js</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/jquery.fancybox-1.2.1.pack.js</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/jquery.fancybox.css</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_closebox.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_left.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_progress.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_right.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_e.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_n.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_ne.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_nw.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_s.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_se.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_sw.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_shadow_w.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_title_left.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_title_main.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/fancy_title_right.png</filename>
+		<filename module="mod_JFlickr">js/jquery.fancybox/index.html</filename>
+	</files>
+	<params>
+		<param name="spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General JFlickr Module Settings&lt;/div&gt;" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="moduleID" type="text" default="1" label="Module ID" description="A unique ID to be applied to this module elements. This allows multiple JFlickr modules on a page." />
+		<param name="spacer" type="spacer" default="Get you own unique &lt;a href=&quot;http://www.flickr.com/services/api/keys/apply/&quot;&gt;Flickr API Key&lt;/a&gt; &lt;br /&gt;" label="" description="" />
+		<param name="apiKey" type="text" default="f28804be7a09c5845676349c7e47d636" label="Flickr API Key" description="Your unique Flickr API key" />
+		<param name="spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Flickr Image Settings&lt;/div&gt;" label="" description="" />
+		<param name="tsize" type="list" default="s" label="Thumbnail Size" description="Size of the thumbnail image">
+			<option value="s">Small</option>
+			<option value="t">Medium</option>
+			<option value="m">Large</option>
+		</param>
+		<param name="size" type="list" default="m" label="Image Size" description="Size of the Image">
+			<option value="m">Medium</option>
+			<option value="o">Original Size</option>
+		</param>		
+		<param name="spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Fancy Box Settings&lt;/div&gt;" label="" description="" />
+		<param name="fancybox" type="list" default="yes" label="Open Image in FancyBox" description="Display image in fancy box popup?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="fancyboxScript" type="list" default="yes" label="Load FancyBox Script?" description="Do you wish to load the fancybox plugin? Set to no if it is already used by another module on the page.">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="fancyEasing" type="list" default="yes" label="Easing Effect" description="Set to yes for a smooth and subtle animated popup.">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="fancyOverlayShow" type="list" default="true" label="Use the overlay?" description="If set to yes a transparent overlay will appear above the page and under the popup box.">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</param>
+		<param name="fancyOverlay" type="text" default="0.6" label="Overlay Opacity" description="If the previous option is set to yes this value controls the transparency of the overlay. 1 is entirely opaque while 0 is no overlay colour." />
+		<param name="fancyPadding" type="text" default="30" label="Popup Padding" description="This value determines the amount of space that surrounds the image in the popup and the edge of the popup itself. Just a numerical value is required without the px" />
+		<param name="spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Flickr Source Settings&lt;/div&gt;" label="" description="" />
+		<param name="number" type="text" default="16" label="Number of images" description="Number of images you want to display." />
+	<param name="type" type="list" default="s" label="Type of Gallery" description="Type of Gallery">
+			<option value="photoset">Photoset</option>
+			<option value="search">Keyword Search</option>
+			<option value="user">User</option>
+			<option value="group">Group</option>
+		</param>
+		<param name="photoset_id" type="text" default="981332" label="Photoset Id" description="Photoset Id. Use this field if you have selected photoset as the type of gallery." />
+		<param name="text" type="text" default="" label="Free Search Text" description="Enter the term you want to search images for." />
+		<param name="sort" type="list" default="relevance" label="Sort Photos by" description="Method to sort photos">
+			<option value="date-posted-asc">Date Posted Ascending</option>
+			<option value="date-posted-desc">Date Posted Descending</option>
+			<option value="date-taken-asc">Date Taken Ascending</option>
+			<option value="date-taken-desc">Date Taken Descending</option>
+			<option value="interestingness-desc">Interestingness Descending</option>
+			<option value="interestingness-asc">Interestingness Ascending</option>
+			<option value="relevance">Relevance</option>
+		</param>
+		<param name="tags" type="text" default="" label="Tags" description="Tags separated by commas" />
+		<param name="spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Flickr ID Settings&lt;/div&gt;" label="" description="" />
+		<param name="spacer" type="spacer" default="Find your flickr user or group NSID at &lt;a href=&quot;http://idgettr.com/&quot;&gt;idgettr.com&lt;/a&gt; &lt;br /&gt;" label="" description="" />
+		<param name="user_id" type="text" default="" label="User ID" description="Select your user id. Flickr requires your NSID eg; 44047888@N04" />  
+		<param name="group_id" type="text" default="" label="Group ID" description="Select your group id. Flickr requires an NSID eg; 80044370@N00" />
+		  
+		</params>
+</install>

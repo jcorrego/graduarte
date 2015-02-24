@@ -1,0 +1,261 @@
+/* @override http://localhost:8888/joomla/1.5/grid2/templates/grid2/css/k2.css */
+
+/**
+ * @package		Joomla Bamboo Grid 2 Joomla Template - June 2010
+ * @Type        K2 Theme CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		Commercial Joomla Template. All rights reserved. Anthony Olsen 2010.
+ */
+
+.clr {clear: both}
+#k2Container {margin-left: -20px;padding-left: 20px;padding-top:20px;}
+
+/* Div around the title and author, date etc */
+div.k2Meta {float: left;color: #ccc;font-size: 90%;position: relative;margin-top: 4px; width: 100%;}
+.itemHeader .k2Meta {margin: 0}
+div.k2Createdate {width: 10%;height: 50px;text-align: center;float: left;color: #333;margin-right: 20px;}
+div.k2Createdate span.dateday {margin-left: 4px}
+div.k2Createdate span.dateyear {font-size: 2em;display: block;text-align: center;line-height: 1em}
+h2.dateheading {margin: 0;padding-bottom: 0;line-height: 1.2em}
+h2.dateheading span sup {font-size: 12px;float: right;position: absolute;margin-top: -10px} 
+h2.noborder {background: none}
+.k2Buttons {float: right;width: 100px;font-size: 90%;position: absolute;right: 20px;}
+.k2Buttons a {margin-left: 10px}
+span.catItemAuthor {float: right;line-height: 1}
+.catItemCategory,.userItemCategory{float: left;line-height: 1}
+
+ 
+/* Category View */
+.itemListCategory, {background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left bottom repeat-x;margin-left: -20px;padding-left: 20px;padding-right: 20px;width: 100%;padding-bottom: 50px;clear: both}
+.containerBG.width980_four .itemAttachmentsBlock,.containerBG.width980_four .itemAuthorBlock,.containerBG.width980_four .itemAuthorLatest {width: 578px;background-position: -4px bottom;}
+.itemCategory.dateheading {float: left;color: #333}
+.itemAuthor {float: right;color: #333}
+.itemHeader,.catItemView {padding-top: 30px;margin-bottom: 30px}
+.itemHeader {background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left 85px repeat-x;margin-left: -20px;padding-left: 20px;padding-right: 20px}
+.itemToolbar {font-size: 90%}
+.itemToolbar a {margin-right: 10px}
+span.itemDateModified,span.catItemDateModified {font-size: 90%;font-style: italic;float: right;margin-top: 4px;color: #ccc}
+.catItemUser {margin-bottom: 30px;margin-top: 20px}
+.catItemIntroText {clear: both;padding-top: 30px}
+.k2Divider {margin-bottom: 10px;padding-bottom: 2px}
+
+/* Item Body */
+.itemBody {padding: 30px 20px 60px 20px;margin:0px 0 0 -20px;background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left bottom repeat-x;width: 100%;}
+
+/* Item Header */
+.mainRow .containerBG.width980_two .itemHeader {width: 740px}
+.mainRow .containerBG.width980_three .itemHeader {width: 660px}
+.mainRow .containerBG.width980_four .itemHeader {width: 580px}
+.mainRow .containerBG.width980_five .itemHeader {width: 500px}
+
+/* Read More */
+.k2ReadMore {float: right;padding-left: 15px;font-size: 90%;line-height: 1;background: #f9f9f9 url(../html/com_k2/templates/grid2/images/readmore.png) no-repeat 8px 1px;padding: 0 0 0 25px;}
+
+/* Item Container */
+.k2Category  {margin-bottom: 40px}
+.itemContainer{float: left;background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left 25px repeat-x;margin-left: -20px;padding-left: 20px;padding-right: 18px;padding-top: ;}
+
+/* Explicit Widths to keep shadows happy */
+#mainContent.one .itemContainer {background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left 25px repeat-x;padding-right: 20px;}
+.containerBG.width780_two .itemList {width: 573px}
+.containerBG.width780_three .itemList {width: 517px;}
+.containerBG.width780_four .itemList {width: 448px;}
+.containerBG.width780_five .itemList {width: 385px;}
+.containerBG.width780_six .itemList {width: 322px;}
+.containerBG.width887_two .itemList {width: 664px}
+.containerBG.width887_three .itemList {width: 592px;}
+.containerBG.width887_four .itemList {width: 515px;}
+.containerBG.width887_five .itemList {width: 447px;}
+.containerBG.width887_six .itemList {width: 375px;}
+.containerBG.width980_two .itemList {width: 742px}
+.containerBG.width980_three .itemList {width: 662px;}
+.containerBG.width980_four .itemList {width: 582px;}
+.containerBG.width980_five .itemList {width: 497px;}
+.containerBG.width980_six .itemList {width: 422px;}
+.catItemView{float: left;background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left 50px repeat-x;margin-left: -20px;padding-left: 20px;padding-right: 13px;width: 100%;}
+.containerBG.width780_two .catItemView {width: 571px;}
+.containerBG.width780_four .catItemView {width: 444px;}
+.containerBG.width780_five .catItemView {width: 381px;}
+.containerBG.width980_two .catItemView {width: 738px;}
+.containerBG.width980_five .catItemView {width: 498px;}
+.containerBG.width980_six .catItemView {width: 418px;}
+.catItemView .catItemCategory {line-height: 1.2}
+.catItemView .catItemCategory a {margin-left: 10px;}
+
+
+/* Widths and adjustments on items using the bg separator */
+/* Layout 780px */
+.mainRow .containerBG.width780_three .itemContainer,.mainRow .containerBG.width780_three .catItemView {padding-right: 13px;}
+.mainRow .containerBG.width780_two .itemHeader,.mainRow .containerBG.width780_two div.itemAuthorBlock,.mainRow .containerBG.width780_two .itemAuthorLatest,.mainRow .containerBG.width780_two .itemContainer
+{width: 573px;padding-right: 20px;}
+.mainRow .containerBG.width780_three .itemHeader,.mainRow .containerBG.width780_three div.itemAuthorBlock,.mainRow .containerBG.width780_three .itemAuthorLatest,.mainRow .containerBG.width780_three .itemBody
+{width: 510px}
+.mainRow .containerBG.width780_four .itemHeader,.mainRow .containerBG.width780_four div.itemAuthorBlock,.mainRow .containerBG.width780_four .itemAuthorLatest
+{width: 446px}
+.mainRow .containerBG.width780_five .itemHeader,.mainRow .containerBG.width780_five div.itemAuthorBlock,.mainRow .containerBG.width780_five .itemAuthorLatest
+{width: 383px} 
+.mainRow .containerBG.width780_six .itemHeader,.mainRow .containerBG.width780_six div.itemAuthorBlock,.mainRow .containerBG.width780_six .itemAuthorLatest
+{width: 320px}
+.mainRow .containerBG.width780_six .catItemView {width: 318px;}
+
+
+/* Layout 887px */
+.mainRow .containerBG.width887_three .itemContainer,.mainRow .containerBG.width887_three .catItemView {padding-right: 18px;padding-top: ;}
+.mainRow .containerBG.width887_two .itemHeader{width: 590px}
+.mainRow .containerBG.width887_two .itemHeader,.mainRow .containerBG.width887_two div.itemAuthorBlock,.mainRow .containerBG.width887_two .itemAuthorLatest,.mainRow .containerBG.width887_two .itemContainer
+{width: 662px}
+.mainRow .containerBG.width887_three .itemHeader,.mainRow .containerBG.width887_three div.itemAuthorBlock,.mainRow .containerBG.width887_three .itemAuthorLatest,.mainRow .containerBG.width887_three .itemBody
+{width: 590px}
+.mainRow .containerBG.width887_four .itemHeader,.mainRow .containerBG.width887_four div.itemAuthorBlock,.mainRow .containerBG.width887_four .itemAuthorLatest
+{width: 518px}
+.mainRow .containerBG.width887_five .itemHeader,.mainRow .containerBG.width887_five div.itemAuthorBlock,.mainRow .containerBG.width887_five .itemAuthorLatest
+{width: 445px} 
+.mainRow .containerBG.width887_five .catItemView {width: 441px;}
+.mainRow .containerBG.width887_six .itemHeader,.mainRow .containerBG.width887_six div.itemAuthorBlock,.mainRow .containerBG.width887_six .itemAuthorLatest
+{width: 373px}
+.mainRow .containerBG.width887_six .catItemView {width: 370px;}
+
+
+/* Layout 960px */
+.k2SectCat {clear: both;float: left;width: 100%}
+.k2Meta .itemComments {float: left;margin-left: 20px}
+.itemHits {float: left;margin-top: 4px;font-size: 90%}
+
+/* Item Author */
+div.itemAuthorBlock{padding: 20px 20px 60px 20px;margin:0px 0 0 -20px;background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left bottom repeat-x;width: 100%;}
+div.itemAuthorBlock img.itemAuthorAvatar{float:left;display:block;background:#fff;border:1px solid #ddd;margin:0 20px 0 0;padding:4px}
+.itemAuthorDetails {float: left}
+.itemAuthorDetails h3,.itemAuthorLatest h3,.itemRelated h3,.itemComments h3 {background: none;padding: 0;font-size: 1.2em}
+.itemAuthorDetails h3 a {color:#AD271F}
+
+/* Item Links */
+.itemLinksNavigation {padding-bottom: 10px;margin:0px 0;float: left;width: 100%;line-height: 1.3em}
+.itemSocialLinksBlock {float: left}
+.itemNavigation {float: right;width: 45%;text-align: right}
+.itemNavigation a {display: block;text-align: right}
+
+/* Tags and Ratings*/
+.catTagRating,.itemTagsBlock {clear: both;float: left;width: 100%;;margin-bottom: 20px}
+.itemTagsBlock {padding-bottom: 10px}
+.catItemRatingBlock {float: right;width: 60%;font-size: 90%}
+.catItemRatingBlock ul.itemRatingList {margin: -4px 0 0 0}
+.catItemRatingBlock .itemRatingLog {padding: 0}
+#tagReadmoreBlock {background: #f9f9f9;border: 1px solid #eee;padding: 8px 8px 20px;margin-top: 20px;}
+.catItemTagsBlock span,.itemTagsBlock span,.userItemTagsBlock span {float: left;line-height: 1em;font-size: 90%;margin-right: 10px;color: #333}
+ul.catItemTags,.itemTagsBlock ul,ul.userItemTags {margin: 0}
+ul.catItemTags li,.itemTagsBlock li,.itemRelated ul li,ul.userItemTags li {float:left;list-style: none;margin: 0 10px 0 0;font-size: 90%;font-style: italic;padding: 0}
+ul.catItemTags li a,.itemTagsBlock li a,.itemRelated ul li a,.userItemTagsBlock ul li a {padding: 0;margin: 0;line-height: 1em;float: left}
+span.catItemHits {font-size: 90%;color: #ccc}
+.k2user .catItemTagsBlock {float: left;width: 80%;}
+.k2user ul.catItemTags li,.itemTagsBlock li,.itemRelated ul li,ul.userItemTags li {}
+
+
+/* Related Items */
+.itemRelated {float: left;clear: both;width: 100%;;padding-bottom: 20px;margin-bottom: 20px}
+.itemRelated ul li {float: left}
+
+/* Comments */
+h3.itemCommentsCounter {font-size: 1.4em}
+.catItemCommentsLink {text-align:left;float: left;width: 200px;margin-left: 20px;line-height: 1}
+textarea#commentText {width: 96%}
+textarea#commentText:focus,.inputbox:focus {border: 1px solid #999}
+input#userName.inputbox,input#commentEmail.inputbox,input#commentURL.inputbox {width: 45%;display: block;clear: both;}
+ul.itemCommentsList li{list-style-type: none;margin: 0;clear: both;;margin-bottom: 20px;float: left;width: 100%;border-bottom: 1px dashed #ddd;}
+.commentsLeft {float: left;width: 25%;margin-right: 3%;;margin-bottom: 20px;padding-right: 2%}
+.commentsLeft img {float: left;margin-right: 10px;margin-bottom: 10px}
+span.commentDate {line-height: 1em}
+span.commentAuthorName {display: block}
+span.commentAuthorName a{}
+span.commentAuthorEmail {line-height: 1em}
+.commentsRight {float: right;width: 70%}
+.commentsRight  p {margin: 0}
+span.commentLink a {float: right;display: block;font-size: 90%;}
+
+/* Author Latest */
+.itemAuthorLatest {padding: 0px 20px 60px 20px;margin:0px 0 0 -20px;background:url(../html/com_k2/templates/grid2/images/fullwidthSeparator.png) left bottom repeat-x;width: 100%}
+.itemAuthorLatest ul {margin: 0}
+.itemAuthorLatest ul li {margin: 0;list-style-type: none;padding: 0}
+.itemAuthorLatest ul li a {display: block;padding: 4px 0;border-bottom: 1px dashed #eee}
+.itemRatingBlock {width: 65%;float: right;position: relative;margin-top: -5px}
+.itemRatingBlock span{font-size: 90%;float: right;line-height: 1em;padding-top: 4px}
+.itemRatingForm{display:block;vertical-align:middle;line-height:25px;float:right;font-size: 90%} 
+.itemRatingLog{margin:0;padding:0 0 0 4px;line-height: 1em;padding-top: 4px;float: left;margin-right: 20px}
+div.itemRatingForm .formLogLoading{background:url(../html/com_k2/templates/grid2/images/system/loading.gif) no-repeat left center;height:25px;padding:0 0 0 20px}
+.itemRatingList,.itemRatingList a:hover,.itemRatingList .itemCurrentRating{background:url(../html/com_k2/templates/grid2/images/system/star.gif) left -1000px repeat-x}
+.itemRatingList{position:relative;float:left;width:125px;height:25px;overflow:hidden;list-style:none;background-position:left top;margin:0;padding:0}
+.itemRatingList li{display:inline;background-image:none;padding:0}
+.itemRatingList a,.itemRatingList .itemCurrentRating{position:absolute;top:0;left:0;text-indent:-1000px;height:25px;line-height:25px;outline:none;overflow:hidden;border:none;cursor:pointer}
+.itemRatingList a:hover{background-position:left bottom}
+.itemRatingList a.one-star{width:20%;z-index:6}
+.itemRatingList a.two-stars{width:40%;z-index:5}
+.itemRatingList a.three-stars{width:60%;z-index:4}
+.itemRatingList a.four-stars{width:80%;z-index:3}
+.itemRatingList a.five-stars{width:100%;z-index:2}
+.itemRatingList .itemCurrentRating{z-index:1;background-position:0 center;margin:0;padding:0}
+.smallerFontSize{font-size:100%;line-height:inherit}
+.largerFontSize{font-size:150%;line-height:140%}
+.recaptchatable .recaptcha_image_cell,#recaptcha_table{background-color:#fff !important}
+#recaptcha_table{border-color:#ccc !important}
+#recaptcha_response_field{background-color:#fff !important;border-color:#ccc !important}
+
+/* User Page */
+.userBlock {float: left;width: 100%;padding-bottom: 0;font-size: 90%;padding-top: 30px}
+.userBlock p {margin: 0}
+.userAvatar {float: left;width: 25%}
+.userInfo {float: right;width: 75%}
+.userItemView {margin-bottom: 10px;padding-bottom: 20px}
+.userItemTagsBlock {float: left;width: 70%;}
+
+
+/* General K2 CSS*/
+div.k2Pagination{}
+div.k2Pagination p.pages{float:left;margin:4px 10px}
+div.itemToolbar{float: left;width: 30%}
+div.itemToolbar a {float: left;line-height: 1;}
+div.itemToolbar ul{float:left;text-align:right;list-style:none;margin:0;padding:0}
+div.itemToolbar ul li{display:inline;list-style:none;text-align:center;margin:0;padding:0 4px 0 0}
+div.itemToolbar ul > li:first-child{border:none;margin:0}
+div.itemToolbar a img{vertical-align:middle}
+.itemTextResizerTitle {display: none}
+div.itemToolbar a#fontDecrease img{width:13px;height:13px;background:url(../html/com_k2/templates/grid2/images/system/font_decrease.gif) no-repeat;margin-top: 0;margin-left: 4px}
+div.itemToolbar a#fontIncrease img{width:13px;height:13px;background:url(../html/com_k2/templates/grid2/images/system/font_increase.gif) no-repeat;margin-top: 0;margin-left: 0px}
+div.itemImageBlock{margin:0 0 16px;padding:8px}
+span.itemImage{display:block;text-align:center;margin:0 0 8px}
+span.itemImageCaption{color:#666;float:left;display:block;font-size:11px}
+span.itemImageCredits{color:#999;float:right;display:block;font-style:italic;font-size:11px}
+div.itemFullText h3{margin:0;padding:16px 0 4px}
+span.itemHitsTwitterSep{color:#ccc;padding:0 8px}
+span.itemTwitterLink a{background:url(../html/com_k2/templates/grid2/images/social/twitter.png) no-repeat 0 50%;text-decoration:none;margin:8px 0;padding:2px 0 0 20px}
+span.itemTwitterLink a:hover{text-decoration:none}
+div.itemCategory{margin-bottom:10px}
+div.itemSocialLinksBlock {}
+div.itemSocialLinksBlock span{display: none}
+div.itemSocialLinksBlock ul.itemSocialLinks{list-style:none;float:left;margin:0;padding:0}
+div.itemSocialLinksBlock ul.itemSocialLinks li{float:left;list-style:none;margin:0;padding:0 4px}
+div.itemSocialLinksBlock ul.itemSocialLinks li a{float:left;display:block;width:16px;height:16px;background-position:0 0;background-repeat:no-repeat}
+	div.itemSocialLinksBlock ul.itemSocialLinks li a span {display:none}
+a.delicious{background-image:url(../html/com_k2/templates/grid2/images/social/delicious.png)}
+a.digg{background-image:url(../html/com_k2/templates/grid2/images/social/digg.png)}
+a.reddit{background-image:url(../html/com_k2/templates/grid2/images/social/reddit.png)}
+a.stumble{background-image:url(../html/com_k2/templates/grid2/images/social/stumble.png)}
+a.facebook{background-image:url(../html/com_k2/templates/grid2/images/social/facebook.png)}
+a.myspace{background-image:url(../html/com_k2/templates/grid2/images/social/myspace.png)}
+a.technorati{background-image:url(../html/com_k2/templates/grid2/images/social/technorati.png)}
+
+/* Video */
+.itemVideoBlock {float: left;width: 100%;text-align: left;;padding-bottom: 40px;margin-bottom: 8px}
+span.avPlayerSubContainer{float: left}
+.itemVideoCaption,span.itemVideoCredits {float: left;clear: both;font-style: italic}
+
+/* Image Gallery */
+.itemImageGallery {clear: both;;padding-bottom: 40px;margin-bottom: 8px}
+#itemListLinks ul li a {display: block;border-bottom: 1px solid #eee}
+
+/* Comments module */
+#leftCol img.lcAvatar {float: left;margin-right: 8px;background: #000;padding: 2px;margin-top: 8px;}
+#leftCol ul li.even a,#leftCol ul li.odd a {padding: 0;}
+#leftCol span.lcItemTitle a {color: #fff;}
+#leftCol .k2LatestCommentsBlock ul li a {border-bottom: 1px solid #101010;padding: 4px 0;}
+.k2TagCloudBlock {margin-top: 15px;}

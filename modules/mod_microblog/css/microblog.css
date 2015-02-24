@@ -1,0 +1,53 @@
+/* @override 
+	http://localhost:8888/minimoo2/minimoo2.css
+	http://localhost:8888/joomla/slideshow/minimoo2.css
+	http://localhost:8888/joomla/slideshow/modules/mod_minimoo2/css/minimoo2.css
+	http://localhost:8888/joomla/1.5/columns/modules/mod_microblog/css/microblog.css
+	http://localhost:8888/joomla/1.5/function/modules/mod_microblog/css/microblog.css
+	http://showcase.joomlabamboo.com/oct09/modules/mod_microblog/css/microblog.css
+	http://localhost:8888/joomla/1.5/flower/modules/mod_microblog/css/microblog.css
+	http://showcase.joomlabamboo.com/avante/modules/mod_microblog/css/microblog.css
+*/
+
+.mbClear {clear: both;}
+.mbWrapFlat {float: left;width: 100%;border-bottom: 1px dashed #ddd;padding: 10px 0;}
+.mbitemFlat.full {width: 100%;}
+.mbitemFlat {width: 80%;float: left;}
+.mbImageFlat {border: 1px solid #ddd;padding: 4px;float: left;margin-right: 20px;}
+.mbWrapFlat h2 {display: inline;font-size: 1.4em;}
+.microdateFlat {float: right;margin-right: 11px;}
+.mbDetailsFlat {float: right;width: 18%;margin-top: 10px;}
+.mbMoreFlat {float: right;text-align: right;clear: both;width:100%}
+.mbMoreFlat .readon {margin: 0;}
+
+.mbWrap {margin-bottom: 30px;float:left;}
+
+.mbImage {border: 1px solid #ddd;padding: 4px;float: left;margin-bottom: 20px;}
+.mbitemCols h2 {font-size: 1.2em;line-height: 1.6em;display: inline;}
+.mbitemCols {width: 100%;}
+.mbDetailsCols {float: left;width: 100%;text-align: left;}
+.mbIntroCols {margin: 0}
+.mbDetailsCols {font-size: 90%;}
+.mbDateCols {width: 96%;font-size: 90%;font-style: italic;}
+.mbMoreCols {float: right;width: 80px}
+.mbMoreCols a.readon {margin: 0;} 
+.mbMoreCols {width: 100%;}
+
+/*.mbWrap3 .item2,.mbWrap3 .item5 {margin-left: 7%;float: left;display: inline;}
+
+.mbWrap3 .mbItem3,.mbWrap3 .mbItem6 {float: right;margin: 0;width: 100%;}*/
+
+
+.mbitemIntro  {width: 100%;float: left;margin-bottom: 20px;}
+.mbImageIntro  {border: 1px solid #ddd;padding: 4px;float: left;margin-right: 20px;}
+.mbWrapIntro  h2 {display: inline;font-size: 1.4em;}
+.mbdateIntro  {font-size: 90%;font-style: italic;}
+.mbIntrolistdate {float: right;font-size: 90%;font-style: italic;text-align: right;}
+.mbMoreIntro  {float: right;width: 100%;text-align: right}
+.mbMoreIntro  .readon {margin: 0;}
+
+ul.mbList {clear: both;padding-bottom: 20px;}
+.mbList li {list-style-type: none;padding: 0;float: left;width: 100%;margin: 0}
+ul.mbList li a {display: block;border-bottom: 1px solid #ddd;padding: 4px 0}
+ul.mbList li a:hover {background: #eee;} 
+

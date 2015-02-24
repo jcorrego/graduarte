@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for file plugin
+*
+* @version		$Id: file.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='element' limit='0' group='basic'>
+<name>file</name>
+<description>FILEPLUGINDESCRIPTION</description>
+<files>
+	<file type='jsEntryPoint'>file.js</file>
+	<file type='phpEntryPoint'>file.php</file>
+	<file type='icon'>file.png</file>
+</files>
+<parameters>
+	<param name="label" label="Label" control="textbox" default='Upload' valueType='string' translate='1' />
+	<param name="css" label="CSS Class" control="textbox" default='jffile' valueType='string' translate='0' />
+	<param name="maxSize" label="Maximum Size(MB)" control="textbox" default='0.5' valueType='string' translate='0' />
+	<param name="required" label="Required" control="checkbox" default='0' valueType='integer' translate='0' />
+	<param name="extensions" label="Extensions" control="textbox" default='jpg,gif,png' valueType='string' translate='0' />
+	<param name="veryBadExtensions" label="veryBadExtensions" default='php,php3,php4,ph3,ph4' valueType='string' control='none' translate='0' /> 
+	<param name="lh" control="none" valueType='integer' default='20' translate='0' />
+	<param name="lw" control="none" valueType='integer' default='50' translate='0' />
+	<param name="hash" control="none" valueType='string' default='' translate='0' />
+
+</parameters>
+<storage type='textfield' size='10000' requirefs='true' />
+</JFormPlugin>

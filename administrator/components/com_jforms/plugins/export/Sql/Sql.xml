@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* XML config file for SQL Export plugin
+*
+* @version		$Id: Sql.xml 128 2009-04-05 06:14:28Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<JFormPlugin type='export'>
+<name>Sql</name>
+<description>Exports Data to SQL</description>
+<format>raw</format>
+</JFormPlugin>

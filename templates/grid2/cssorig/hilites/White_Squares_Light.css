@@ -1,0 +1,44 @@
+/**
+ * @package		Joomla Bamboo Grid 2 Joomla Template - June 2010
+ * @Type        Hilite CSS
+ * @version		v1.0
+ * @author		Joomal Bamboo http://www.joomlabamboo.com
+ * @copyright 	Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license		Commercial Joomla Template. All rights reserved. Anthony Olsen 2010.
+ */
+ 
+ body {background:#fff url(../../images/background/whiteSquares.png) repeat-x left 0 fixed}
+.fullWrap {background: url(../../images/background/whiteSquaresUpside.png) left bottom repeat-x fixed} 
+
+.topRow {background: url(../../images/topnav/topNav.png) repeat-x left top}  
+
+/* Left Column Style */
+.leftStyle {background:  url(../../images/leftbackground/whiteNoise.png) repeat-y left top}
+#leftCol {color: #777}
+#leftCol h3 {color: #333}
+#leftCol blockquote {color: #777}
+#tagline {color: #333;}
+#leftCol span.expanded,#leftCol span.mainlevel span{background: url(../../images/moduleClasses/blueSquares.png) no-repeat left 8px}
+#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-border,#leftCol #logoInner,#leftCol .moduletable-pink,#leftCol .moduletable-blue,#leftCol .moduletable-brown,#leftCol .moduletable-olive,#leftCol .moduletable-purple,#leftCol .moduletable-red,#leftCol .moduletable-yellow,#leftCol .moduletable-green,#leftCol .moduletable-orange,.moduletable-panelmenu,.moduletable-slide{background:none}
+
+/* Divider Style for left column */
+#leftCol .moduletable-border,#leftCol #logoInner {background: none;}
+
+/* General Links */
+a,#leftCol .moduletable-slide h3:hover,#leftCol a:hover {color: #91AA9D}
+a:hover {color: #333}
+.moduletable-slide h3{background: url(../../images/accordionParentOpenLight.png) no-repeat left 6px}
+.moduletable-slide h3.open{background: url(../../images/accordionParentOpen.png) no-repeat left 6px}
+
+/* Top Menu links */
+.topRow ul li#current a,.topRow ul li.active a,#nav ul li.active a.sf-with-ul,#nav ul li#current.active a, #nav ul li#current a,#nav ul li.active a {background: #000000;color: #91AA9D}
+.topRow .moduletable-superfish ul li a:hover,.topRow .moduletable-superfish ul li li a:hover,.topRow ul li#current li#current.active a,.topRow ul li.active li#current.active a,.topRow ul li.active a:hover,.topRow ul li#current li a:hover,.topRow ul li#current.active li a:hover,.topRow ul li#current.active li a:hover,.topRow .moduletable-superfish ul li.active li a:hover,.topRow .moduletable-superfish ul li.active a,#nav  ul li a:hover,#nav  ul li li a:hover,#nav  ul li#current li#current.active a,#nav  ul li.active li#current.active a,#nav  ul li.active a:hover,#nav  ul li#current li a:hover,#nav  ul li#current.active li a:hover,#nav  ul li#current.active li a:hover,#nav  ul li.active li a:hover,#nav  ul li.active a, #nav ul li span.mainlevel:hover, .moduletable-superfish ul li li span.mainlevel:hover, #nav ul li a.mainlevel:hover, .moduletable-superfish ul li li a.mainlevel:hover {color: #91AA9D}
+
+/* k2 */
+#leftCol .k2LatestCommentsBlock ul li a {border-bottom: 1px solid #ddd}
+#leftCol img.lcAvatar {background: #ddd}
+#leftCol span.lcItemTitle a {color: #91AA9D}
+
+/* jFlickr */
+.gallery-flickr img {background: #ccc}
+

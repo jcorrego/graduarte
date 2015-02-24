@@ -1,0 +1,20 @@
+/* @override http://localhost:8888/joomla/1.5/landscape/modules/mod_captifyContent/css/captifyContent.css */
+
+/* @group Mod Captify Sections */
+#captifyContent {margin:0}
+#captifyContent a {float: left;padding: 0;}
+.caption-top, .caption-bottom {	color: #ffffff;	padding: 0.6em 1.2em 0.6em 1.2em;	 font-size: 12px;font-family: arial;	cursor: hover;border: 0px solid #334143;background: #000}
+.caption a {
+	border: 0 none;	text-decoration: none;	background: #000000;padding: 0.3em;float: left;}
+.caption-wrapper {float: left;}
+br.c { clear: both; }
+
+.bbMeta {padding-top: 4px;float: left;}
+.bbMeta a {float: left;font-size: 0.9em;margin-right: 4px}
+.bbImage, .bbItem {float: left;}
+.articleLink {}
+.bbClear{clear:both;}
+span.zoomImage {background: url(../images/magnifyingGlass.png) no-repeat;float: left;padding-left: 20px;}
+span.articleLink {background: url(../images/add.png) no-repeat 0 4px;float: left;padding-left: 10px;margin-right: 8px;}
+.popupImage img {float: left;margin-right: 10px;}
+/* @end */

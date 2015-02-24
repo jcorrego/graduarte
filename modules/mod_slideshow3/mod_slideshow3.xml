@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>JB Slideshow v3.2</name>
+  <author>Joomla Bamboo</author>
+  <creationDate>August 2009</creationDate>
+  <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+  <authorEmail>design@joomlabamboo.com</authorEmail>
+  <authorUrl>http://www.joomlabamboo.com</authorUrl>
+  <version>3.2.4</version>
+    <description>JB Slideshow scrolls and fades latest news and images of your choice in a module position.</description>
+	<files>
+		<filename module="mod_slideshow3">mod_slideshow3.php</filename>
+		<filename module="mod_slideshow3">index.html</filename>
+		<filename module="mod_slideshow3">helper.php</filename>
+		<filename module="mod_slideshow3">image.php</filename>
+		<filename module="mod_slideshow3">images/index.html</filename>
+		<filename module="mod_slideshow3">images/spacer.png</filename>
+		<filename module="mod_slideshow3">images/loading.gif</filename>
+		<filename module="mod_slideshow3">images/lightOverlay.png</filename>
+		<filename module="mod_slideshow3">images/blackNav.png</filename>
+		<filename module="mod_slideshow3">images/whiteNav.png</filename>
+		<filename module="mod_slideshow3">images/blackoverlay.png</filename>
+		<filename module="mod_slideshow3">images/slideshowtitle.png</filename>
+		<filename module="mod_slideshow3">images/yellowButton.png</filename>
+		<filename module="mod_slideshow3">images/next_horz.png</filename>
+		<filename module="mod_slideshow3">images/next_vert.png</filename>
+		<filename module="mod_slideshow3">images/prev_horz.png</filename>
+		<filename module="mod_slideshow3">images/prev_vert.png</filename>
+		<filename module="mod_slideshow3">imagecache/index.html</filename>
+		<filename module="mod_slideshow3">tmpl/default.php</filename>
+		<filename module="mod_slideshow3">tmpl/index.html</filename>
+		<filename module="mod_slideshow3">slideshow/index.html</filename>
+		<filename module="mod_slideshow3">slideshow/jquery.cycle.js</filename>
+		<filename module="mod_slideshow3">slideshow/jquery.cycle.lite.js</filename>
+		<filename module="mod_slideshow3">slideshow/slideshow.css</filename>
+		<filename module="mod_slideshow3">includes/index.html</filename>
+		<filename module="mod_slideshow3">includes/helper.php</filename>
+		<filename module="mod_slideshow3">includes/elements/index.html</filename>
+		<filename module="mod_slideshow3">includes/elements/categories.php</filename>
+		<filename module="mod_slideshow3">includes/elements/categoriesmultiple.php</filename>
+	</files>
+	<params addpath="/modules/mod_slideshow3/includes/elements">
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General Slideshow Settings&lt;/div&gt;" label="" description="" />
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	<param name="moduleID" type="text" default="1" label="Module ID" description="A unique ID to be applied to the module. This allows multiple JB Slideshow modules on a page." />
+	<param name="contentSource" type="list" default="article" label="Slideshow Content Source" description="Choose to display content from either Joomla articles or K2 items.">
+			<option value="article">Joomla Articles</option>
+			<option value="k2">K2 Content Items</option>
+	</param>
+	<param name="ssTheme" type="list" default="None" label="Slideshow Theme" description="Choose an available theme for the slideshow .">
+			<option value="None">Default</option>
+			<option value="Dark">Dark</option>
+	</param>	
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;line-height:2em&quot;&gt;Select the ticker transitions you want to use. The fade transistion will result in a lighter script.&lt;/div&gt;" label="" description="" />
+		<param name="ticker_transition" type="list" default="fade" label="Transition" description="The type of transition effect to be applied to the slides.">
+			<option value="fade">Fade</option>
+			<option value="scrollUp">Scroll Up</option>
+			<option value="scrollDown">Scroll Down</option>
+			<option value="scrollLeft">Scroll Left</option>
+			<option value="scrollRight">Scroll Right</option>
+			<option value="slideX">Slide X</option>
+			<option value="slideY">Slide Y</option>
+			<option value="turnUp">Turn Up</option>
+			<option value="turnDown">Turn Down</option>
+			<option value="turnLeft">Turn Left</option>
+			<option value="turnRight">Turn Right</option>
+			<option value="zoom">Zoom</option>
+			<option value="fadeZoom">Fade Zoom</option>
+			<option value="curtainX">Curtain X</option>
+			<option value="curtainY">Curtain Y</option>
+		</param>
+	<param name="slideshow_height" type="text" default="400" label="Height of the Slideshow" description="Value in px for the height of the slideshow container." />
+	<param name="slideshow_width" type="text" default="100%" label="Width of the Slideshow" description="Value in px or % for the width of the slideshow container. Defaults to px" />
+	<param name="sstime" type="text" default="10000" label="Duration of each slide." description="Time Image displayed for best results set as the same time as duration." />
+	<param name="ssSpeed" type="text" default="1500" label="Speed of Transition" description="Speed of transition from one slide to the next." />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Slideshow Image Options&lt;/div&gt;" label="" description="" />	
+	<param name="display_slideshow" type="list" default="yes" label="Display images" description="Do you want to display the images in the slideshow.">
+		<option value="yes">Published</option>
+		<option value="no">Unpublished</option>
+	</param>	
+	<param name="content_image" type="list" default="yes" label="Image Source" description="Choose to display the images from content items or a specified image directory.">
+		<option value="content">Content Item</option>
+		<option value="directory">Directory</option>
+		<option value="k2content">K2 Content Item</option>
+		<option value="k2item">K2 Item Image</option>
+	</param>
+	<param name="imageLink" type="list" default="yes" label="Image as Link" description="Do you wish to make the image a link to the article?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="The Offsets for positioning the image in the slideshow" label="" description="" />
+	<param name="image_top" type="text" default="0" label="Image Top Margin" description="Distance from the top of the slideshow for the image to appear." />
+	<param name="image_left" type="text" default="380" label="Image Left Margin" description="Distance from the left of the slideshow for the image to appear." />
+	<param name="imgBorder" type="list" default="yes" label="Image Border" description="Do you wish to add a border style to the image?">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</param>
+	
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="Options for slideshow images in a specified directory" label="" description="" />
+	<param name="directory" type="text" default="" label="Image Directory" description="Set the directory that contains the slideshow images." />
+	<param name="lowercase" type="list" default="0" label="Convert filenames to lowercase" description="Are you image names lowercase for compatibility on your server?">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+	<param name="fileType" type="list" default="jpg" label="Select the file type for your images." description="All of the images used in the slideshow need to be of the same file type.">
+		<option value="jpg">jpg</option>
+		<option value="jpeg">jpeg</option>
+		<option value="gif">gif</option>
+		<option value="png">png</option>	
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Image Resize Settings&lt;/div&gt;"  label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="If set to yes the images in the slideshow will be resized according to settings below. This does not have a bearing on the thumbnails as navigation options below." label="" description="" />
+		<param name="imageResize" type="list" default="yes" label="Resize images?" description="If set to yes the images in the slideshow will be resized according to settings below.">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</param>
+		<param name="image_width" type="text" default="555" label="Width of the resized image" description="Set the width of the resized image." />
+		<param name="image_height" type="text" default="347" label="Height of the resized image" description="Set the width of the resized image." />
+		<param name="crop_width" type="text" default="2" label="The width ratio of the image" description="Set the width ratio of the resized image." />
+		<param name="crop_height" type="text" default="1" label="The height ratio of the image" description="Set the height ratio of the resized image." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General Text Options&lt;/div&gt;" label="" description="" />
+	<param name="display_ticker" type="list" default="yes" label="Display the content items?" description="Do you want to display the News Ticker?.">
+			<option value="yes">Published</option>
+			<option value="no">Unpublished</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="Position and margin offsets for the text" label="" description="" />
+	<param name="ticker_height" type="text" default="260" label="Height of the text" description="Value in px." />
+	<param name="ticker_width" type="text" default="360" label="Width of the text" description="Value in px." />
+	<param name="margin_top" type="text" default="100" label="Top Margin" description="Distance from the top of the slideshow for the ticker to appear." />
+	<param name="margin_left" type="text" default="0" label="Left Margin" description="Distance from the left of the slideshow for the ticker to appear." />	
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="Ticker Text Options" label="" description="" />
+	<param name="item_title" type="list" default="yes" label="Display the item titles." description="Do you want to display the titles of the news in the News Ticker.">
+		<option value="yes">Published</option>
+		<option value="no">Unpublished</option>
+	</param>
+	<param name="tickerIntro" type="text" default="&#32;" label="Label for Title" description="Use this field to enter a field such as Latest News if using the slideshow in ticker mode." />
+	<param name="title_class" type="list" default="h2" label="Newsticker title class" description="Set the class ssigned to the news ticker title.">
+		<option value="h1">H1</option>
+		<option value="h2">H2</option>
+		<option value="h3">H3</option>
+		<option value="h4">H4</option>
+		<option value="h5">H5</option>
+		<option value="h6">H6</option>
+		<option value="strong">Strong/Bold</option>
+		<option value="em">Emphasis/Italics</option>
+	</param>
+	<param name="title_link" type="list" default="yes" label="Display Titles as links" description="Do you want to publish the title as a link?">
+		<option value="yes">Published</option>
+		<option value="no">Unpublished</option>
+	</param>
+	<param name="ticker_text" type="list" default="yes" label="Display the Ticker text" description="Do you want to publish the introtext from the content item you are displaying?">
+		<option value="yes">Published</option>
+		<option value="no">Unpublished</option>
+	</param>
+	<param name="wordCount" type="text" default="40" label="Word Count" description="Number of words to be displayed in the ticker text" />
+	<param name="renderPlugin" type="list" default="render" label="Plugin Behaviour in Content?" description="Choose how you would like to handle plugin code {} in the content.">
+	  <option value="render">Render Plugin</option>
+	  <option value="strip">Strip Plugin Code</option>
+	</param>
+	<param name="striptags" type="list" default="yes" label="Strip Tags" description="Strip html markup tags from intro text?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+	</param>
+	<param name="tags" type="textarea" cols="30" rows="5" default="&lt;a&gt;&lt;ul&gt;&lt;li&gt;&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;&lt;b&gt;&lt;em&gt;&lt;i&gt;&lt;strong&gt;&lt;blockquote&gt;&lt;dd&gt;&lt;dt&gt;&lt;small&gt;&lt;u&gt;&lt;br&gt;&lt;br /&gt;" label="Allowed Tags" description="This setting defines the tags you want to display in the slideshow. We've created this option primarily to remove images from the output but you can allow or disallow any html entity you like." />
+	<param name="readMoreLink" type="list" default="yes" label="Read More Link" description="Add a Read More link after the intro text.">
+			<option value="yes">On</option>
+			<option value="no">Off</option>
+	</param>
+	<param name="readMoreText" type="text" default="Read More ..." label="Read More Text" description="Text for the read more link." />
+	<param name="linkTarget" type="list" default="article" label="Link Target" description="Page the link must target.">
+      <option value="article">Content Article</option>
+      <option value="default">Category Default Page</option>
+	  <option value="blog">Category Blog Page</option>
+    </param>
+	<param name="bgOverlay" type="list" default="no" label="Background Overlay" description="Overlay for improving ticker text visibility over and image.">
+			<option value="dark">Dark</option>
+			<option value="light">Light</option>
+			<option value="no">Off</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />	
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Slideshow Navigation&lt;/div&gt;" label="" description="" />
+	<param name="display_nav" type="list" default="thumbsNav" label="Slideshow Navigation" description="Choose the required option for slideshow navigation">
+			<option value="thumbsNav">Thumbnails</option>
+			<option value="thumbsTitleNav">Thumbnails+Title</option>
+			<option value="titleThumbsNav">Title+Thumbnails</option>
+			<option value="titleNav">Title</option>
+			<option value="indexNav">Pagination</option>
+			<option value="indexNavButtons">Coloured Discs</option>
+			<option value="noNav">None</option>
+	</param>
+	<param name="navWidth" type="text" default="400" label="Navigation Area Width" description="Width of the area containing the navigation elements." />
+	<param name="navHeight" type="text" default="400" label="Navigation Area Height" description="Height of the area containing the navigation elements." />
+	<param name="navButtons" type="list" default="on" label="Navigation Buttons" description="Display buttons to navigate the slides">
+			<option value="yes">On</option>
+			<option value="no">Off</option>
+	</param>
+	<param name="navPrevText" type="text" default="&lt;&lt;  Previous" label="Text for Previous Button" description="Text for the previous navigation button" />
+	<param name="navNextText" type="text" default="Next  &gt;&gt;" label="Text for Next Button" description="Text for the next navigation button" />
+	<param name="@spacer" type="spacer" default="Margin offsets for the nav" label="" description="" />
+	<param name="navTop" type="text" default="0" label="Top Margin for Nav" description="Distance from the top of the slideshow for the ticker to appear." />
+	<param name="navLeft" type="text" default="0" label="Left Margin for Nav" description="Distance from the left of the slideshow for the ticker to appear." />
+	<param name="scrollNav" type="list" default="vertical" label="Scrolling Thumbs+Title Navigation" description="Choose to have a vertical horizontal or non scrolling thumbnail+title navigation">
+			<option value="none">No</option>
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+	</param>
+	<param name="numVis" type="text" default="3" label="Visible Scrollbar Nav Items" description="The number of thumb+title navigation items that should be visible on the scrolling nav at any given time." />
+	<param name="navItemWidth" type="text" default="40" label="Thumbnail and/or Title Width" description="Set the width for the individual nav item." />
+	<param name="navItemHeight" type="text" default="40" label="Thumbnail and/or Title Height" description="Set the height for the individual nav item." />
+	<param name="titleLimit" type="text" default="0" label="Title Character Limit" description="Set a limit on the number of title characters to be displayed in the nav item. A value of 0 will mean no limit." />
+	<param name="titleSuffix" type="text" default="..." label="Limited Title Suffix" description="Characters to follow any limited title" />
+	<param name="fadeEffect" type="list" default="1" label="Thumbnail Image Effect" description="Choose a thumbnail image effect">
+		<option value="1">Fade</option>
+		<option value="0">None</option>
+	</param>
+	<param name="hoverTransition" type="list" default="no" label="Thumbnail Hover Transitions" description="Transition slideshow image when mouse hovers over the thumbnail">
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="The general settings for resizing the image thumbnails for the navigation." label="" description="" />
+		<param name="thumb_width" type="text" default="60" label="Width of the image thumbnail" description="Set the width of the image thumbnail." />
+		<param name="thumb_height" type="text" default="40" label="Height of the image thumbnail" description="Set the height of the image thumbnail." />
+		<param name="thumb_crop_width" type="text" default="2" label="The width ratio of the image thumbnail" description="Set the width ratio of the image thumbnail." />
+		<param name="thumb_crop_height" type="text" default="1" label="The height ratio of the image thumbnail" description="Set the height ratio of image thumbnail." />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Article Options&lt;/div&gt;" label="" description="" />
+	<param name="count" type="text" default="4" label="Count" description="The number of items to display (default 5)" />
+	<param name="ordering" type="list" default="c_dsc" label="Ordering" description="Ordering options">
+		<option value="c_dsc">Recently Added First</option>
+		<option value="m_dsc">Recently Modified First</option>
+		<option value="mostread">Most Popular</option>
+		<option value="item_order">Ordering</option>
+		<option value="alpha">Title</option>
+		<option value="ralpha">Title Ascending</option>
+	</param>
+	<param name="user_id" type="list" default="0" label="Authors" description="A filter for the authors">
+		<option value="0">Anyone</option>
+		<option value="by_me">Added or modified by me</option>
+		<option value="not_me">Not added or modified by me</option>
+	</param>
+	<param name="article_source" type="list" default="cat" label="Article Source" description="Choose how you would like to specify the article sources">
+		<option value="cat">Categories</option>
+		<option value="art">Articles</option>
+		<option value="catart">Categories + Articles</option>
+	</param>
+	<param name="show_front" type="radio" default="1" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+		<option value="1">show</option>
+		<option value="0">hide</option>
+	</param>
+	<param name="catid" type="categories" default="" label="Category" description="PARAMCATEGORYID" />
+	<param name="artid" type="text" default="" label="Article IDs" description="List the article ID's separated by a comma ," />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;K2 Options&lt;/div&gt;" label="" description="" />
+	<param name="itemFilter" type="list" default="cat" label="K2 Items" description="Select the K2 Item Source.">
+		<option value="cat">Categories</option>
+		<option value="feat">Featured Items</option>
+		<option value="item">Items</option>
+		<option value="catitem">Categories + Items</option>
+	</param>
+	<param name="k2catid" type="categoriesmultiple" default="" label="Filter items by category" description="Select one or more categories for which you want to filter an items list. Select none to fetch items from all categories." />
+    <param name="getChildren" type="radio" default="0" label="Fetch items from children categories" description="">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+	<param name="itemid" type="text" default="" label="Item IDs" description="List the K2 item ID's separated by a comma ," />
+	<param name="countK2" type="text" default="4" label="Count" description="The number of items to display (default 5)" />
+	<param name="orderingK2" type="list" default="c_dsc" label="Ordering" description="Ordering options">
+		<option value="">Default</option>
+	  <option value="date">Oldest first</option>
+      <option value="rdate">Most recent first</option>
+      <option value="alpha">Title Alphabetical</option>
+      <option value="ralpha">Title Reverse-Alphabetical</option>
+      <option value="order">Ordering</option>
+      <option value="hits">Most popular</option>
+      <option value="best">Highest rated</option>
+      <option value="rand">Random ordering</option>
+	</param>
+	<param name="showCommentCount" type="list" default="yes" label="Display Comment Count" description="Choose to display the number of comments for each item.">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </param>
+	<param name="itemImageSize" type="list" default="XSmall" label="Image size" description="">
+		<option value="Original">Original</option>      
+		<option value="XSmall">XSmall</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+      <option value="XLarge">XLarge</option>
+	<option value="Generic">Generic</option>
+    </param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Slideshow Description Text&lt;/div&gt;" label="" description="" />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="showDescriptionText" type="list" default="none" label="Display Description Text?" description="Choose to show description text for the slideshow.">
+      <option value="none">No</option>
+      <option value="block">Yes</option>
+    </param>
+	<param name="descriptionText" type="text" default="" label="Description Text/HTML" description="Description text or HTML for the slideshow" />
+	<param name="descriptionMarginTop" type="text" default="0" label="Description Margin-Top" description="Top Margin offset for description text. Relative to Slideshow Container" />
+	<param name="descriptionMarginLeft" type="text" default="0" label="Description Margin-Left" description="Left Margin offset for description text. Relative to Slideshow Container" />
+	<param name="descriptionHeight" type="text" default="50" label="Description Text Height" description="Height for the description text" />
+	<param name="descriptionWidth" type="text" default="100" label="Description Text Width" description="Width for the description text" />
+	<param name="descriptionOverlay" type="list" default="no" label="Description Text Overlay" description="Overlay for improving description text visibility">
+			<option value="dark">Dark</option>
+			<option value="light">Light</option>
+			<option value="no">Off</option>
+	</param>	
+	</params>
+	<params group="advanced">
+	<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+		<option value="1">Use global</option>
+		<option value="0">No caching</option>
+	</param>
+	<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

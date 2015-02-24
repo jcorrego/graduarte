@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>jTweet</name>
+	<author>Joomla Bamboo</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>1.5.2</version>
+	<description>jTweets is a port of the Sea of Clouds jQuery script called Tweet.</description>
+	<files>
+		<filename module="mod_jTweet">mod_jTweet.php</filename>
+		<filename module="mod_jTweet">css/jTweet.css</filename>
+		<filename module="mod_jTweet">images/bird1.png</filename>
+		<filename module="mod_jTweet">images/bird2.png</filename>
+		<filename module="mod_jTweet">images/bird3.png</filename>
+		<filename module="mod_jTweet">images/bird4.png</filename>
+		<filename module="mod_jTweet">images/bird5.png</filename>
+		<filename module="mod_jTweet">images/whiteOverlay.png</filename>
+		<filename module="mod_jTweet">js/jquery.tweet.js</filename>
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General JTweet Module Settings&lt;/div&gt;" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="moduleID" type="text" default="1" label="Module ID" description="A unique ID to be applied to the Tweets of this module. This allows multiple JTweet modules on a page." />	
+			<param name="css" type="list" default="1" label="Load jTweet default css" description="Set this option to no if you want to style the jTweet module using your own styles and to disable the jTweet css form being loaded.">
+			<option value="0">Disable jTweet Styles</option>
+			<option value="1">Load jTweet Styles</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Twitter Source Settings&lt;/div&gt;" label="" description="" />
+		<param name="type" type="list" default="0" label="Display your tweets or query?" description="If set to displaying your tweets the module will output all of your recent tweets, otherwise if set to query it will display all recent tweets according to the query term.">
+			<option value="tweets">Your tweets</option>
+			<option value="query">Twitter query</option>
+			<option value="multi">Multi-user tweets</option>
+		</param>
+		<param name="userName" type="text" default="" label="Twitter Username(s)" description="Your twitter username or usernames seperated by ',' " />
+		<param name="query" type="text" default="" label="Twitter Query" description="Search term for recent tweets" />		
+		<param name="count" type="text" default="5" label="Tweet Count" description="Number of tweets to display" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Tweet Layout and Display Settings&lt;/div&gt;" label="" description="" />
+		<param name="twitterBird" type="list" default="bird1" label="Twitter Icon" description="Select the twitter bird icon to display beside the first tweet in the twitter module. Please note that if this is set to anything other than none then you must set the avatar size to 0.">
+			<option value="bird1">Bird1</option>
+			<option value="bird2">Bird2</option>
+			<option value="bird3">Bird3</option>
+			<option value="bird4">Bird4</option>
+			<option value="bird5">Bird5</option>
+			<option value="none">No Icon</option>
+		</param>
+		<param name="avatar" type="list" default="no" label="Display Avatar?" description="Display the avatar before your tweets.">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="avatarSize" type="text" default="48" label="Avatar Size" description="The size of your twitter avatar" />
+		<param name="twitterName" type="list" default="yes" label="Display Twitter Name?" description="Display the twitter name for the tweet?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="twitterAction" type="text" default="tweeted" label="Twitter Name Action Text" description="Action text following the twitter name." />
+		<param name="tweetSource" type="list" default="yes" label="Display Source?" description="Display the source of the tweet?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="sourcePre" type="text" default="from" label="Tweet Source Preceeding Text" description="Text preceeding the Tweet source." />
+		<param name="joinText" type="list" default="auto" label="Display linking text?" description="Display the intro text nominated below to preface your tweets.">
+			<option value="auto">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="noReplies" type="list" default="no" label="Display Replies?" description="Display direct replies to other users. Experimental feature that may result in reduced tweets being displayed.">
+			<option value="no">Yes</option>
+			<option value="yes">No</option>
+		</param>
+		<param name="tweetTemplate" type="list" default="1" label="Choose a Tweet Template" description="Pick the layout of your tweets as they areto be displayed.">
+			<option value="1">avatar + twitter name + join + text + date + tweet source</option>
+			<option value="2">avatar + twitter name + date + tweet source + join + text</option>
+			<option value="3">avatar + join + text + twitter name + date + tweet source</option>
+		</param>
+		<param name="autoDefault" type="text" default="I said" label="Non verb text" description="auto text for non verb: i said 'bullocks'" />
+		<param name="autoEd" type="text" default="I" label="Past tense text" description="auto text for past tense: i 'surfed'" />
+		<param name="autoIng" type="text" default="I am" label="Present tense Text" description="auto text for past tense: i 'surfed'" />
+		<param name="autoReply" type="text" default="I replied to" label="Text for reply" description="auto tense for replies: 'i replied to' @someone 'with'" />
+		<param name="loadingText" type="text" default="Loading Tweets ..." label="Loading Text" description="Loading text, displayed while tweets load" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Additional Settings&lt;/div&gt;" label="" description="" />
+		<param name="popup" type="list" default="yes" label="Display Popup User Info?" description="Display the user information in a popup?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="moreInfo" type="text" default="more info...!" label="More Info Text" description="Enter the text you would like displayed for more information in a popup." />
+		<param name="popupIntro" type="text" default="I am on Twitter!" label="Popup Intro Text" description="Enter the intro text you would like displayed in the popup." />
+		<param name="follow" type="list" default="yes" label="Display follow text?" description="Display the follow text and icon?">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="followText" type="text" default="Follow me on Twitter" label="Follow me text" description="Enter the text you would like displayed in the follow me area of the module." />
+		<param name="followStyle" type="list" default="auto" label="Follow Icon style" description="Select the style you want to apply to the follow text, link and icon.">
+			<option value="none">None</option>
+			<option value="sticker">Sticker</option>
+			<option value="icon">Icon</option>
+		</param>
+		<param name="followPosition" type="list" default="right" label="Follow Text Position" description="Select whether to float the follow text to the left or the right of the module.">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+	</params>
+</install>
+
+
+

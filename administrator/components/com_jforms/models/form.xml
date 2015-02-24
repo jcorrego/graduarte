@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* JForms Form XML File
+*
+* @version		$Id: form.xml 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+-->
+<form>
+	<name>Form Edit Form</name>
+	
+	<params>
+		<param name="title" type="text" size="20" default="" label="Title" description="FORMTITLE" />
+		<param name="state" type="list" size="20" default="1" label="Published" description="FORMPUBLISH">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="type" type="list" size="20" default="0" label="Type" description="FORMTYPE">
+			<option value="0">Normal</option>
+			<option value="1">Profile</option>
+		</param>
+		<param name="publish_up" type="calendar" default="" label="Start Publishing" description="FORMPUBLISHSTART" />
+		<param name="publish_down" type="calendar" default="" label="Finish Publishing" description="FORMPUBLISHFINISH" />
+		<param name="thank" type="textarea" rows="5" cols="30"  default="" label="Thank you message" description="FORMTHANK" />
+	</params>
+</form>

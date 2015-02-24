@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleviewergallery maxImageWidth="480" maxImageHeight="480" textColor="0x333333" frameColor="0x999999" frameWidth="0" stagePadding="0" navPadding="40" thumbnailColumns="6" thumbnailRows="2" navPosition="bottom" vAlign="center" hAlign="center" title="" enableRightClickOpen="true" backgroundImagePath="" imagePath="http://graduarte.net/sitio/images/morfeoshow/diplomas-4070/big/" thumbPath="http://graduarte.net/sitio/images/morfeoshow/diplomas-4070/thumbs/">
+<image>
+<filename>diplomacafehoriz-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>diplomaveticalcafeescudolaser-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>Ref.DH-2P-PA-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>Ref.DV-2P-MC-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+</simpleviewergallery>

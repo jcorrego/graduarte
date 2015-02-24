@@ -1,0 +1,77 @@
+<settings>
+  <General_Properties>
+    <direction value="vertical"/>
+    <width value="197"/>
+    <height value="800"/>
+    <spacing value="8"/>
+    <thumbWidth value="138"/>
+    <thumbHeight value="256"/>
+    <backgroundColor value="0x333333"/>
+    <backgroundAlpha value="1"/>
+    <offset value="30"/>
+    <preloader value="assets/redsquares.swf"/>
+    <assets value="images3.xml"/>
+    <showAbout value="true"/>
+	<useLightbox value="true" />
+  </General_Properties>
+  <Expand_Properties>
+    <direction value="center"/>
+    <percent value="40"/>
+    <func value="Bounce"/>
+    <method value="easeOut"/>
+    <duration value="0.7"/>
+  </Expand_Properties>
+  <Roll_Over_Properties>
+    <rollOverBehaviour value="alpha2"/>
+    <brightnessOver value="100"/>
+    <brightnessOut value="35"/>
+    <brightnessSpeed value="6"/>
+  </Roll_Over_Properties>
+  <Frame_Properties>
+    <color value="0xffffff"/>
+    <width value="5"/>
+    <alpha value="5"/>
+  </Frame_Properties>
+  <Reflection_Properties>
+    <useReflection value="false"/>
+    <reflectionDistance value="2"/>
+    <reflectionAlpha value="1"/>
+    <reflectionSpread value="90"/>
+  </Reflection_Properties>
+  <Scroll_Properties>
+    <scrollMode value="infinite"/>
+    <scrollOnRollOver value="images"/>
+    <onRollOverSpeed value="19"/>
+    <onRollOutSpeed value="4"/>
+    <stoppingSpeed value="17"/>
+    <stopOnRollOver value="false"/>
+    <inverseScrolling value="none"/>
+    <buttonScrollMode value="pixel by pixel"/>
+    <buttonImage value="assets/arrow2.gif"/>
+    <buttonsX value="330"/>
+    <buttonsY value="210"/>
+    <buttonDistance value="200"/>
+  </Scroll_Properties>
+  <Tooltip_Properties>
+    <position value="bottom"/>
+    <delay value="0.1"/>
+    <distance value="-23"/>
+    <padding value="8"/>
+    <cornerRadius value="6"/>
+    <appearance value="bottom"/>
+    <easingFunction value="Back"/>
+    <easingDuration value="0.5"/>
+    <fontFace value="verdana"/>
+    <fontSize value="13"/>
+    <fontColor value="3355443"/>
+    <backColor value="16777215"/>
+    <backColor2 value="13421772"/>
+    <backAlpha value="1"/>
+    <borderColor value="13421772"/>
+    <borderThickness value="1"/>
+    <useArrow value="false"/>
+    <arrowPos value="right"/>
+    <arrowSize value="5"/>
+    <embedFonts value = "true"/>
+  </Tooltip_Properties>
+</settings>

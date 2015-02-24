@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Date Title</name>
+	<author>Joomla Bamboo</author>
+	<creationDate>June 2009</creationDate>
+	<copyright>Copyright (C) 2009 Joomlabamboo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>1.1</version>
+	<description>A simple module used to display the date and title of content items.</description>
+	<files>
+		<filename module="mod_dateTitle">mod_dateTitle.php</filename>
+		<filename module="mod_dateTitle">css/dateTitle.css</filename>
+		<filename module="mod_dateTitle">helper.php</filename>
+		<filename module="mod_dateTitle">tmpl/default.php</filename>
+		<filename module="mod_dateTitle">tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+	 <param name="ordering" type="list" default="rdate" label="Ordering of content" description="Select the order in which the content items should appear.">
+      <option value="rdate">Most Recent First</option>
+      <option value="date">Oldest First</option>
+      <option value="alpha">Title Alphabetical</option>
+      <option value="ralpha">Title Alphabetical Reverse</option>
+      <option value="hits">Most Read</option>
+      <option value="rhits">Least Read</option>
+      <option value="order">Default ordering</option>
+    </param>
+        <param name="dateFormat" type="list" default="0" label="Date Format" description="Display items int he moduel that also are displayed on the front page.">
+      <option value="0">15 Sep, 09</option>
+      <option value="1">Sep 15, 09</option>
+      <option value="2">September 15, 09</option>
+      <option value="3">15 September, 09</option>
+      <option value="4">September 15, 2009</option>
+      <option value="5">15 September, 2009</option>
+      <option value="6">15/09/09</option>
+      <option value="7">Tuesday 15 September, 2009</option>
+      <option value="8">Tue 15 Sept, 09</option>
+      <option value="9">Sept 15</option>
+      <option value="10">15 Sept</option>
+    </param>
+		<param name="user_id" type="list" default="0" label="Authors" description="A filter for the authors">
+			<option value="0">Anyone</option>
+			<option value="by_me">Added or modified by me</option>
+			<option value="not_me">Not added or modified by me</option>
+	  	</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_front" type="radio" default="1" label="Frontpage Items" description="PARAMFRONTPAGEITEMS">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="secid" type="text" default="" label="Section ID" description="PARAMSECTIONID" />
+		<param name="catid" type="text" default="" label="Category ID" description="PARAMCATEGORYID" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

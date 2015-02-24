@@ -1,0 +1,14 @@
+/* @override 
+	http://localhost:8888/joomla/1511/elevate2_1511/modules/mod_dateTitle/css/dateTitle.css
+	http://localhost:8888/joomla/1.5/1514/modules/mod_dateTitle/css/dateTitle.css
+*/
+
+.dateTitle {display: block;padding: 0;margin: 0 0 20px 0;float: left;width: 100%;font-family: georgia}
+.dateTitleSpan a {text-decoration: none;display: block;padding: 4px 0 4px;font-style: italic;border-bottom: 1px solid #ddd;font-size: 1.2em;}
+span.dateTitleDate {width: 120px;float: left;padding: 6px 0 0 6px;}
+.jbClear {clear: both;}
+.dateTitleClear {clear: both}
+
+
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="template" method="upgrade">
+	<name>Zen Grid Framework</name>
+	<creationDate>October, 2009</creationDate>
+	<author>Anthony Olsen</author>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<copyright>(C) 2007 - 2010 Joomla Bamboo. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.0.4</version>
+	<description>
+		<![CDATA[<p style="line-height:180%;font-size:1.2em"><a href="http://www.joomlabamboo.com"><img src="http://www.joomlabamboo.com/images/zenGridIcon.jpg" alt="joomla Bamboo" style="float:left;margin:0 20px 20px 0px"/></a><br style="clear:both" />The Zen Grid template is a templating framework developed by Joomla Bamboo to be used with Zen Grid Framework Compatible themes. Please visit the <a href="http://www.joomlabamboo.com/documentation/zen-grid-2-documentation/installation">Zen Grid Framework Knowledgebase</a> for more details.</p>]]>
+	</description>
+	<files>
+		<folder>assets</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<params addpath="/templates/zengridframework/elements">
+	<param name="@desc" type="jbdesc" default="&lt;div style=&quot;width:70%;margin:20px auto;height:90px;background:#fff url(http://www.joomlabamboo.com/images/zenGridIcon.jpg) no-repeat left center;padding:40px 20px 80px 25%;border:1px solid #ddd;color:#444;line-height:2em;font-size:16px&quot;&gt;&lt;strong&gt;This is the core Zen Grid Framework application.&lt;/strong&gt;&lt;br /&gt; Please edit your template directly via the parameters available for your Zen Grid Framework compatible template. If you are new to the Zen Grid framework and would like to learn more please visit the Zen Grid framework knowledgebase.&lt;/div&gt;" />
+		<param name="@jbzenoverview" type="jbzenoverview" default="Menu Settings" />
+	</params>
+</install>

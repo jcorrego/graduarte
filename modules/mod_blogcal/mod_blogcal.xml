@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>BlogCal-J1.5</name>
+	<author>Andrew Willis</author>
+	<creationDate>10/13/08</creationDate>
+	<copyright>(C) 2008 julianna.homelinux.org</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>drew@willisfamily.homelinux.org</authorEmail>
+	<authorUrl>www.julianna.homelinux.org</authorUrl>
+	<version>2.6</version>
+	<description><![CDATA[This module provides a calendar based index to your joomla articles. Articles indexed on the calendar may come from a single section or from all sections. Options are provided that allow the user to control calendar appearance which by default takes on settings from the site template. Appearance options include abbreviations for the month and year, and background highlighting for days that link to content as well as the current day. A demo of this module is available at http://julianna.homelinux.org. Support for this module is available at http://joomlacode.org/gf/project/blogcal/.]]></description>
+	<files>
+        <filename>mod_blogcal.xml</filename>
+	<filename module="mod_blogcal">mod_blogcal.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="mbdivclass_sfx" type="text" default="moduletable" label="div Class Suffix" description="A suffix to be applied to the css class of the module (div.h3), this allows individual module styling" />
+		<param name="mbtitle_sfx" type="text" default="h3" label="Header Format" description="Title Header Style" />
+		<param name="monthname_width" type="radio" default="0" label="Abbreviated Month Name?" description="Select whether to show abbreviated month name">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="year_width" type="radio" default="1" label="Year Format" description="Select whether to show 2 digit or 4 digit">
+			<option value="0">Two</option>
+			<option value="1">Four</option>
+		</param>
+		<param name="secid" type="text" label="Section ID" description="Select which section to show calendar for (Default is all items)" />
+		<param name="linkbg" type="text" label="Link Background" description="Background for days, for example #AAAAFF, which have valid number of items listed. These days will be shown as link, hence link background" />
+		<param name="currbg" type="text" label="Current Day Background" description="Background for todays date, for example #FFAA55. Takes priority over link Background" />
+		<param name="currfontclr" type="text" default="#FAFAFA" label="Current Day Color" description="Font Color for todays date, for example #FAFAFA. Takes priority over link Background" />
+		<param name="firstdayofweek" type="text" default="0" label="First Day of Week" description="Changes the first day of the week, 0=Sunday, 1=Monday, etc." />
+		<param name="monthyearformat" type="text" default="0" label="Month-Year Format" description="Changes the format of the month and year, 0=Month-Year, 1=Year-Month" />
+	</params>
+</install>

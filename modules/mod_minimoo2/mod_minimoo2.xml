@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Mini Moo 2</name>
+    <creationDate>September 2007</creationDate>
+    <author>Anthony Olsen</author>
+    <copyright>This module is released under the GNU/GPL License.</copyright>
+    <authorEmail>design@joomlabamboo.com</authorEmail>
+    <authorUrl>http://www.joomlabamboo.com</authorUrl>
+    <version>1.2.3</version>
+    <description>Minimoo2 is the jQuery update to the original Mootools MiniMoo Gallery module for Joomla. It has a number of enhancements making it much easier to use. Please see the demo site for more information and setup instructions - http://extensions.joomlabamboo.com</description>
+    <files>
+       	<filename module="mod_minimoo2">mod_minimoo2.php</filename>
+       	<filename module="mod_minimoo2">css/minimoo2.css</filename>
+        <filename module="mod_minimoo2">js/DD_belatedPNG0.0.6a-min.js</filename>
+        <filename module="mod_minimoo2">js/jquery.easing.min.js</filename>
+        <filename module="mod_minimoo2">js/jquery.flow.1.2.js</filename>
+        <filename module="mod_minimoo2">image.php</filename>
+        <filename module="mod_minimoo2">imagecache/index.html</filename>
+      	<filename module="mod_prettySlider">prettyPhoto/css/prettyPhoto.css</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_rounded/btnNext.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_rounded/btnPrevious.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_rounded/contentPattern.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_rounded/loader.gif</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_rounded/sprite.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_square/btnNext.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_square/btnPrevious.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_square/contentPattern.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_square/loader.gif</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/dark_square/sprite.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_rounded/btnNext.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_rounded/btnPrevious.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_rounded/loader.gif</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_rounded/sprite.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_square/btnNext.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_square/btnPrevious.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_square/loader.gif</filename>
+		<filename module="mod_prettySlider">prettyPhoto/images/prettyPhoto/light_square/sprite.png</filename>
+		<filename module="mod_prettySlider">prettyPhoto/js/jquery.prettyPhoto.js</filename>
+	</files>
+    <params>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General MiniMoo2 Settings&lt;/div&gt;" label="" description="" />
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	<param name="module_id" type="text" default="1" label="Module ID" description="A unique id applied to each instance of the module" />
+	<param name="directory" type="text" default="images/stories" label="Directory for images" description="Relative directory where images are stored." size="20"/>
+	<param name="width" type="text" default="350" label="Width of the module" description="Width of overall module without the px." />
+	<param name="height" type="text" default="350" label="Height of the module" description="Height of thumbnail and main image area without the px." />
+	<param name="link" type="list" default="prettyPhoto" label="Action to occur when main image is clicked." description="Set the type of action you want to occur when the main image is clicked.">
+    	<option value="0">None</option>
+		<option value="1">prettyPhoto</option>	
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Pretty Photo Settings&lt;/div&gt;" label="" description="" />
+	<param name="prettyPhoto" type="list" default="Yes" label="Enable prettyphoto?" description="Enable this option if you want to display image when clicked in a pretyyPhoto overlay. If you are using another module that includes prettyPhoto then set this option to no. ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</param>
+	<param name="theme" type="list" default="tfast" label="Overlay Theme" description="Select the theme to use in the lightbox.">
+			<option value="dark_rounded">Dark Rounded</option>
+			<option value="light_rounded">Light Rounded</option>
+			<option value="dark_square">Dark Square</option>
+			<option value="light_square">Light Square</option>
+	</param>
+	<param name="opacity" type="text" default="0.6" label="Overlay opacity" description="Set the opacity of the overlay - 1 is opaque and 0 is transparent."/>
+<param name="padding" type="text" default="150" label="prettyPhoto padding" description="The width of the padding around the prettyPhoto overlay without px."/>
+<param name="resize" type="list" default="false" label="Resize Image?" description="Set this option to true if you want to be able to resize large images that are automatically scaled down to fit within the browser window.">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+	</param>
+<param name="prettyBoxTitle" type="list" default="false" label="Show image title?" description="Display the title of the image in the overlay?">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+	</param>
+	<param name="prettyBoxSpeed" type="list" default="tfast" label="Overlay Speed" description="The speed at which the overlay appears when the image is displayed in the lightbox.">
+			<option value="fast">Fast</option>
+			<option value="normal">Normal</option>
+			<option value="slow">Slow</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Transition Settings&lt;/div&gt;" label="" description="" />
+	<param name="duration" type="text" default="400" label="Speed of the transition" description="Speed of transitions."  />
+	<param name="transition" type="list" default="swing" label="The type of transition that slides the image into view." description="If you have set the extended transition selection to no then you can only use the default option.">
+		<option value="swing">Swing</option>
+		<option value="easeOutQuad">easeOutQuad</option>
+		<option value="easeInQuad">easeInQuad</option>
+		<option value="easeInOutQuad">easeInOutQuad</option>			
+		<option value="easeInCubic">easeInCubic</option>
+		<option value="easeOutCubic">easeOutCubic</option>		
+		<option value="easeInOutCubic">easeInOutCubic</option>	
+		<option value="easeInQuart">easeInQuart</option>	
+		<option value="easeOutQuart">easeOutQuart</option>
+		<option value="easeInOutQuart">easeInOutQuart</option>		
+		<option value="easeInQuint">easeInQuint</option>	
+		<option value="easeOutQuint">easeOutQuint</option>
+		<option value="easeInOutQuint">easeInOutQuint</option>		
+		<option value="easeInSine">easeInSine</option>	
+		<option value="easeOutSine">easeOutSine</option>
+		<option value="easeInOutSine">easeInOutSine</option>
+		<option value="easeInExpo">easeInExpo</option>	
+		<option value="easeOutExpo">easeOutExpo</option>
+		<option value="easeInOutExpo">easeInOutExpo</option>
+		<option value="easeInCirc">easeInCirc</option>	
+		<option value="easeOutCirc">easeOutCirc</option>
+		<option value="easeInOutCirc">easeInOutCirc</option>
+		<option value="easeInElastic">easeInElastic</option>	
+		<option value="easeOutElastic">easeOutElastic</option>
+		<option value="easeInOutElastic">easeInOutElastic</option>
+		<option value="easeInBack">easeInBack</option>	
+		<option value="easeOutBack">easeOutBack</option>
+		<option value="easeInOutBack">easeInOutBack</option>
+		<option value="easeInBounce">easeInBounce</option>	
+		<option value="easeOutBounce">easeOutBounce</option>
+		<option value="easeInOutBounce">easeInOutBounce</option>
+	</param>
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Thumbnail Settings&lt;/div&gt;" label="" description="" />
+	<param name="thumbWidth" type="text" default="20" label="Width of the thumbnail images" description="Width of thumbnail images without the px." />
+	<param name="thumbHeight" type="text" default="20" label="Height of the thumbnail images" description="Height of thumbnail images without the px." />
+	<param name="cropThumbWidth" type="text" default="2" label="Cropping ratio for width" description="Ratio of width to height of thumbnail images" />
+	<param name="cropThumbHeight" type="text" default="1" label="Cropping ratio for height" description="Ratio of height to width of thumbnail images." />
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Image Resize Settings&lt;/div&gt;" label="" description="" />
+	<param name="imageWidth" type="text" default="200" label="Width of the main images" description="Width of main images without the px." />
+	<param name="imageHeight" type="text" default="200" label="Height of the main images" description="Height of main images without the px." />
+	<param name="cropImageWidth" type="text" default="2" label="Cropping ratio for width" description="Ratio of width to height of main images" />
+	<param name="cropImageHeight" type="text" default="1" label="Cropping ratio for height" description="Ratio of height to width of main images." />
+	<param name="nav" type="list" default="yes" label="Display Nav buttons" description="Set to yes to display the next and previous buttons below.">
+    	<option value="yes">Enable</option>
+		<option value="no">Disable</option>			
+	</param>
+</params>
+</install>

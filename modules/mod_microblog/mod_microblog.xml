@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>JB MicroBlog</name>
+  <author>Joomla Bamboo</author>
+  <creationDate>13/05/2009</creationDate>
+  <copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+  <authorEmail>design@joomlabamboo.com</authorEmail>
+  <authorUrl>www.joomlabamboo.com</authorUrl>
+  <version>1.3.8</version>
+  			<description>The Joomla 1.5 version of the microblog module is built on the shoulders of the awesome UCD module from Joomlaworks. It displays the latest news from selected sections and categories and controls whether the intro text is displayed, the time of the post, whether the title is a link and whether or not to display a read more button. For more information please check the documentation at http://www.joomlabamboo.com </description>
+  <files>
+    <filename module="mod_microblog">mod_microblog.php</filename>
+	<filename module="mod_microblog">helper.php</filename>
+	<filename module="mod_microblog">index.html</filename>
+	<filename module="mod_microblog">image.php</filename>
+    <filename module="mod_microblog">css/index.html</filename>
+	<filename module="mod_microblog">css/microblog.css</filename>
+	<filename module="mod_microblog">css/cbtheme1.css</filename>
+	<filename module="mod_microblog">css/cbtheme2.css</filename>
+	<filename module="mod_microblog">css/cbtheme3.css</filename>
+	<filename module="mod_microblog">css/cbtheme4.css</filename>
+	<filename module="mod_microblog">css/cbthemepred.css</filename>
+	<filename module="mod_microblog">css/cbthemepbrown.css</filename>
+	<filename module="mod_microblog">css/cbthemepgreen.css</filename>
+	<filename module="mod_microblog">css/cbthemeppurple.css</filename>
+	<filename module="mod_microblog">tmpl/default.php</filename>
+	<filename module="mod_microblog">tmpl/index.html</filename>
+	<filename module="mod_microblog">imagecache/index.html</filename>
+	<filename module="mod_microblog">includes/index.html</filename>
+	<filename module="mod_microblog">includes/helper.php</filename>
+	<filename module="mod_microblog">includes/elements/index.html</filename>
+	<filename module="mod_microblog">includes/elements/categories.php</filename>
+	<filename module="mod_microblog">includes/elements/categoriesmultiple.php</filename>
+	<filename module="mod_microblog">js/index.html</filename>
+	<filename module="mod_microblog">js/jquery.colorbox-min.js</filename>
+	<folder module="mod_microblog">images</folder>
+  </files>
+  <params addpath="/modules/mod_microblog/includes/elements">
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General Options&lt;/div&gt;"  label="" description="" />
+	<param name="moduleID" type="text" default="1" label="Module ID" description="A unique ID to be applied to the module. This allows multiple MicroBlog modules on a page." />
+	<param name="contentSource" type="list" default="article" label="MicroBlog Content Source" description="Choose to display content from either Joomla articles or K2 items.">
+			<option value="article">Joomla Articles</option>
+			<option value="k2">K2 Content Items</option>
+	</param>
+	<param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+		 <param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Scripts and Css Files&lt;/div&gt;"  label="" description="" />
+	<param name="@spacer" type="spacer" default="Set this option to yes if this is the only instance of the module being used on the page. If you have more than one microblog on the one page then you just need to set this option to yes for one module.&lt;br /&gt;&lt;br /&gt;" label="" description="" />
+	<param name="loadMBcss" type="list" default="1" label="Load microblog css?" description="Set this option to yes if this is the only instance of the module being used on the page. If you have more than one microblog on the one page then you just need to set this option to yes for one module.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+	<param name="loadScripts" type="list" default="1" label="Load Color Box Script?" description="Set this option to yes if this is the only instance of the module being used on the page. If you have more than one bambooBox or microBlog module on the one page then you just need to set the loadScript option to yes for one module.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+	<param name="cbTheme" type="list" default="1" label="Select ColorBox Theme" description="Choose one of the color box style themes.">
+      <option value="1">Theme 1</option>
+	  <option value="2">Theme 2</option>
+      <option value="3">Theme 3</option>
+	  <option value="4">Theme 4</option>
+	  <option value="pred">Pixel Red</option>
+	  <option value="pgreen">Pixel Green</option>
+      <option value="pbrown">Pixel Brown</option>
+	  <option value="ppurple">Pixel Purple</option>
+    </param>
+	<param name="loadCBcss" type="list" default="1" label="Load ColorBox css?" description="Set this option to yes if this is the only instance of the module with ColorBox being used on the page.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+    <param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;General Layout&lt;/div&gt;"  label="" description="" />
+    <param name="@spacer" type="spacer" default="Select the layout for the way you want your content items to be displayed.&lt;br /&gt;&lt;br /&gt;" label="" description="" />
+    <param name="layout" type="list" default="flat" label="Layout Type" description="Select the source of the content you would like to display in the module">
+      <option value="flat">Flat</option>
+      <option value="columns">Columns</option>
+      <option value="intro">Leading article followed by a list of titles</option>
+      <option value="dateTitle">Date and Title</option>
+    </param>
+    <param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Joomla Content Retrieval Settings&lt;/div&gt;"  label="" description="" />
+		<param name="@spacer" type="spacer" default="The general settings for selecting the Joomla content to be displayed in the module.&lt;br /&gt;&lt;br /&gt;" label="" description="" />
+  		<param name="article_source" type="list" default="cat" label="Article Source" description="Choose how you would like to specify the article sources">
+			<option value="cat">Categories</option>
+			<option value="art">Articles</option>
+			<option value="catart">Categories + Articles</option>
+		</param>   
+		<param name="catid" type="categories" default="" label="Category" description="Select the categories that you would like to display. You may select multiple." />
+		<param name="artid" type="text" default="" label="Article IDs" description="List the article ID's separated by a comma ," />
+    <param name="ordering" type="list" default="rdate" label="Ordering of content" description="Select the order in which the content items should appear.">
+      <option value="rdate">Most Recent First</option>
+      <option value="date">Oldest First</option>
+      <option value="alpha">Title Alphabetical</option>
+      <option value="ralpha">Title Alphabetical Reverse</option>
+      <option value="hits">Most Read</option>
+      <option value="rhits">Least Read</option>
+      <option value="order">Default ordering</option>
+    </param>
+    <param name="count" type="text" default="5" label="Item Count" description="The number of items to display in the module." />
+    <param name="show_front" type="list" default="0" label="Show Front page Items" description="Display items in the module that also are displayed on the front page.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+	<param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;K2 Content Retrieval Settings&lt;/div&gt;"  label="" description="" />
+	<param name="@spacer" type="spacer" default="The general settings for selecting the K2 content to be displayed in the module.&lt;br /&gt;&lt;br /&gt;" label="" description="" />
+	<param name="itemFilter" type="list" default="cat" label="K2 Items" description="Select the K2 Item Source.">
+		<option value="cat">Categories</option>
+		<option value="feat">Featured Items</option>
+		<option value="item">Items</option>
+		<option value="catitem">Categories + Items</option>
+	</param>
+	<param name="k2catid" type="categoriesmultiple" default="" label="Filter items by category" description="Select one ore more categories for which you want to filter an items list. Select none to fetch items from all categories." />
+    <param name="getChildren" type="radio" default="0" label="Fetch items from children categories" description="">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+	<param name="itemid" type="text" default="" label="Item IDs" description="List the K2 item ID's separated by a comma ," />
+	<param name="orderingK2" type="list" default="c_dsc" label="Ordering" description="Ordering options">
+		<option value="">Default</option>
+	  <option value="date">Oldest first</option>
+      <option value="rdate">Most recent first</option>
+      <option value="alpha">Title Alphabetical</option>
+      <option value="ralpha">Title Reverse-Alphabetical</option>
+      <option value="order">Ordering</option>
+      <option value="hits">Most popular</option>
+      <option value="best">Highest rated</option>
+      <option value="rand">Random ordering</option>
+	</param>
+	<param name="countK2" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+	<param name="showCommentCount" type="list" default="yes" label="Display Comment Count" description="Choose to display the number of comments for each item.">
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+    <param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Content Display Settings&lt;/div&gt;"  label="" description="" />
+<param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+<param name="renderPlugin" type="list" default="strip" label="Plugin Behaviour in Content?" description="Choose how you would like to handle plugin code {} in the content.">
+  <option value="render">Render Plugin</option>
+  <option value="strip">Strip Plugin Code</option>
+</param>     
+<param name="showdate" type="list" default="1" label="Display date?" description="Set this option to yes in order to display the date in the content output.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="dateFormat" type="list" default="0" label="Date Format" description="Display items int he moduel that also are displayed on the front page.">
+      <option value="0">15 Sep, 09</option>
+      <option value="1">Sep 15, 09</option>
+      <option value="2">September 15, 09</option>
+      <option value="3">15 September, 09</option>
+      <option value="4">September 15, 2009</option>
+      <option value="5">15 September, 2009</option>
+      <option value="6">15/09/09</option>
+      <option value="7">Tuesday 15 September, 2009</option>
+      <option value="8">Tue 15 Sept, 09</option>
+      <option value="9">Sept 15</option>
+      <option value="10">15 Sept</option>
+    </param>
+    <param name="colorBox" type="list" default="1" label="Display content item in ColorBox?" description="If set to yes then the content item will be displayed in a ColorBox overlay when the image, title or read more link is clicked.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="titlelink" type="list" default="2" label="Display Title" description="Choose how you would like to display the title?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+	  <option value="2">As Link</option>
+    </param>
+	<param name="linkTarget" type="list" default="article" label="Link Target" description="Page the link must target.">
+      <option value="article">Content Article</option>
+      <option value="default">Category Default Page</option>
+	  <option value="blog">Category Blog Page</option>
+    </param>
+	<param name="showintro" type="list" default="1" label="Show Intro Text?" description="Select whether to display introtext in the module.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="displayMore" type="list" default="1" label="Display readmore link" description="Do you want to display the read more link after the intro text?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="readonText" type="text" default="" label="Text for read more link" description="The text used for the read more link." />
+    <param name="wordCount" type="text" default="" label="Introtext Word limit" description="The number of words to limit the introtext by. Leave blank if you do not wish to l,imit the text." />
+	<param name="introSuffix" type="text" default="..." label="Intro Text Suffix" description="Characters to follow Intro Text" />
+    <param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+     <param name="@spacer" type="spacer"  default="Use this setting to nominate the html tags you would like to appear in your content item." />
+<param name="strip_tags" type="list" default="1" label="Strip Tags" description="Choose to strips tags from article content.">
+	<option value="1">Yes</option>
+      <option value="0">No</option>
+</param>
+   <param name="allowed_tags" type="textarea" cols="30" rows="5" default="&lt;p&gt;&lt;a&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;&lt;b&gt;&lt;em&gt;&lt;i&gt;&lt;strong&gt;&lt;blockquote&gt;&lt;dd&gt;&lt;dt&gt;&lt;small&gt;&lt;u&gt;&lt;br&gt;&lt;br /&gt;" label="Allowed Tags" description="This setting defines the tags you want to display in the slideshow. We've created this option primarily to remove images from the output but you can allow or disallow any html entity you like." />
+   <param name="@spacer" type="spacer"  default="If using Column mode select how many items should appear in a row before creating a new row." />
+   <param name="imagesPerRow" type="text" default="3" label="Items Per Row" description="Set the number of images to be per row." />
+   <param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+	<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;ColorBox Settings&lt;/div&gt;"  label="" description="" />
+		<param name="@spacer" type="spacer" default="The general settings for controlling how items appear if the Fancy Box is enabled in the setting above.&lt;br /&gt;&lt;br /&gt;" label="" description="" />
+    <param name="popupGallery" type="list" default="1" label="Popup Gallery" description="Set this to yes if you would like to be able to navigate between items within the popup.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="overlayOpacity" type="text" default="0.6" label="Overlay Opacity" description="Set the opacity for the overlay." />
+     <param name="frameWidth" type="text" default="800" label="Popup Width" description="Set the width of the popup." />
+      <param name="frameHeight" type="text" default="500" label="Popup Height" description="Set the height of the popup." />
+	<param name="colorboxScrolling" type="list" default="false" label="Scrolling?" description="Set this to yes if you would like to use scrolling for content within the ColorBox.">
+      	<option value="true">Yes</option>
+	    <option value="false">No</option>
+    </param>
+<param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+  		<param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Image Settings&lt;/div&gt;"  label="" description="" />
+		<param name="@spacer" type="spacer" default="The general settings for resizing the images within the module.&lt;br /&gt;&lt;br /&gt;" label="" description="" />
+		<param name="displayImages" type="list" default="1" label="Display Images in the module?" description="Set this to yes if you would like to show the first image from the article as a thumbnail in the microblog layout.">
+      <option value="no">No</option>
+      <option value="article">From Article IntroText</option>
+	  <option value="k2content">From K2 IntroText</option>
+	  <option value="k2item">K2 Item Image</option>
+    </param>
+	<param name="resizeImage" type="list" default="1" label="Resize Image?" description="Set this to yes if you would like to Specify the size of the image.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+		<param name="image_width" type="text" default="245" label="Width of the resized image" description="Set the width of the resized image." />
+		<param name="image_height" type="text" default="100" label="Height of the resized image" description="Set the width of the resized image." />
+		<param name="crop_width" type="text" default="2" label="The width ratio of the image" description="Set the width ratio of the resized image." />
+		<param name="crop_height" type="text" default="1" label="The height ratio of the image" description="Set the height ratio of the resized image." />
+				<param name="fadeEffect" type="list" default="1" label="Main image Fade on Hover" description="Enable image fade effects on page load and mouse hover">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+<param name="@spacer" type="spacer" default="&lt;br /&gt;" label="" description="" />
+   <param name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:16px;color:#fff;padding:4px;margin:0;background:#333;&quot;&gt;Miscellaneous Module Options&lt;/div&gt;"  label="" description="" />
+      <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Class suffix for the module" />
+      <param name="cache" type="list" default="0" label="Cache Module" description="">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+	  </params>
+</install>

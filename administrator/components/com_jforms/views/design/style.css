@@ -1,0 +1,343 @@
+/**
+* Stylesheet for design view
+*
+* @version		$Id: style.css 170 2009-08-12 07:29:38Z dr_drsh $
+* @package		Joomla
+* @subpackage	JForms
+* @copyright	Copyright (C) 2008 Mostafa Muhammad. All rights reserved.
+* @license		GNU/GPL
+*/
+
+  /* Tooltips */
+.tip {
+   float: left;
+   background: #ffc;
+   border: 1px solid #D4D5AA;
+   padding: 5px;
+   max-width: 200px;
+}
+
+.tip-title {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: bold;
+   margin-top: -15px;
+   padding-top: 15px;
+   padding-bottom: 5px;
+   background: url(selector-arrow.png) no-repeat;
+}
+
+.tip-text {
+   font-size: 100%;
+   margin: 0;
+}
+
+
+div.sessionstate-okay{
+
+	background-image:url('green.png');
+	background-repeat:no-repeat;
+	color:#00aa00;
+	font-weight:bold;
+	
+	padding-top:5px;
+	padding-left:25px;
+	height:20px;
+
+}
+
+div.sessionstate-expired{
+
+	background-image:url('red.png');
+	background-repeat:no-repeat;
+	color:#aa0000;
+	font-weight:bold;
+
+	padding-top:5px;
+	padding-left:25px;
+	height:20px;
+
+}
+
+
+div#session-status{
+	float:right;
+	height:25px;
+}
+
+div.activated-tab-button{
+	float:left;
+	font-size:120%;
+
+	text-align:center;	
+	padding-top:10px;
+	width:134px;
+	height:23px;
+	
+	border:0;
+	color:black;
+	font-weight:bold;
+	background-image:url('active.png');
+	cursor:pointer;
+	
+}
+div.tab-button{
+	
+	float:left;
+	font-size:120%;
+	text-align:center;
+	
+	text-align:center;	
+	padding-top:10px;
+	width:134px;
+	height:20px;
+	
+	color:white;
+	border:0;
+	border-bottom:3px solid black;
+	background-image:url('inactive.png');
+	cursor:pointer;
+		
+}
+.drag-handle{
+	width:16px;
+	height:16px;
+	margin:0px;
+	padding:0px;
+	background-image:url('move.png');
+	background-color:red;
+	border:1px solid green;
+	float:left;
+	position:relative;
+	visibility:hidden;
+	margin-right:3px;
+	top:-3px;/* li margin */
+	
+}
+
+img.resize-handle{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:16px;
+	height:16px;
+	background-image:url('corner.gif');
+	visibility:hidden;
+}
+div.delete-button{
+	float:right;
+	background-image:url('delete.gif');
+	width:22px;
+	height:22px;
+	visibility:hidden;
+}
+
+div.edit-button{
+	float:right;
+	background-image:url('edit.gif');
+	width:22px;
+	height:22px;
+	visibility:hidden;
+}
+
+div.controls{
+	
+	width:100px;
+	height:32px;
+
+}
+
+table.ppage label{
+	float:left;
+	width:120px;
+	font-weight:bold;
+	padding:1px;
+	font-size:11px;
+	text-align:left;
+	
+}
+table.ppage input,table.ppage select{
+	float:left;
+	width:200px;
+	padding:1px;
+	margin-bottom:5px;
+	font-size:11px;
+}
+table.ppage
+{
+	border-top:1px dashed silver;
+	border-bottom:1px dashed silver;
+	
+	padding:5px;
+	padding-top:10px;
+	display:none;
+}
+#cvForm .deleteButton
+{
+	float:right;
+	width:20px;
+}
+#cvForm label.radio{
+	width:auto;
+	height:auto;
+}
+#cvForm input.radio{
+	width:auto;
+	height:auto;
+}
+
+div#settings{
+	padding-top:10px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	
+}
+div#properties-container{
+	padding-top:10px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	height:1000px;
+
+}
+
+div#controls{
+	margin:0px;
+	padding-top:10px;
+	border-left:3px solid black;
+	border-right:3px solid black;
+	border-bottom:3px solid black;
+	height:1000px;
+}
+
+div#controls li{
+	
+	list-style: none outside none;
+	width:100px;
+	height:32px;
+	padding:0px;
+	margin:0px;
+}
+
+div#controls .pane-sliders .content {
+	background-color: white;
+}
+
+#cvForm label.checkbox{
+	width:auto;
+	height:auto;
+}
+#cvForm input.checkbox{
+	width:auto;
+	height:auto;
+}
+
+#cvForm label{
+	float:left;
+	width:100px;
+	font-weight:bold;
+	padding:0px;
+	text-align:left;
+	color:black;
+}
+#cvForm legend{
+	color:black;
+}
+#cvForm input,#cvForm textarea,#cvForm select{
+	float:left;
+	width:150px;
+	padding:0px;
+}
+#cvForm textarea{
+	height:32px;
+}
+
+#clist
+{
+	padding:0px;
+	margin:0px;
+	margin-top:0px;
+	height:980px;
+	width:97%;
+	
+}
+
+
+fieldset.radio-container{
+	float:left;
+}
+#clist li.element{
+	list-style: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	color: black;
+	cursor: pointer;
+	display:block;
+	width:100%;
+	background-color: transparent;
+}
+
+#clist li.element:hover{
+	background-color:silver;
+}
+
+
+#clist li.selected{
+	color: #ffffff;
+	background-color:navy !important;	
+}
+
+
+#clist li.selected legend{
+	color:white;
+}
+
+#clist li.selected label
+{
+	color:white;
+}
+#clist .deleteButton
+{
+	width:32px;
+	height:32px;
+	border:0px solid white;
+	background-color:transparent;
+	background-image:url('delete.gif');
+}
+
+#container{
+	width:90%;
+	border:1px solid black;	
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+#side-bar{
+	vertical-align:top;
+	width:402px;
+}
+#workarea-td{
+
+	border:5px solid black;
+	padding:0;
+	background-image:url('bg.gif');
+	margin:0;
+
+}
+#workarea{
+	
+	height:1000px;
+	width:100%;
+	padding:0px;
+	text-align:left;
+	background-color:white;
+	background-image:url('bg.gif');
+	overflow:scroll;
+}
+
+#properties input[type=checkbox]{
+	width:auto;
+}

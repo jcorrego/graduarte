@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleviewergallery maxImageWidth="480" maxImageHeight="480" textColor="0x333333" frameColor="0x999999" frameWidth="0" stagePadding="0" navPadding="40" thumbnailColumns="6" thumbnailRows="2" navPosition="bottom" vAlign="center" hAlign="center" title="" enableRightClickOpen="true" backgroundImagePath="" imagePath="http://graduarte.net/sitio/images/morfeoshow/agradecimien-2388/big/" thumbPath="http://graduarte.net/sitio/images/morfeoshow/agradecimien-2388/thumbs/">
+<image>
+<filename>agradecimientoescudocolor-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>agradecimientoescudocolorcentro-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>agradecimientoescudolaser-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>agradecimientograndeescudocolor-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>agradecimientohorizescudocolor-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>agradecimientovertical-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+<image>
+<filename>Ref.AV-1SR-MV-p.jpg</filename>
+<caption><![CDATA[]]></caption>
+</image>
+</simpleviewergallery>

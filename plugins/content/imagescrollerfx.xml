@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" group="content" version="1.5.0">
+	<name>Content - Image Scroller FX</name>
+	<creationDate>8 July 2010</creationDate>	
+	<author>FlashXML.net</author>
+	<copyright>Copyright (C) 2010 FlashXML.net</copyright>
+	<license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>support@flashxml.net</authorEmail>	
+	<authorUrl>http://www.flashxml.net/</authorUrl>
+	<version>0.0.2</version>
+	<description>The Image Scroller FX can be embedded in any website for free without even using Flash. It can have an overall width and height up to 1680 x 1050 pixels. It supports the following files: JPG, PNG, BMP, GIF for the thumbs, which are configurable through the images.xml file. The Scroller can be set to have infinite or finite scrolling, supporting different thumbs dimensions. There are a multiple highly customizable scroll properties like speed (on roll over or roll out), reflection, tooltip properties etc. On roll over can be applied different effects like: zooming, transparency, color saturation. An important thing is the low CPU usage for an extremely large number of thumbs. It has almost 60 configurable properties through a settings.xml file.</description>
+	<files>
+		<filename plugin="imagescrollerfx">imagescrollerfx.php</filename>
+	</files>
+	<params>
+		<param name="imagescrollerfx_path" type="text" size="40" default="/flashxml/imagescrollerfx/" label="Path" description="Path of the Flash component and its assets" />
+	</params>
+</install>
