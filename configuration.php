@@ -31,7 +31,7 @@ class JConfig {
 	var $ftp_pass = '';
 	var $ftp_root = '';
 	var $dbtype = 'mysql';
-	var $host = 'localhost';
+	var $host = '50.62.209.78';
 	var $user = 'graduarte';
 	var $db = 'graduarte';
 	var $dbprefix = 'jos_';
@@ -49,7 +49,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '1500';
 	var $session_handler = 'database';
-	var $password = 'Th2HLWP8zj';
+	var $password = 'nsCn8*93';
 	var $sitename = 'Graduarte';
 	var $MetaDesc = 'Joomla! - el motor de portales dinámicos y sistema de administración de contenidos';
 	var $MetaKeys = 'joomla, Joomla';
